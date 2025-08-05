@@ -84,7 +84,7 @@ for k, v in text_author.items():
                     
 df = pd.DataFrame(result_27a, columns= ['person', 'topic'])
 co_occurrence = df.groupby(['person', 'topic']).size().reset_index(name='weight')
-co_occurrence.to_excel('data/Michał Nowakowski/27a.xlsx', index=False)
+co_occurrence.to_excel('data/27a.xlsx', index=False)
 
 # Tworzymy graf
 G = nx.Graph()
@@ -118,7 +118,7 @@ Sigma(
 # ✅ Eksport do HTML
 Sigma.write_html(
     G,
-    'data/Michał Nowakowski/27a1.html',
+    'data/27a1.html',
     fullscreen=True,
     node_metrics=['louvain'],
     node_color='louvain',
@@ -139,7 +139,7 @@ nx.set_node_attributes(G, pagerank, name='pagerank')
 # ✅ Eksport do HTML z własnymi metrykami
 Sigma.write_html(
     G,
-    'data/Michał Nowakowski/27a2.html',
+    'data/27a2.html',
     fullscreen=True,
     node_color='pagerank',         # ręcznie przypisany
     node_size='degree',
@@ -180,7 +180,7 @@ for k, v in text_author.items():
                     
 df = pd.DataFrame(result_27b, columns= ['person', 'topic'])
 co_occurrence = df.groupby(['person', 'topic']).size().reset_index(name='weight')
-co_occurrence.to_excel('data/Michał Nowakowski/27b.xlsx', index=False)
+co_occurrence.to_excel('data/27b.xlsx', index=False)
 
 # Tworzymy graf
 G = nx.Graph()
@@ -214,7 +214,7 @@ Sigma(
 # ✅ Eksport do HTML
 Sigma.write_html(
     G,
-    'data/Michał Nowakowski/27b1.html',
+    'data/27b1.html',
     fullscreen=True,
     node_metrics=['louvain'],
     node_color='louvain',
@@ -235,7 +235,7 @@ nx.set_node_attributes(G, pagerank, name='pagerank')
 # ✅ Eksport do HTML z własnymi metrykami
 Sigma.write_html(
     G,
-    'data/Michał Nowakowski/27b2.html',
+    'data/27b2.html',
     fullscreen=True,
     node_color='pagerank',         # ręcznie przypisany
     node_size='degree',
@@ -275,7 +275,7 @@ for k, v in text_figure.items():
                     
 df = pd.DataFrame(result_27c, columns= ['person', 'topic'])
 co_occurrence = df.groupby(['person', 'topic']).size().reset_index(name='weight')
-co_occurrence.to_excel('data/Michał Nowakowski/27c.xlsx', index=False)
+co_occurrence.to_excel('data/27c.xlsx', index=False)
 
 # Tworzymy graf
 G = nx.Graph()
@@ -309,7 +309,7 @@ Sigma(
 # ✅ Eksport do HTML
 Sigma.write_html(
     G,
-    'data/Michał Nowakowski/27c1.html',
+    'data/27c1.html',
     fullscreen=True,
     node_metrics=['louvain'],
     node_color='louvain',
@@ -330,7 +330,7 @@ nx.set_node_attributes(G, pagerank, name='pagerank')
 # ✅ Eksport do HTML z własnymi metrykami
 Sigma.write_html(
     G,
-    'data/Michał Nowakowski/27c2.html',
+    'data/27c2.html',
     fullscreen=True,
     node_color='pagerank',         # ręcznie przypisany
     node_size='degree',
@@ -370,7 +370,7 @@ for k, v in text_figure.items():
                     
 df = pd.DataFrame(result_27d, columns= ['person', 'topic'])
 co_occurrence = df.groupby(['person', 'topic']).size().reset_index(name='weight')
-co_occurrence.to_excel('data/Michał Nowakowski/27d.xlsx', index=False)
+co_occurrence.to_excel('data/27d.xlsx', index=False)
 
 # Tworzymy graf
 G = nx.Graph()
@@ -404,7 +404,7 @@ Sigma(
 # ✅ Eksport do HTML
 Sigma.write_html(
     G,
-    'data/Michał Nowakowski/27d1.html',
+    'data/27d1.html',
     fullscreen=True,
     node_metrics=['louvain'],
     node_color='louvain',
@@ -425,7 +425,7 @@ nx.set_node_attributes(G, pagerank, name='pagerank')
 # ✅ Eksport do HTML z własnymi metrykami
 Sigma.write_html(
     G,
-    'data/Michał Nowakowski/27d2.html',
+    'data/27d2.html',
     fullscreen=True,
     node_color='pagerank',         # ręcznie przypisany
     node_size='degree',
@@ -468,7 +468,7 @@ df = df.loc[~df['person'].isin(['Anonymous', 'Various']) &
             ~df['response_person'].isin(['Anonymous', 'Various'])]
 
 co_occurrence = df.groupby(['person', 'response_person']).size().reset_index(name='weight')
-co_occurrence.to_excel('data/Michał Nowakowski/29a.xlsx', index=False)
+co_occurrence.to_excel('data/29a.xlsx', index=False)
 
 # Tworzymy graf
 G = nx.Graph()
@@ -502,7 +502,7 @@ Sigma(
 # ✅ Eksport do HTML
 Sigma.write_html(
     G,
-    'data/Michał Nowakowski/29a1.html',
+    'data/29a1.html',
     fullscreen=True,
     node_metrics=['louvain'],
     node_color='louvain',
@@ -523,7 +523,7 @@ nx.set_node_attributes(G, pagerank, name='pagerank')
 # ✅ Eksport do HTML z własnymi metrykami
 Sigma.write_html(
     G,
-    'data/Michał Nowakowski/29a2.html',
+    'data/29a2.html',
     fullscreen=True,
     node_color='pagerank',         # ręcznie przypisany
     node_size='degree',
@@ -536,38 +536,45 @@ Sigma.write_html(
 
 #%% Sankey
 
-# Tworzenie DataFrame
-df = pd.read_excel('data/Michał Nowakowski/29a.xlsx')
+# Wczytanie danych
+df = pd.read_excel('data/29a.xlsx')
 
-# Lista unikalnych nazw
-all_names = pd.unique(df[['autor', 'polemizowany']].values.ravel())
-name_to_index = {name: i for i, name in enumerate(all_names)}
+# Dodajemy sufiksy, by rozdzielić węzły autorów i adresatów
+df['person_label'] = df['person'] + ' (autor)'
+df['response_label'] = df['response_person'] + ' (adresat)'
 
-# Grupowanie danych i zliczanie liczby polemik
-links_df = df.groupby(['autor', 'polemizowany']).size().reset_index(name='count')
+# Lista unikalnych nazw węzłów
+all_labels = pd.unique(df[['person_label', 'response_label']].values.ravel())
+label_to_index = {name: i for i, name in enumerate(all_labels)}
 
-# Mapowanie nazw na indeksy
-source_indices = links_df['autor'].map(name_to_index)
-target_indices = links_df['polemizowany'].map(name_to_index)
+# Grupowanie danych
+links_df = df.groupby(['person_label', 'response_label']).size().reset_index(name='count')
+
+# Mapowanie do indeksów
+source_indices = links_df['person_label'].map(label_to_index)
+target_indices = links_df['response_label'].map(label_to_index)
 values = links_df['count']
 
-# Tworzenie wykresu Sankeya
+# Tworzenie Sankey diagramu
 fig = go.Figure(data=[go.Sankey(
     node=dict(
         pad=15,
         thickness=20,
         line=dict(color="black", width=0.5),
-        label=list(all_names)
+        label=list(label_to_index.keys())
     ),
     link=dict(
         source=source_indices,
         target=target_indices,
         value=values
-    ))])
+    )
+)])
 
-fig.update_layout(title_text="Diagram Sankeya: Autorzy i adresaci polemik", font_size=12)
+fig.update_layout(title_text="Diagram Sankeya: Autorzy (lewa) i adresaci (prawa)", font_size=12)
+
+import plotly.io as pio
+pio.renderers.default = "browser"
 fig.show()
-
 
 
 #%% rdf to lpg dla całego grafu
