@@ -5,6 +5,12 @@ from rdflib import Graph, Namespace, Literal
 import pandas as pd
 from tqdm import tqdm
 import plotly.graph_objects as go
+import plotly.io as pio
+import matplotlib.pyplot as plt
+from collections import Counter
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import matplotlib.colors as mcolors
 
 #%%
 # 1. Wczytanie pliku TTL za pomocą rdflib
@@ -534,6 +540,8 @@ Sigma.write_html(
     node_border_color_from='node'
 )
 
+nx.write_graphml(G, "data/29a.graphml")
+
 #%% Sankey
 
 # Wczytanie danych
@@ -571,10 +579,193 @@ fig = go.Figure(data=[go.Sankey(
 )])
 
 fig.update_layout(title_text="Diagram Sankeya: Autorzy (lewa) i adresaci (prawa)", font_size=12)
+fig.write_html("data/29a_sankey_diagram.html")
 
-import plotly.io as pio
-pio.renderers.default = "browser"
-fig.show()
+# pio.renderers.default = "browser"
+# fig.show()
+
+#%% 29a -- analiza sieciowa
+
+# Wczytanie grafu z pliku GraphML
+G = nx.read_graphml("data/29a.graphml")
+
+# Konwersja na graf nieskierowany dla niektórych analiz (opcjonalnie)
+G_undirected = G.to_undirected()
+
+# Podstawowe informacje
+print("Liczba wierzchołków:", G.number_of_nodes())
+print("Liczba krawędzi:", G.number_of_edges())
+
+# 1. Centralność stopnia (degree centrality)
+degree_centrality = nx.degree_centrality(G)
+
+# 2. Centralność pośrednictwa (betweenness centrality)
+betweenness_centrality = nx.betweenness_centrality(G)
+
+# 3. Centralność bliskości (closeness centrality)
+closeness_centrality = nx.closeness_centrality(G)
+
+# 4. Centralność wektora własnego (eigenvector centrality)
+try:
+    eigenvector_centrality = nx.eigenvector_centrality(G)
+except nx.NetworkXError:
+    eigenvector_centrality = {node: None for node in G.nodes()}
+    print("Eigenvector centrality failed — graf może być niespójny.")
+
+# 5. Pagerank
+pagerank = nx.pagerank(G)
+
+# 6. Spoistość i komponenty
+components = list(nx.connected_components(G_undirected))
+largest_component = max(components, key=len)
+print("Liczba komponentów spójnych:", len(components))
+print("Rozmiar największego komponentu:", len(largest_component))
+
+# Globalna spoistość
+print("Czy graf jest spójny?", nx.is_connected(G.to_undirected()))
+
+# Liczba komponentów spójnych
+print("Liczba komponentów:", nx.number_connected_components(G.to_undirected()))
+
+# Średnie lokalne klastrowanie
+print("Średni współczynnik klastrowania:", nx.average_clustering(G.to_undirected()))
+
+# Gęstość grafu
+print("Gęstość grafu:", nx.density(G))
+
+# 7. Analiza klastrów (spójność lokalna)
+clustering_coeffs = nx.clustering(G_undirected)
+
+# Tworzenie tabeli wyników
+df_centrality = pd.DataFrame({
+    'Node': list(G.nodes()),
+    'Degree Centrality': pd.Series(degree_centrality),
+    'Betweenness Centrality': pd.Series(betweenness_centrality),
+    'Closeness Centrality': pd.Series(closeness_centrality),
+    'Eigenvector Centrality': pd.Series(eigenvector_centrality),
+    'PageRank': pd.Series(pagerank),
+    'Clustering Coefficient': pd.Series(clustering_coeffs)
+}).sort_values(by='Degree Centrality', ascending=False)
+
+# Wyświetlenie top 10
+print("\nTop 10 węzłów według centralności stopnia:")
+print(df_centrality.head(10))
+
+# Zapis do pliku CSV
+df_centrality.to_excel("data/centrality_analysis.xlsx", index=False)
+
+# (Opcjonalnie) wizualizacja grafu z wielkością węzłów wg centralności
+plt.figure(figsize=(12, 10))
+pos = nx.spring_layout(G, seed=42)
+node_sizes = [v * 5000 for v in degree_centrality.values()]
+nx.draw(G, pos, with_labels=True, node_size=node_sizes, node_color="skyblue", edge_color="gray")
+plt.title("Wizualizacja grafu z centralnością stopnia")
+plt.show()
+
+#%% 29b -- communities
+import networkx as nx
+import community.community_louvain as community_louvain
+import matplotlib.pyplot as plt
+
+# Load the graph from the uploaded .graphml file
+graphml_path = "data/29a.graphml"
+G = nx.read_graphml(graphml_path)
+
+# Convert to undirected graph if it's directed (Louvain works on undirected graphs)
+if G.is_directed():
+    G = G.to_undirected()
+
+# Apply Louvain community detection
+partition = community_louvain.best_partition(G)
+
+# Count number of communities
+num_communities = len(set(partition.values()))
+
+# Add community information to each node
+nx.set_node_attributes(G, partition, 'community')
+
+# Show number of communities
+num_communities
+
+community_df = pd.DataFrame(list(partition.items()), columns=["node", "community"])
+community_df.sort_values(by="community", inplace=True)
+
+community_values = set(partition.values())
+#Key Historical Figures Mentioned, Key Authors Cited, Categorized Polemical Themes (Random Order), Discussed Issues (Random Order)
+
+for com in tqdm(community_values):
+    # com = list(community_values)[0]
+    com_people = community_df.loc[community_df['community'] == com]['node'].to_list()
+    texts = []
+    for s, p, o in g:
+        if s in original_texts and str(p) == str(SCHEMA.author) and people_names.get(o) in com_people:
+            texts.append(str(s))
+    key_historical_figures_mentioned = []
+    key_authors_cited = []
+    categorized_polemical_themes = []
+    discussed_issues = []
+    for s, p, o in g:
+        if str(s) in texts:
+            if str(p) == 'https://example.org/jesuit_calvinist/keyHistoricalFiguresMentioned':
+                key_historical_figures_mentioned.append(people_names.get(o))
+            elif str(p) == 'https://example.org/jesuit_calvinist/keyAuthorsCited':
+                key_authors_cited.append(people_names.get(o))
+            elif str(p) == 'https://example.org/jesuit_calvinist/categorizedPolemicalTheme':
+                categorized_polemical_themes.append(str(o))
+            elif str(p) == 'https://example.org/jesuit_calvinist/discussedIssue':
+                discussed_issues.append(str(o))
+    key_historical_figures_mentioned = [e for e in key_historical_figures_mentioned if e]
+    key_authors_cited = [e for e in key_authors_cited if e]
+    categorized_polemical_themes = [e for e in categorized_polemical_themes if e]
+    discussed_issues = [e for e in discussed_issues if e]
+    
+    categories = {'Key Historical Figures Mentioned': key_historical_figures_mentioned,
+                  'Key Authors Cited': key_authors_cited,
+                  'Categorized Polemical Themes': categorized_polemical_themes,
+                  'Discussed Issues': discussed_issues}
+    
+    for k,v in categories.items():
+        # k = list(categories.keys())[0]
+        # v = categories.get(k)
+        counter = Counter(v)
+        
+        # Sortowanie od najczęstszych do najrzadszych i ograniczenie do top 20
+        top_items = counter.most_common(20)
+        unique_entry = [item[0] for item in top_items]
+        entry_counter = [item[1] for item in top_items]
+        
+        # Styl wykresu
+        plt.style.use("seaborn-v0_8-whitegrid")
+        
+        # Ustawienia kolorów: od ciemniejszego do jaśniejszego
+        norm = mcolors.Normalize(vmin=min(entry_counter), vmax=max(entry_counter))
+        colors = cm.viridis(norm(entry_counter))
+        
+        # Tworzenie wykresu
+        plt.figure(figsize=(12, 7))
+        bars = plt.bar(unique_entry, entry_counter, color=colors, edgecolor='black')
+        
+        # Etykiety nad słupkami
+        for bar in bars:
+            height = bar.get_height()
+            plt.text(bar.get_x() + bar.get_width()/2, height + 0.5, str(height),
+                     ha='center', va='bottom', fontsize=9)
+        
+        # Opisy i styl osi
+        plt.title(f"Top 20 most frequent '{k}' in community {com}", fontsize=14, fontweight='bold')
+        plt.xlabel("Themes", fontsize=12)
+        plt.ylabel("Frequency", fontsize=12)
+        plt.xticks(rotation=90, fontsize=10)
+        plt.yticks(fontsize=10)
+        plt.grid(axis='y', linestyle='--', alpha=0.4)
+        
+        # Dopasowanie layoutu
+        plt.tight_layout()
+        
+        # Wyświetlenie wykresu
+        # plt.show()
+        plt.savefig(f"data/29b_community_{com}_top_20_{k}.png", dpi=300, bbox_inches="tight")
+                
 
 
 #%% rdf to lpg dla całego grafu
