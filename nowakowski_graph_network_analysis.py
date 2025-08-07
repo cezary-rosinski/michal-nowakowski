@@ -541,6 +541,198 @@ Sigma.write_html(
 )
 
 nx.write_graphml(G, "data/29a.graphml")
+#%% 29a2 + confessional type
+JC = Namespace("https://example.org/jesuit_calvinist/")
+
+text_people = {}
+for t, p in g.subject_objects(predicate=SCHEMA.author):
+    text_people[t] = p
+
+text_confession = {}
+for subject, conf in g.subject_objects(predicate=JC.confessionalProfile):
+    text_confession[subject] = str(conf)
+    
+people_confession = {}
+for t, p in text_people.items():
+    for te, c in text_confession.items():
+        if t == te:
+            people_confession[people_names.get(p)] = c
+people_confession = {k:v for k,v in people_confession.items() if k != 'Anonymous'}
+
+people_confession.update({'Ames, William': 'Reformed Evangelical',
+                          'Drohojewski, Jan': 'Reformed Evangelical',
+                          'Bellarmine, Robert': 'Roman Catholic',
+                          'Myślenta, Celestyn': 'Lutheran',
+                          'Wądłowski, Łukasz': 'Reformed Evangelical',
+                          'Reszka, Stanisław': 'Roman Catholic',
+                          'Chemnitz, Martin': 'Lutheran',
+                          'Chytraeus, David': 'Lutheran'})
+
+text_author = dict()
+text_response = dict()
+for s, p, o in g:
+    if s in original_texts:
+        if str(p) == str(SCHEMA.author):
+            if str(s) not in text_author:
+                text_author[str(s)] = [people_names.get(o)]
+            else: text_author[str(s)].append(people_names.get(o))
+        elif str(p) == 'https://example.org/jesuit_calvinist/responseToAuthor':
+            if str(s) not in text_response:
+                text_response[str(s)] = [people_names.get(o)]
+            else: text_response[str(s)].append(people_names.get(o))
+
+result_29a2 = []
+for k, v in text_author.items():
+    for ka, va in text_response.items():
+        if k == ka:
+            for a in v:
+                for t in va:
+                    result_29a2.append([a, t])
+
+df = pd.DataFrame(result_29a2, columns= ['person', 'response_person'])
+df = df.loc[~df['person'].isin(['Anonymous', 'Various']) &
+            ~df['response_person'].isin(['Anonymous', 'Various'])]
+df['person_confession'] = df['person'].apply(lambda x: people_confession.get(x))
+df['response_person_confession'] = df['response_person'].apply(lambda x: people_confession.get(x))
+
+co_occurrence = df.groupby(['person', 'person_confession', 'response_person', 'response_person_confession']).size().reset_index(name='weight')
+co_occurrence.to_excel('data/29a2.xlsx', index=False)
+
+# Tworzymy graf
+G = nx.Graph()
+
+# Dodajemy węzły i krawędzie z wagami oraz wyznaniami
+for _, row in tqdm(co_occurrence.iterrows(), total=len(co_occurrence)):
+    person = row['person']
+    person_confession = row['person_confession']
+    response_person = row['response_person']
+    response_confession = row['response_person_confession']
+    weight = row['weight']
+
+    # Węzły z atrybutami
+    G.add_node(person, type='person', confession=person_confession)
+    G.add_node(response_person, type='response_person', confession=response_confession)
+
+    # Krawędź
+    G.add_edge(person, response_person, weight=weight)
+
+# Dodajemy metrykę stopnia
+degree_dict = dict(G.degree())
+nx.set_node_attributes(G, degree_dict, name='degree')
+
+# (Opcjonalnie) PageRank
+pagerank = nx.pagerank(G)
+nx.set_node_attributes(G, pagerank, name='pagerank')
+
+
+# Eksport 1 — kolor według wyznania
+Sigma.write_html(
+    G,
+    'data/29a2_confession.html',
+    fullscreen=True,
+    node_color='confession',
+    node_size='degree',
+    node_size_range=(3, 20),
+    max_categorical_colors=30,
+    default_edge_type='curve',
+    default_node_label_size=14,
+    node_border_color_from='node'
+)
+
+# Eksport 2 — kolor według pagerank
+Sigma.write_html(
+    G,
+    'data/29a2_pagerank.html',
+    fullscreen=True,
+    node_color='pagerank',
+    node_size='degree',
+    node_size_range=(3, 20),
+    max_categorical_colors=30,
+    default_edge_type='curve',
+    default_node_label_size=14,
+    node_border_color_from='node'
+)
+
+nx.write_graphml(G, "data/29a2.graphml")
+#%% 29a3
+from collections import defaultdict
+
+# Tworzymy pusty graf
+G = nx.Graph()
+
+# 1. Dodajemy węzły i krawędzie oraz wyznania
+for _, row in tqdm(co_occurrence.iterrows(), total=len(co_occurrence)):
+    person = row['person']
+    person_confession = row['person_confession']
+    response_person = row['response_person']
+    response_confession = row['response_person_confession']
+    weight = row['weight']
+    
+    # Dodajemy węzły z atrybutem confession
+    if not G.has_node(person):
+        G.add_node(person, confession=person_confession)
+    if not G.has_node(response_person):
+        G.add_node(response_person, confession=response_confession)
+    
+    G.add_edge(person, response_person, weight=weight)
+
+# 2. Grupa node'ów wg wyznania
+confession_to_nodes = defaultdict(list)
+for node, data in G.nodes(data=True):
+    confession = data.get('confession', 'unknown')
+    confession_to_nodes[confession].append(node)
+
+# 3. Tworzymy wspólnoty: po dwie różne grupy wyznaniowe
+confessions = list(confession_to_nodes.keys())
+communities = []
+community_id = 0
+
+for i in range(len(confessions)):
+    for j in range(i, len(confessions)):
+        group_conf1 = confessions[i]
+        group_conf2 = confessions[j]
+        combined_nodes = confession_to_nodes[group_conf1] + confession_to_nodes[group_conf2]
+        communities.append({
+            'id': f'comm_{community_id}',
+            'nodes': combined_nodes,
+            'confessions': {group_conf1, group_conf2}
+        })
+        community_id += 1
+
+# 4. Przypisujemy węzłom przynależność do wspólnot (może być wiele)
+node_to_communities = defaultdict(list)
+for comm in communities:
+    for node in comm['nodes']:
+        node_to_communities[node].append(comm['id'])
+
+# 5. Wybieramy główną wspólnotę (pierwszą) jako primary_community
+for node in G.nodes:
+    comm_list = node_to_communities[node]
+    G.nodes[node]['primary_community'] = comm_list[0] if comm_list else 'none'
+    G.nodes[node]['all_communities'] = ', '.join(comm_list)
+    G.nodes[node]['label'] = f"{node} (wspólnota: {G.nodes[node]['primary_community']})"
+
+# 6. Dodajemy metryki
+nx.set_node_attributes(G, dict(G.degree()), name='degree')
+nx.set_node_attributes(G, nx.pagerank(G), name='pagerank')
+
+# 7. Eksport do HTML – kolorujemy wg primary_community, nie confession
+Sigma.write_html(
+    G,
+    'data/29a3_community_custom.html',
+    fullscreen=True,
+    node_color='primary_community',
+    node_label='label',
+    node_size='degree',
+    node_size_range=(3, 20),
+    max_categorical_colors=50,
+    default_edge_type='curve',
+    default_node_label_size=14,
+    node_border_color_from='node'
+)
+
+
+
 
 #%% Sankey
 
@@ -687,14 +879,17 @@ nx.set_node_attributes(G, partition, 'community')
 # Show number of communities
 num_communities
 
-community_df = pd.DataFrame(list(partition.items()), columns=["node", "community"])
-community_df.sort_values(by="community", inplace=True)
+# community_df = pd.DataFrame(list(partition.items()), columns=["node", "community"])
+# community_df.sort_values(by="community", inplace=True)
+# community_df.to_excel('data/29b_people_and_communities.xlsx', index=False)
+
+community_df = pd.read_excel('data/29b_people_and_communities.xlsx')
 
 community_values = set(partition.values())
 #Key Historical Figures Mentioned, Key Authors Cited, Categorized Polemical Themes (Random Order), Discussed Issues (Random Order)
 
 for com in tqdm(community_values):
-    # com = list(community_values)[0]
+    # com = list(community_values)[1]
     com_people = community_df.loc[community_df['community'] == com]['node'].to_list()
     texts = []
     for s, p, o in g:
@@ -817,7 +1012,7 @@ Sigma(G,
 
 Sigma.write_html(
     G,
-    'jecal.html',
+    'data/jecal.html',
     fullscreen=True,
     node_metrics=['louvain'],
     node_color='louvain',
