@@ -114,6 +114,8 @@ def add_person(row):
         g.add((person, schema.deathDate, Literal(year, datatype=XSD.gYear)))
     if pd.notnull(row['productivity_century']):
         g.add((person, JECAL.productivityCentury, Literal(row['productivity_century'])))
+    if pd.notnull(row['productivity_epoch']):
+        g.add((person, JECAL.productivityEpoch, Literal(row['productivity_epoch'])))
     if pd.notnull(row["birthplace_id"]):
         place_id = str(row["birthplace_id"])
         g.add((person, schema.birthPlace, JECAL[f"Place/{place_id}"]))
