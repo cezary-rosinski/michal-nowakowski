@@ -1024,7 +1024,202 @@ Sigma.write_html(
     node_size=G.degree
 )
 
-#%%
+#%% RDF filtering for the article
+
+# pip install rdflib
+from rdflib import Graph, URIRef, BNode, Literal
+from rdflib.namespace import RDF, RDFS, OWL
+from collections import deque
+from pathlib import Path
+
+# PATH = Path("/mnt/data/jecal.ttl")  # Twój wgrany plik
+
+def lname(x):
+    s = str(x)
+    s = s.rsplit("#", 1)[-1]
+    return s.rstrip("/").rsplit("/", 1)[-1]
+
+def is_original(o):
+    return (isinstance(o, Literal) and str(o).strip().lower() == "original") or \
+           (isinstance(o, URIRef) and lname(o) == "Original")
+
+# 1) wczytaj graf
+# g = Graph().parse(PATH.as_posix(), format="turtle")
+
+# 2) wybierz podmioty z editionType == Original (niezależnie od prefiksu)
+subjects = {s for s, p, o in g
+            if isinstance(p, URIRef) and lname(p) == "editionType" and is_original(o)}
+
+# 3) zbuduj podgraf instancji + domknięcie po blank-node’ach
+out = Graph(); out.namespace_manager = g.namespace_manager
+queue = deque()
+
+for s in subjects:
+    for t in g.triples((s, None, None)):
+        out.add(t)
+        if isinstance(t[2], BNode):
+            queue.append(t[2])
+
+seen_bn = set()
+while queue:
+    b = queue.popleft()
+    if b in seen_bn: 
+        continue
+    seen_bn.add(b)
+    for t in g.triples((b, None, None)):
+        out.add(t)
+        if isinstance(t[2], BNode) and t[2] not in seen_bn:
+            queue.append(t[2])
+
+# 4) minimalny schemat „w zasięgu” — NIC spoza tego minimum
+# 4a) klasy: te, które występują jako obiekty rdf:type w 'out'
+classes = {c for _, _, c in out.triples((None, RDF.type, None)) if isinstance(c, URIRef)}
+
+# domknięcie po rdfs:subClassOf*, ale bez dodawania pełnych opisów klas
+cls_closure = set(classes)
+q = deque(classes)
+while q:
+    c = q.popleft()
+    for _, _, sup in g.triples((c, RDFS.subClassOf, None)):
+        if isinstance(sup, URIRef) and sup not in cls_closure:
+            cls_closure.add(sup); q.append(sup)
+
+# dołącz TYLKO minimalne trójki o klasach
+for c in cls_closure:
+    # typ klasy (jeśli jest)
+    for t in g.triples((c, RDF.type, None)):
+        if t[2] in (OWL.Class, RDFS.Class):
+            out.add(t)
+    # subClassOf krawędzie do klas z naszego zbioru
+    for _, _, sup in g.triples((c, RDFS.subClassOf, None)):
+        if isinstance(sup, URIRef) and sup in cls_closure:
+            out.add((c, RDFS.subClassOf, sup))
+    # etykiety/komentarze (opcjonalnie)
+    for _, _, lab in g.triples((c, RDFS.label, None)):
+        out.add((c, RDFS.label, lab))
+    for _, _, com in g.triples((c, RDFS.comment, None)):
+        out.add((c, RDFS.comment, com))
+
+# 4b) właściwości: predykaty użyte w podgrafie instancji
+props = {p for _, p, _ in out if isinstance(p, URIRef)}
+
+for p in props:
+    # typy właściwości (zachowujemy, jeśli są)
+    for _, _, t in g.triples((p, RDF.type, None)):
+        out.add((p, RDF.type, t))
+    # etykiety
+    for _, _, lab in g.triples((p, RDFS.label, None)):
+        out.add((p, RDFS.label, lab))
+    # domain / range — tylko jeśli wskazują na klasy z naszego zbioru
+    for _, _, dom in g.triples((p, RDFS.domain, None)):
+        if isinstance(dom, URIRef) and dom in cls_closure:
+            out.add((p, RDFS.domain, dom))
+    for _, _, ran in g.triples((p, RDFS.range, None)):
+        if isinstance(ran, URIRef) and ran in cls_closure:
+            out.add((p, RDFS.range, ran))
+
+# 5) wypisz wynik (bez zapisu do pliku)
+# ttl = out.serialize(format="turtle")
+# print(ttl.decode() if hasattr(ttl, "decode") else ttl)
+
+
+
+g.serialize(destination='jecal_filtered.ttl', format="turtle")
+
+#%% statystyki do artykułu
+
+SCHEMA = Namespace("http://schema.org/")
+
+texts = [str(s) for s in g.subjects(RDF.type, SCHEMA.Text)]
+print(len(texts), "schema:Text objects found")
+
+authors = set()
+for text in g.subjects(RDF.type, SCHEMA.Text):
+    for person in g.objects(text, SCHEMA.author):
+        if (person, RDF.type, SCHEMA.Person) in g:
+            authors.add(str(person))
+
+print(len(authors), "Persons are authors of schema:Text")
+
+KEY_AUTHORS_CITED = URIRef("https://example.org/jesuit_calvinist/keyAuthorsCited")
+
+cited_authors = set()
+for text in g.subjects(RDF.type, SCHEMA.Text):
+    for person in g.objects(text, KEY_AUTHORS_CITED):
+        if (person, RDF.type, SCHEMA.Person) in g:
+            cited_authors.add(str(person))
+
+print(len(cited_authors), "Persons are cited as keyAuthorsCited")
+
+KEY_HISTORICAL_FIGURES = URIRef("https://example.org/jesuit_calvinist/keyHistoricalFiguresMentioned")
+
+historical_figures = set()
+for text in g.subjects(RDF.type, SCHEMA.Text):
+    for person in g.objects(text, KEY_HISTORICAL_FIGURES):
+        if (person, RDF.type, SCHEMA.Person) in g:
+            historical_figures.add(str(person))
+
+print(len(historical_figures), "Persons are mentioned as keyHistoricalFiguresMentioned")
+
+KEY_POLEMICAL_THEME = URIRef("https://example.org/jesuit_calvinist/categorizedPolemicalTheme")
+
+themes = set()
+for text in g.subjects(RDF.type, SCHEMA.Text):
+    for theme in g.objects(text, KEY_POLEMICAL_THEME):
+        themes.add(str(theme))
+
+print(len(themes), "categorizedPolemicalTheme objects found")
+
+POLEMICAL_THEME = URIRef("https://example.org/jesuit_calvinist/polemicalTheme")
+
+themes = set()
+for text in g.subjects(RDF.type, SCHEMA.Text):
+    for theme in g.objects(text, POLEMICAL_THEME):
+        themes.add(str(theme))
+
+print(len(themes), "polemicalTheme objects found")
+
+DISCUSSED_ISSUE = URIRef("https://example.org/jesuit_calvinist/discussedIssue")
+
+issues = set()
+for text in g.subjects(RDF.type, SCHEMA.Text):
+    for issue in g.objects(text, DISCUSSED_ISSUE):
+        issues.add(str(issue))
+
+print(len(issues), "discussedIssue objects found")
+
+
+SCHEMA = Namespace("http://schema.org/")
+BASE = "https://example.org/jesuit_calvinist/"
+
+# Definicje właściwości
+PROPERTIES = {
+    "schema:author": SCHEMA.author,
+    "discussedIssue": URIRef(BASE + "discussedIssue"),
+    "polemicalTheme": URIRef(BASE + "polemicalTheme"),
+    "keyHistoricalFiguresMentioned": URIRef(BASE + "keyHistoricalFiguresMentioned"),
+    "keyAuthorsCited": URIRef(BASE + "keyAuthorsCited"),
+}
+
+# Liczenie połączeń (krawędzi)
+connections = {}
+
+for label, prop in PROPERTIES.items():
+    count = 0
+    for text in g.subjects(RDF.type, SCHEMA.Text):
+        for _ in g.objects(text, prop):
+            count += 1
+    connections[label] = count
+
+# Wyniki
+total_count = 0
+for label, count in connections.items():
+    total_count += count
+    print(f"{label}: {count} connections")
+
+
+
+
 
 
 
