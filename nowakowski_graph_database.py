@@ -100,10 +100,10 @@ for _, r in df_events.iterrows():
 
 # 3) Person
 def add_person(row):
-    pid = str(r["person_id"])
+    pid = str(row["person_id"])
     person = JECAL[f"Person/{pid}"]
     g.add((person, RDF.type, schema.Person))
-    g.add((person, schema.name, Literal(r["person_name"])))
+    g.add((person, schema.name, Literal(row["person_name"])))
     if pd.notnull(row["person_wikidata_id"]):
         g.add((person, OWL.sameAs, WDT[row["person_wikidata_id"]]))
     if pd.notnull(row['birthdate']):
@@ -119,10 +119,11 @@ def add_person(row):
     if pd.notnull(row["birthplace_id"]):
         place_id = str(row["birthplace_id"])
         g.add((person, schema.birthPlace, JECAL[f"Place/{place_id}"]))
-    if pd.notnull(r["deathplace_id"]):
-        # relation Person->Place
+    if pd.notnull(row["deathplace_id"]):
         place_id = str(row["deathplace_id"])
         g.add((person, schema.deathPlace, JECAL[f"Place/{place_id}"]))
+    if pd.notnull(row["confession"]):
+        g.add((person, JECAL.confession, Literal(row['confession'])))
 
 for _, r in df_people.iterrows():
     add_person(r)

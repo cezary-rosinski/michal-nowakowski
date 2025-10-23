@@ -1,0 +1,22 @@
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix jesuit_calvinist: <https://example.org/jesuit_calvinist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch: <http://schema.org/> .
+
+sch:Event a rdfs:Class .
+
+sch:Person a rdfs:Class .
+
+sch:Place a rdfs:Class .
+
+sch:Text a rdfs:Class ;
+    fabio:hasPlaceOfPublication sch:Place ;
+    sch:author sch:Person ;
+    jesuit_calvinist:additionalAuthor sch:Person ;
+    jesuit_calvinist:dedicatedTo sch:Person ;
+    jesuit_calvinist:keyAuthorsCited sch:Person ;
+    jesuit_calvinist:keyHistoricalFiguresMentioned sch:Person ;
+    jesuit_calvinist:responseToAuthor sch:Person ;
+    jesuit_calvinist:responseToWork sch:Text ;
+    jesuit_calvinist:tumultMentioned sch:Event .
+
