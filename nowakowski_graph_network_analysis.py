@@ -449,7 +449,8 @@ Sigma.write_html(
 
 text_author = dict()
 text_response = dict()
-for s, p, o in g:
+# for s, p, o in g:
+for s, p, o in out:
     if s in original_texts:
         if str(p) == str(SCHEMA.author):
             if str(s) not in text_author:
@@ -1026,108 +1027,108 @@ Sigma.write_html(
 
 #%% RDF filtering for the article
 
-# pip install rdflib
-from rdflib import Graph, URIRef, BNode, Literal
-from rdflib.namespace import RDF, RDFS, OWL
-from collections import deque
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Skrypt RDF do filtrowania schema:Text z editionType zawierającym "Original".
+Gotowy do uruchomienia w Spyderze – wystarczy nacisnąć F5.
+"""
+
+from rdflib import Graph, Namespace, RDF, RDFS, URIRef, Literal
 from pathlib import Path
 
-# PATH = Path("/mnt/data/jecal.ttl")  # Twój wgrany plik
+# ------------------------------------------------------------
+# 🔧 USTAWIENIA ŚCIEŻEK – ZMODYFIKUJ WG SWOJEGO KATALOGU
+# ------------------------------------------------------------
+INPUT_PATH = Path(r"jecal.ttl")
+OUT_SUBGRAPH_PATH = Path(r"jecal_original_texts_subgraph.ttl")
+OUT_CLASSES_PATH = Path(r"jecal_original_texts_classes.ttl")
+INPUT_FORMAT = "turtle"  # zmień na np. "xml" jeśli plik RDF jest w RDF/XML
 
-def lname(x):
-    s = str(x)
-    s = s.rsplit("#", 1)[-1]
-    return s.rstrip("/").rsplit("/", 1)[-1]
+# ------------------------------------------------------------
+# 🔧 NAZWY PRZESTRZENI
+# ------------------------------------------------------------
+SCHEMA = Namespace("http://schema.org/")
+JC = Namespace("https://example.org/jesuit_calvinist/")
 
-def is_original(o):
-    return (isinstance(o, Literal) and str(o).strip().lower() == "original") or \
-           (isinstance(o, URIRef) and lname(o) == "Original")
+# ------------------------------------------------------------
+# 🔍 FUNKCJE POMOCNICZE
+# ------------------------------------------------------------
+def literal_contains_original(lit: Literal) -> bool:
+    """Sprawdza, czy literal zawiera słowo 'Original' (bez rozróżniania wielkości liter)."""
+    try:
+        return "original" in str(lit).lower()
+    except Exception:
+        return False
 
-# 1) wczytaj graf
-# g = Graph().parse(PATH.as_posix(), format="turtle")
+def classes_of(g: Graph, node) -> set:
+    """Zwraca zbiór klas (rdf:type) dla danego węzła."""
+    return set(g.objects(node, RDF.type))
 
-# 2) wybierz podmioty z editionType == Original (niezależnie od prefiksu)
-subjects = {s for s, p, o in g
-            if isinstance(p, URIRef) and lname(p) == "editionType" and is_original(o)}
+# ------------------------------------------------------------
+# 🚀 GŁÓWNA LOGIKA
+# ------------------------------------------------------------
+def main():
+    print("📘 Wczytywanie pliku RDF...")
+    g = Graph()
+    g.parse(INPUT_PATH, format=INPUT_FORMAT)
+    print(f"✅ Załadowano {len(g)} trójek RDF z pliku {INPUT_PATH}")
 
-# 3) zbuduj podgraf instancji + domknięcie po blank-node’ach
-out = Graph(); out.namespace_manager = g.namespace_manager
-queue = deque()
+    # 1️⃣ Znajdź wszystkie schema:Text, które mają editionType zawierające 'Original'
+    texts = set(
+        s for s in g.subjects(RDF.type, SCHEMA.Text)
+        if any(literal_contains_original(o) for o in g.objects(s, JC.editionType))
+    )
+    print(f"🔎 Znaleziono {len(texts)} obiektów schema:Text z editionType='Original'")
 
-for s in subjects:
-    for t in g.triples((s, None, None)):
-        out.add(t)
-        if isinstance(t[2], BNode):
-            queue.append(t[2])
+    # 2️⃣ Zbuduj subgraf (ABox)
+    subg = Graph()
+    for prefix, ns in g.namespaces():
+        subg.bind(prefix, ns)
+    nodes = set()
+    for s in texts:
+        for p, o in g.predicate_objects(s):
+            subg.add((s, p, o))
+            nodes.add(s); nodes.add(o)
+    for n in list(nodes):
+        for c in g.objects(n, RDF.type):
+            subg.add((n, RDF.type, c))
+    subg.serialize(destination=OUT_SUBGRAPH_PATH, format="turtle")
+    print(f"💾 Zapisano subgraf (ABox) → {OUT_SUBGRAPH_PATH} ({len(subg)} trójek)")
 
-seen_bn = set()
-while queue:
-    b = queue.popleft()
-    if b in seen_bn: 
-        continue
-    seen_bn.add(b)
-    for t in g.triples((b, None, None)):
-        out.add(t)
-        if isinstance(t[2], BNode) and t[2] not in seen_bn:
-            queue.append(t[2])
+    # 3️⃣ Zbuduj graf klas (TBox-like)
+    class_graph = Graph()
+    for prefix, ns in g.namespaces():
+        class_graph.bind(prefix, ns)
+    observed_edges = set()
+    for s, p, o in subg:
+        if p == RDF.type or not isinstance(o, URIRef):
+            continue
+        s_classes = classes_of(g, s)
+        o_classes = classes_of(g, o)
+        for cs in s_classes:
+            for co in o_classes:
+                observed_edges.add((cs, p, co))
+    for cs, p, co in observed_edges:
+        class_graph.add((cs, p, co))
+        class_graph.add((cs, RDF.type, RDFS.Class))
+        class_graph.add((co, RDF.type, RDFS.Class))
+    class_graph.serialize(destination=OUT_CLASSES_PATH, format="turtle")
+    print(f"💾 Zapisano graf klas (TBox-like) → {OUT_CLASSES_PATH} ({len(class_graph)} trójek)")
 
-# 4) minimalny schemat „w zasięgu” — NIC spoza tego minimum
-# 4a) klasy: te, które występują jako obiekty rdf:type w 'out'
-classes = {c for _, _, c in out.triples((None, RDF.type, None)) if isinstance(c, URIRef)}
+    print("\n✅ Operacja zakończona pomyślnie!")
 
-# domknięcie po rdfs:subClassOf*, ale bez dodawania pełnych opisów klas
-cls_closure = set(classes)
-q = deque(classes)
-while q:
-    c = q.popleft()
-    for _, _, sup in g.triples((c, RDFS.subClassOf, None)):
-        if isinstance(sup, URIRef) and sup not in cls_closure:
-            cls_closure.add(sup); q.append(sup)
+# ------------------------------------------------------------
+# ▶️ URUCHOMIENIE
+# ------------------------------------------------------------
+if __name__ == "__main__":
+    main()
 
-# dołącz TYLKO minimalne trójki o klasach
-for c in cls_closure:
-    # typ klasy (jeśli jest)
-    for t in g.triples((c, RDF.type, None)):
-        if t[2] in (OWL.Class, RDFS.Class):
-            out.add(t)
-    # subClassOf krawędzie do klas z naszego zbioru
-    for _, _, sup in g.triples((c, RDFS.subClassOf, None)):
-        if isinstance(sup, URIRef) and sup in cls_closure:
-            out.add((c, RDFS.subClassOf, sup))
-    # etykiety/komentarze (opcjonalnie)
-    for _, _, lab in g.triples((c, RDFS.label, None)):
-        out.add((c, RDFS.label, lab))
-    for _, _, com in g.triples((c, RDFS.comment, None)):
-        out.add((c, RDFS.comment, com))
-
-# 4b) właściwości: predykaty użyte w podgrafie instancji
-props = {p for _, p, _ in out if isinstance(p, URIRef)}
-
-for p in props:
-    # typy właściwości (zachowujemy, jeśli są)
-    for _, _, t in g.triples((p, RDF.type, None)):
-        out.add((p, RDF.type, t))
-    # etykiety
-    for _, _, lab in g.triples((p, RDFS.label, None)):
-        out.add((p, RDFS.label, lab))
-    # domain / range — tylko jeśli wskazują na klasy z naszego zbioru
-    for _, _, dom in g.triples((p, RDFS.domain, None)):
-        if isinstance(dom, URIRef) and dom in cls_closure:
-            out.add((p, RDFS.domain, dom))
-    for _, _, ran in g.triples((p, RDFS.range, None)):
-        if isinstance(ran, URIRef) and ran in cls_closure:
-            out.add((p, RDFS.range, ran))
-
-# 5) wypisz wynik (bez zapisu do pliku)
-# ttl = out.serialize(format="turtle")
-# print(ttl.decode() if hasattr(ttl, "decode") else ttl)
-
-
-
-g.serialize(destination='jecal_filtered.ttl', format="turtle")
 
 #%% statystyki do artykułu
-
+##cała baza
+g = Graph()
+g.parse("jecal.ttl", format="turtle")
 SCHEMA = Namespace("http://schema.org/")
 
 texts = [str(s) for s in g.subjects(RDF.type, SCHEMA.Text)]
@@ -1139,7 +1140,17 @@ for text in g.subjects(RDF.type, SCHEMA.Text):
         if (person, RDF.type, SCHEMA.Person) in g:
             authors.add(str(person))
 
-print(len(authors), "Persons are authors of schema:Text")
+response_to_authors = URIRef("https://example.org/jesuit_calvinist/responseToAuthor")
+
+response_authors = set()
+for text in g.subjects(RDF.type, SCHEMA.Text):
+    for person in g.objects(text, response_to_authors):
+        if (person, RDF.type, SCHEMA.Person) in g:
+            response_authors.add(str(person))
+
+authors = authors | response_authors
+
+print(len(authors), "Persons are authors and response authors of schema:Text")
 
 KEY_AUTHORS_CITED = URIRef("https://example.org/jesuit_calvinist/keyAuthorsCited")
 
@@ -1216,13 +1227,120 @@ total_count = 0
 for label, count in connections.items():
     total_count += count
     print(f"{label}: {count} connections")
+    
+print(f"All connections in the graph: {total_count}")
+
+print('________________________________')
+##wyfiltrowana baza
+out = Graph()
+out.parse("jecal_original_texts_subgraph.ttl", format="turtle")
+SCHEMA = Namespace("http://schema.org/")
+
+texts = [str(s) for s in out.subjects(RDF.type, SCHEMA.Text)]
+print(len(texts), "schema:Text objects found")
+
+authors = set()
+for text in out.subjects(RDF.type, SCHEMA.Text):
+    for person in out.objects(text, SCHEMA.author):
+        if (person, RDF.type, SCHEMA.Person) in out:
+            authors.add(str(person))
+            
+response_to_authors = URIRef("https://example.org/jesuit_calvinist/responseToAuthor")
+
+response_authors = set()
+for text in out.subjects(RDF.type, SCHEMA.Text):
+    for person in out.objects(text, response_to_authors):
+        if (person, RDF.type, SCHEMA.Person) in out:
+            response_authors.add(str(person))
+
+authors = authors | response_authors
+
+print(len(authors), "Persons are authors and response to authors of schema:Text")
+
+KEY_AUTHORS_CITED = URIRef("https://example.org/jesuit_calvinist/keyAuthorsCited")
+
+cited_authors = set()
+for text in out.subjects(RDF.type, SCHEMA.Text):
+    for person in out.objects(text, KEY_AUTHORS_CITED):
+        if (person, RDF.type, SCHEMA.Person) in out:
+            cited_authors.add(str(person))
+
+print(len(cited_authors), "Persons are cited as keyAuthorsCited")
+
+KEY_HISTORICAL_FIGURES = URIRef("https://example.org/jesuit_calvinist/keyHistoricalFiguresMentioned")
+
+historical_figures = set()
+for text in out.subjects(RDF.type, SCHEMA.Text):
+    for person in out.objects(text, KEY_HISTORICAL_FIGURES):
+        if (person, RDF.type, SCHEMA.Person) in out:
+            historical_figures.add(str(person))
+
+print(len(historical_figures), "Persons are mentioned as keyHistoricalFiguresMentioned")
+
+KEY_POLEMICAL_THEME = URIRef("https://example.org/jesuit_calvinist/categorizedPolemicalTheme")
+
+themes = set()
+for text in out.subjects(RDF.type, SCHEMA.Text):
+    for theme in out.objects(text, KEY_POLEMICAL_THEME):
+        themes.add(str(theme))
+
+print(len(themes), "categorizedPolemicalTheme objects found")
+
+POLEMICAL_THEME = URIRef("https://example.org/jesuit_calvinist/polemicalTheme")
+
+themes = set()
+for text in out.subjects(RDF.type, SCHEMA.Text):
+    for theme in out.objects(text, POLEMICAL_THEME):
+        themes.add(str(theme))
+
+print(len(themes), "polemicalTheme objects found")
+
+DISCUSSED_ISSUE = URIRef("https://example.org/jesuit_calvinist/discussedIssue")
+
+issues = set()
+for text in out.subjects(RDF.type, SCHEMA.Text):
+    for issue in out.objects(text, DISCUSSED_ISSUE):
+        issues.add(str(issue))
+
+print(len(issues), "discussedIssue objects found")
 
 
+SCHEMA = Namespace("http://schema.org/")
+BASE = "https://example.org/jesuit_calvinist/"
+
+# Definicje właściwości
+PROPERTIES = {
+    "schema:author": SCHEMA.author,
+    "responseToAuthor": URIRef(BASE + "responseToAuthor"),
+    "discussedIssue": URIRef(BASE + "discussedIssue"),
+    "polemicalTheme": URIRef(BASE + "polemicalTheme"),
+    "keyHistoricalFiguresMentioned": URIRef(BASE + "keyHistoricalFiguresMentioned"),
+    "keyAuthorsCited": URIRef(BASE + "keyAuthorsCited"),
+}
+
+# Liczenie połączeń (krawędzi)
+connections = {}
+
+for label, prop in PROPERTIES.items():
+    count = 0
+    for text in out.subjects(RDF.type, SCHEMA.Text):
+        for _ in out.objects(text, prop):
+            count += 1
+    connections[label] = count
+
+# Wyniki
+total_count = 0
+for label, count in connections.items():
+    total_count += count
+    print(f"{label}: {count} connections")
+
+print(f"All connections in the graph: {total_count}")
 
 
-
-
-
+## predykaty całej bazy
+ps = set()
+for s, p, o in g:
+    ps.add(str(p))
 
 
 
