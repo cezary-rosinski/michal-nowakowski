@@ -41,6 +41,7 @@ geo = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
 bibo = Namespace("http://purl.org/ontology/bibo/")
 schema = Namespace("http://schema.org/")
 WDT = Namespace("http://www.wikidata.org/entity/")
+BF = Namespace("http://id.loc.gov/ontologies/bibframe/")
 OUTPUT_TTL = "jecal.ttl"
 
 #%% --- LOAD ---
@@ -49,6 +50,12 @@ texts_ids = df_texts['Work ID'].to_list()
 df_people = gsheet_to_df('1M2gc-8cGZ8gh8TTnm4jl430bL4tccdri9nw-frUWYLQ', 'people')
 df_places = gsheet_to_df('1M2gc-8cGZ8gh8TTnm4jl430bL4tccdri9nw-frUWYLQ', 'places')
 df_events = gsheet_to_df('1M2gc-8cGZ8gh8TTnm4jl430bL4tccdri9nw-frUWYLQ', 'events')
+df_genres = gsheet_to_df('1M2gc-8cGZ8gh8TTnm4jl430bL4tccdri9nw-frUWYLQ', 'genres')
+#%%
+# genres_dict = dict(zip(df_genres['genre_label'].to_list(), df_genres['genre_id'].to_list()))
+# genres = [[el.strip() for el in e.split(';')] for e in df_texts['Genre'].to_list()]
+# genres = [';'.join([genres_dict.get(el) for el in e]) for e in genres]
+# df_test = pd.DataFrame(genres)
 #%% --- GRAPH ---
 g = Graph()
 
@@ -62,8 +69,20 @@ g.bind("biro", BIRO)
 g.bind("foaf", FOAF)
 g.bind("wdt", WDT)
 g.bind("owl", OWL)
+g.bind("bf", BF)
 
-# 1) Place
+# 1) Genre
+def add_genre(row):
+    gid = str(row['genre_id'])
+    genre = JECAL[f"Genre/{gid}"]
+    g.add((genre, RDF.type, BF.GenreForm))
+    g.add((genre, schema.name, Literal(row["genre_label"])))
+    g.add((genre, JECAL.genreType, Literal(row["genre_type"])))
+    
+for _, r in df_genres.iterrows():
+    add_genre(r)
+
+# 2) Place
 def add_place(row):
     pid = str(row["place_id"])
     place = JECAL[f"Place/{pid}"]
@@ -80,7 +99,7 @@ def add_place(row):
 for _, r in df_places.iterrows():
     add_place(r)
 
-# 2) Event
+# 3) Event
 
 def add_event(row):
     pid = str(row['event_id'])
@@ -98,7 +117,7 @@ def add_event(row):
 for _, r in df_events.iterrows():
     add_event(r)
 
-# 3) Person
+# 4) Person
 def add_person(row):
     pid = str(row["person_id"])
     person = JECAL[f"Person/{pid}"]
@@ -128,7 +147,7 @@ def add_person(row):
 for _, r in df_people.iterrows():
     add_person(r)
 
-# 4) Text 
+# 5) Text 
 def add_text(row):
 # for _, row in df_novels.iterrows():
     tid = str(row["Work ID"])
@@ -151,9 +170,12 @@ def add_text(row):
     g.add((text, dcterms.publisher, Literal(row['Publisher'])))
     g.add((text, schema.inLanguage, Literal(row['Languages'])))
     g.add((text, JECAL.documentType, Literal(row['Document Type'])))
-    if pd.notnull(row['Genre']):
-        for genre in row['Genre'].split(';'):
-            g.add((text, schema.genre, Literal(genre.strip())))
+    # if pd.notnull(row['Genre']):
+    #     for genre in row['Genre'].split(';'):
+    #         g.add((text, schema.genre, Literal(genre.strip())))
+    if pd.notnull(row['Genre ID']):
+        for a in row['Genre ID'].split(';'):
+            g.add((text, schema.genre, JECAL[f"Genre/{a}"]))
     if row['Number of Pages'] != 'No Data':
         g.add((text, FABIO.hasPageCount, Literal(row['Number of Pages'])))
     for p in row['Digitized Copy'].split(';'):
@@ -213,7 +235,104 @@ for _, r in df_texts.iterrows():
 g.serialize(destination=OUTPUT_TTL, format="turtle")
 print(f"RDF triples written to {OUTPUT_TTL}")
 
+#%% RDF filtering for the article
 
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Skrypt RDF do filtrowania schema:Text z editionType zawierającym "Original".
+Gotowy do uruchomienia w Spyderze – wystarczy nacisnąć F5.
+"""
+
+from rdflib import Graph, Namespace, RDF, RDFS, URIRef, Literal
+from pathlib import Path
+
+# ------------------------------------------------------------
+# 🔧 USTAWIENIA ŚCIEŻEK – ZMODYFIKUJ WG SWOJEGO KATALOGU
+# ------------------------------------------------------------
+INPUT_PATH = Path(r"jecal.ttl")
+OUT_SUBGRAPH_PATH = Path(r"jecal_original_texts_subgraph.ttl")
+OUT_CLASSES_PATH = Path(r"jecal_original_texts_classes.ttl")
+INPUT_FORMAT = "turtle"  # zmień na np. "xml" jeśli plik RDF jest w RDF/XML
+
+# ------------------------------------------------------------
+# 🔧 NAZWY PRZESTRZENI
+# ------------------------------------------------------------
+SCHEMA = Namespace("http://schema.org/")
+JC = Namespace("https://example.org/jesuit_calvinist/")
+
+# ------------------------------------------------------------
+# 🔍 FUNKCJE POMOCNICZE
+# ------------------------------------------------------------
+def literal_contains_original(lit: Literal) -> bool:
+    """Sprawdza, czy literal zawiera słowo 'Original' (bez rozróżniania wielkości liter)."""
+    try:
+        return "original" in str(lit).lower()
+    except Exception:
+        return False
+
+def classes_of(g: Graph, node) -> set:
+    """Zwraca zbiór klas (rdf:type) dla danego węzła."""
+    return set(g.objects(node, RDF.type))
+
+# ------------------------------------------------------------
+# 🚀 GŁÓWNA LOGIKA
+# ------------------------------------------------------------
+def main():
+    print("📘 Wczytywanie pliku RDF...")
+    g = Graph()
+    g.parse(INPUT_PATH, format=INPUT_FORMAT)
+    print(f"✅ Załadowano {len(g)} trójek RDF z pliku {INPUT_PATH}")
+
+    # 1️⃣ Znajdź wszystkie schema:Text, które mają editionType zawierające 'Original'
+    texts = set(
+        s for s in g.subjects(RDF.type, SCHEMA.Text)
+        if any(literal_contains_original(o) for o in g.objects(s, JC.editionType))
+    )
+    print(f"🔎 Znaleziono {len(texts)} obiektów schema:Text z editionType='Original'")
+
+    # 2️⃣ Zbuduj subgraf (ABox)
+    subg = Graph()
+    for prefix, ns in g.namespaces():
+        subg.bind(prefix, ns)
+    nodes = set()
+    for s in texts:
+        for p, o in g.predicate_objects(s):
+            subg.add((s, p, o))
+            nodes.add(s); nodes.add(o)
+    for n in list(nodes):
+        for c in g.objects(n, RDF.type):
+            subg.add((n, RDF.type, c))
+    subg.serialize(destination=OUT_SUBGRAPH_PATH, format="turtle")
+    print(f"💾 Zapisano subgraf (ABox) → {OUT_SUBGRAPH_PATH} ({len(subg)} trójek)")
+
+    # 3️⃣ Zbuduj graf klas (TBox-like)
+    class_graph = Graph()
+    for prefix, ns in g.namespaces():
+        class_graph.bind(prefix, ns)
+    observed_edges = set()
+    for s, p, o in subg:
+        if p == RDF.type or not isinstance(o, URIRef):
+            continue
+        s_classes = classes_of(g, s)
+        o_classes = classes_of(g, o)
+        for cs in s_classes:
+            for co in o_classes:
+                observed_edges.add((cs, p, co))
+    for cs, p, co in observed_edges:
+        class_graph.add((cs, p, co))
+        class_graph.add((cs, RDF.type, RDFS.Class))
+        class_graph.add((co, RDF.type, RDFS.Class))
+    class_graph.serialize(destination=OUT_CLASSES_PATH, format="turtle")
+    print(f"💾 Zapisano graf klas (TBox-like) → {OUT_CLASSES_PATH} ({len(class_graph)} trójek)")
+
+    print("\n✅ Operacja zakończona pomyślnie!")
+
+# ------------------------------------------------------------
+# ▶️ URUCHOMIENIE
+# ------------------------------------------------------------
+if __name__ == "__main__":
+    main()
 
 
 

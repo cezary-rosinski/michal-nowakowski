@@ -1,3 +1,4 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix jesuit_calvinist: <https://example.org/jesuit_calvinist/> .
@@ -11,7 +12,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1579"^^xsd:gYear ;
-    sch:genre "Theses" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G3> ;
     sch:inLanguage "Latin" ;
     sch:title "Assertiones theologicae de vera Christi Ecclesia, ubi sit et quomodo cognoscenda, disputandae in Vilnensi Societatis Iesu collegio sub vernam studiorum instaurationem, die [11] Mai anno Domini 1579 [hora 7]" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -73,7 +74,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1286> ;
     sch:datePublished "1579"^^xsd:gYear ;
-    sch:genre "Passio" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G2> ;
     sch:inLanguage "Latin" ;
     sch:title "Przydatek do tych Żywotów o świętych męczennikach, którzy tych naszych wieków dla Chrystusa, prawdy i kościoła jego świętego cierpieli (Przedmowa o męczennikach heretyckich)" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1226>,
@@ -217,7 +218,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1446> ;
     sch:datePublished "1580"^^xsd:gYear ;
-    sch:genre "Theses" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G3> ;
     sch:inLanguage "Latin" ;
     sch:title "De vero et unico primatu divi Petri apostolorum principis, sacrosanctorum Ecclesiae patrum testimoniis atque oecumenicorum conciliorum decretis comprobato" ;
     jesuit_calvinist:confessionalProfile "Roman Catholic" ;
@@ -237,8 +238,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1200> ;
     sch:datePublished "1581"^^xsd:gYear ;
-    sch:genre "Epigram",
-        "Letter" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G8> ;
     sch:inLanguage "Latin" ;
     sch:title "Epistola Augustini Rotundi Mieleski i[uris] u[triusque] doctoris, secretarij m[aiestatis] regiae etc. ad illustriss[imum] et reverendiss[imum] dominum D. Georgium Radivilum, ducem Olycen[sem] etc. d. g. episcopum vilnen[sem], qua cuidam a<n>onymo haeresim eidem reverendiss[imo] persuadenti respondet" ;
     jesuit_calvinist:confessionalProfile "Roman Catholic" ;
@@ -257,8 +258,8 @@
     fabio:hasPageCount "36ff." ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1582"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Narrative Poem" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G5> ;
     sch:inLanguage "Polish" ;
     sch:title "Apologeticus to jest obrona konfederacyjej, przy tym seditio albo bunt kapłański na ewangeliki w Wilnie z wolej a łaski miłego Boga przed harapem wynurzony" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -474,7 +475,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL24> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1200> ;
     sch:datePublished "1582"^^xsd:gYear ;
-    sch:genre "Letter" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Appendix ad libertatem Volani adiecta" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -570,8 +571,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1286> ;
     sch:datePublished "1582"^^xsd:gYear ;
-    sch:genre "Emblemat",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G11> ;
     sch:inLanguage "Latin" ;
     sch:title "Artes duodecim sacramentariorum seu Zvingliocalvinistarum quibus oppugnant, et totidem arma Catholicorum quibus propugnant praesentiam corporis D[omini] n[ostri] Iesu Christi in eucharistia: Contra Andream Volanum huius haereticae pestis in Lithuania archiministrum" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -773,7 +774,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL336> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1127> ;
     sch:datePublished "1583"^^xsd:gYear ;
-    sch:genre "Letter" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Epistola ad Stephanum primum Poloniae regem serenissimum: Adversus quendam Volanum haereticum Lithuanum" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P444> ;
@@ -903,7 +904,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1583"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Eiusdem ad nova Loiolitarum obiecta responsio" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -1014,11 +1015,11 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P255> ;
     sch:datePublished "1584"^^xsd:gYear ;
-    sch:genre "Epigram",
-        "Prayer",
-        "Sermon",
-        "Spiritual Guide",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G10>,
+        <https://example.org/jesuit_calvinist/Genre/G16>,
+        <https://example.org/jesuit_calvinist/Genre/G6>,
+        <https://example.org/jesuit_calvinist/Genre/G8> ;
     sch:inLanguage "Polish" ;
     sch:title "Obrona tajemnice krztu prawosławnego chrześcijaństwa" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1500> ;
@@ -1090,7 +1091,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1584"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Libri quinque contra Scargae Iesuitae Vilnensis septem missae, sacrificiique eius columnas et librum duodecimarum artium Zvingliocaluinistarum, quibus is veritatem doctrinae apostolicae et sanctae veteris Ecclesiae de sacrame[n]to coenae Domini evertere studet" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1426>,
@@ -1287,7 +1288,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P839> ;
     sch:datePublished "1584"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Generoso domino Andreae Volano in Biutiski gente Polono, secretario regio longe doctissimo" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1426>,
@@ -1340,7 +1341,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P839> ;
     sch:datePublished "1584"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Pro Volano et puriore religione, defensoribusque eius, adversus Antonium Possevinum Socium Iesu scriptum Apologeticum" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1426>,
@@ -1651,7 +1652,7 @@
     fabio:hasPageCount "39pp." ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1509> ;
     sch:datePublished "1584"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Polish" ;
     sch:title "Krótka sprawa o autorze tych książek i odpisie na nie i o Odpowiedzi na Przyczyny nawrócenia Gaspra Wilkowskiego" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -1789,7 +1790,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1500> ;
     sch:datePublished "1584"^^xsd:gYear ;
-    sch:genre "Letter" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Do osierociałej braciej w Synu Bożym w mieście kiejdańskim podług starodawnej nauki Bożej odrodzonym we krwi Syna Bożego, pragnącym pociechy Ducha Świętego" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P255> ;
@@ -1820,10 +1821,10 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P255> ;
     sch:datePublished "1585"^^xsd:gYear ;
-    sch:genre "Prayer",
-        "Sermon",
-        "Spiritual Guide",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G10>,
+        <https://example.org/jesuit_calvinist/Genre/G16>,
+        <https://example.org/jesuit_calvinist/Genre/G6> ;
     sch:inLanguage "Polish" ;
     sch:title "Obrona pewności dusznego zbawienia, przeciwko papieskiej wątpliwości, przez ks[iędza] Andrzeja Chrząstowskiego, pasterza olszańskiego, w duchu cichości i miłości spisana" ;
     jesuit_calvinist:categorizedPolemicalTheme "Corruption and Manipulation of Scripture",
@@ -1859,7 +1860,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P710> ;
     sch:datePublished "1586"^^xsd:gYear ;
-    sch:genre "Theses" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G3> ;
     sch:inLanguage "Latin" ;
     sch:title "De pio et in sancta Ecclesia iam inde ab apostolis receptissimo sacrarum imaginum usu deq[ue] sacrilegia novorum iconoclastarum in extermnandis illis per summam Christi contumeliam, immanitate itemq[ue] de sanctorum veneratione et invocatione: Theses In Academia Vilnensi disputandae adversus impium et famosum libellum a Volano quodam recenti iconomachorum archiministro editum, propugnatore Andrea Iurgevicio [...] praeside [...] Emmanuele a Vega [...]" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -2020,8 +2021,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1127> ;
     sch:datePublished "1586"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Atheismi Lutheri, Melanchthonis, Calvini, Bezae, Ubiquetariorum, Anabaptistarum, Picardorum, Puritanorum, Arianorum et aliorum nostri temporis haereticorum duo item libri [...] refutati" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P151> ;
@@ -2286,9 +2287,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1586"^^xsd:gYear ;
-    sch:genre "Epigram",
-        "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G8> ;
     sch:inLanguage "Latin" ;
     sch:title "Assertionum de Eucharistia falsarum cum doctrina apostolica et sententia veteris Ecclesiae pugnantium ab Immanuele Vega Vilnen[si] Iesuita publicatarum confutatio" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P842> ;
@@ -2310,7 +2311,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1446> ;
     sch:datePublished "1586"^^xsd:gYear ;
-    sch:genre "Theses" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G3> ;
     sch:inLanguage "Latin" ;
     sch:title "Evangelica et apostolica doctrina de divinissimo et tremendo missae sacrificio, in theses digesta" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -2428,7 +2429,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1446> ;
     sch:datePublished "1586"^^xsd:gYear ;
-    sch:genre "Theses" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G3> ;
     sch:inLanguage "Latin" ;
     sch:title "Disputatio teologica de distributione eucharistiae sub altera tantum vel utraq[ue] specie, in theses digesta" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -2546,8 +2547,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P710> ;
     sch:datePublished "1587"^^xsd:gYear ;
-    sch:genre "Satirical Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Latin" ;
     sch:title "Responsio r[everendi] d[omini] Andreae Iurgewic [...] ad famosum Andreae Volani contra summum pontificem libellum, quem Apologiam contra calumnias Iesuitarum falso inscripsit" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P158> ;
@@ -2701,8 +2702,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL24> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1307> ;
     sch:datePublished "1588"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "De Iesu Christi, Filii Dei, natura sive essentia, nec non de peccatorum per ipsum expiatione disputatio, adversus Andream Volanum" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -2831,8 +2832,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1589"^^xsd:gYear ;
-    sch:genre "Satirical Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Latin" ;
     sch:title "Ad scurrilem et famosum libellum Iesuiticae scholae Vilnensis et potissimum maledici conviciatori Andreae Iurgevitii, sacrificuli et canonici Vilnensis [...] responsio" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1001> ;
@@ -3089,7 +3090,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL24> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P103> ;
     sch:datePublished "1589"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Andreae Volani Lwowkowiensi Zvinglianorum Vilnensium archiministri nuncupati orationi, qua homines omnium ordinum in Magno Ducatu Lithuania his annis ab illa secta conversos ad pristinos errores revocare conatur, benevolo et Christo responsio a Federico Borusso conscripta" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -3241,8 +3242,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P556> ;
     sch:datePublished "1589"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Sermon" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G10>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "O jednej osobie w używaniu sakramentu ciała Pańskiego, w Kościele Bożym zwyczajnej, kazań sześć ks[iędza] d[omini] Stanisława Grodzickiego Societatis Iesu" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -3426,8 +3427,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P710> ;
     sch:datePublished "1590"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Theses" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G3>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Quaestiones de haeresibus nostri temporis Andreae Volano et Lithuaniae ministris" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -3580,9 +3581,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P710> ;
     sch:datePublished "1591"^^xsd:gYear ;
-    sch:genre "Epigram",
-        "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G8> ;
     sch:inLanguage "Latin" ;
     sch:title "Anatomia libelli famosi et scurrilis Andreae Volani Lwowcoviensis apostate et praefecti Synagogae Calvinisticae Vilnensis" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1265>,
@@ -3845,7 +3846,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1591"^^xsd:gYear ;
-    sch:genre "Narrative Poem" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G5> ;
     sch:inLanguage "Latin" ;
     sch:title "Dirae in obtrectatores" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1348> ;
@@ -3862,7 +3863,7 @@
     fabio:hasPageCount "10pp." ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1151> ;
     sch:datePublished "1591"^^xsd:gYear ;
-    sch:genre "Letter" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Theses theologicae, to jest conclave synodalne zboru wileńskiego, defendentur in coetu alias we zborze wileńskim, który jest pod baranem, na wieży wystawionym: Praeside clarissimo et utriusque artis peritissimo ministro Stanislao Sudrovio, respondente vero dignissimo ipsius Ribaldo, seu locato Joanne Radvano, utroque fidelissimo discipulo Kalwina francuza piętnowanego i Bezy sodomity sprośnego jako tegoż własne wiersze o tem swiadczą; defendentur autem mense Maio a[nno] D[omini] 1590" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -3966,7 +3967,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1592"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Meditatio In Epistolam Divi Pauli apostoli ad Ephesios, in qua universae fere religionis Christianae compendium discendum proponitur" ;
     jesuit_calvinist:categorizedPolemicalTheme "Apocalyptic Imagery",
@@ -4060,8 +4061,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1592"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Poem" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G15>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Epistolae aliquot ad refellendum doctrinae Samosatenianae errorem ad astruendam Orthodoxam de Divina Trinitate sententiam, hoc tempore lectu non inutiles, ab Andrea Volano scriptae" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P61> ;
@@ -4242,7 +4243,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P556> ;
     sch:datePublished "1592"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Polish" ;
     sch:title "Prawidło wiary heretyckiej, to jest okazanie, iż wodzowie kacerscy nie pismo ś[więte], ale własny mózg swój za regułę albo prawidło wiary sobie mają, a przy tym Pierwsza centuria albo sto jawnych fałszerstw w wierze, z Obrony postylle kacerskiej od fałecznego proroka Grzegorza Żarnowca wydanej, zebranych przez D. Stanisława Grodzickiego teologa Societatis Iesu" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -4433,8 +4434,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P556> ;
     sch:datePublished "1592"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Trutina Psychotopijej przeciw temu kazaniu od ministra nadwornego wydanej" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -4616,8 +4617,8 @@
     fabio:hasPageCount "112pp." ;
     sch:author <https://example.org/jesuit_calvinist/Person/P255> ;
     sch:datePublished "1593"^^xsd:gYear ;
-    sch:genre "Theses",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G3> ;
     sch:inLanguage "Latin" ;
     sch:title "Contradictionum in libro Roberti Bellarmini de purgatorio index, collectus per Andream Chrząstovium" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -4755,7 +4756,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P764> ;
     sch:datePublished "1593"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Ioannis Kuczborskii, studiosi Academiae Vilnensis Societatis Iesu, censura de iudicio Andreae Volani, archiministrelli caetus Vilnensis, nuper in Ministromachiam r[everendi] d[omini] Stanislai Rescii edito" ;
     jesuit_calvinist:categorizedPolemicalTheme "Animalistic and Monstrous Imagery",
@@ -4830,8 +4831,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1198> ;
     sch:datePublished "1593"^^xsd:gYear ;
-    sch:genre "Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G8> ;
     sch:inLanguage "Latin" ;
     sch:title "Ad orationem Andreae Volani, qua et errores in Ecclesia Romana, si diis placet, repraehendit et pontificem ad deserendum pontificatum adhortatur, Ioannis Bobola, in Academia Vilnensi Societatis Iesu studiosi, responsio" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P104>,
@@ -4981,9 +4982,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL1127> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P255> ;
     sch:datePublished "1594"^^xsd:gYear ;
-    sch:genre "Epigram",
-        "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G8> ;
     sch:inLanguage "Latin" ;
     sch:title "Bellum Iesuiticum sive ducentarum et quinque Iesuiticarum index, nempe de eucharistiae mysterio: CXC. De antichristo XV. Pseudographiae [...], duo libelli de opificio missae [...], praxis de cermoniis et canone missae [...]" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -5164,9 +5165,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL1127> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P255> ;
     sch:datePublished "1594"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Satirical Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Latin" ;
     sch:title "Duo libelli de opificio missae, quorum prior Disputationem contra Iesuitam Robertum Bellarminum susceptam et in capita thesesque digestam, continet; alter Evangelicam et apostolicam adversus horrendum missae sacrificium in novem partes distributam disputationem proponit" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P839> ;
@@ -5419,9 +5420,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL1127> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P255> ;
     sch:datePublished "1594"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Satirical Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Latin" ;
     sch:title "Praxis de caeremoniis et canone missae; Disputatio in theses digesta" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -5557,9 +5558,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P710> ;
     sch:datePublished "1594"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Satirical Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Latin" ;
     sch:title "Bellum quinti evangelii, in quo contra larvatam harmoniam Genevensium et fucatum Consensum Sendomiriensem clarissime ostenditur nullam esse apud Evangelicos nostri temporis fidei unitatem vel certitudinem [...]" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -5794,9 +5795,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1419> ;
     sch:datePublished "1594"^^xsd:gYear ;
-    sch:genre "Emblemat",
-        "Epigram",
-        "Letter" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G11>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G8> ;
     sch:inLanguage "Latin" ;
     sch:title "Examen fidei sectariorum, seu notae verae et apostolicae fidei, an scilicet fides, quam sectarii praedicant, si vera et apostolica" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1423>,
@@ -5961,8 +5962,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P841> ;
     sch:datePublished "1594"^^xsd:gYear ;
-    sch:genre "Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G8> ;
     sch:inLanguage "Polish" ;
     sch:title "Iudicium albo rozsądek księdza Mikołaia Issiory, proboszcza ośmiańskiego w W[ielkim] Ks[ięstwie] Litewskim, o konterfecie jezuitów, z Equesa łacińskiego pod maszkarą prawdzica w polski język przeczynionym" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -6228,9 +6229,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P841> ;
     sch:datePublished "1594"^^xsd:gYear ;
-    sch:genre "Dialogue",
-        "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G9> ;
     sch:inLanguage "Polish" ;
     sch:title "Wieczerza ewangelicka w obronie szafunku wieczerzy ministrów wypisana, przez księdza Marcina Tworzydła, proboszcza kościoła Świętej Trójce w Wilnie wydana; przy tym Odpowiedź na kontradykcyje ministrowskie" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -6413,8 +6414,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1374> ;
     sch:datePublished "1595"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "O bóstwie przedwiecznym Syna Bożego świadectwa Pisma Świętego do trzech przedniejszych artykułów zebrane przeciwko wszystkim Pana Jezusa Chrystusa nieprzyjacielom, gdzie się też odpowiada na Refutacyją od refutarza jakiegoś nowokrzczeńca przeciw [...] Jakubowi Wujkowi wydaną" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -6589,7 +6590,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1539> ;
     sch:datePublished "1595"^^xsd:gYear ;
-    sch:genre "Disputation Account" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G12> ;
     sch:inLanguage "Polish" ;
     sch:title "Opisanie dysputacyjej nowogrodzkiej, którą miał ks[iędza] Marcin Śmiglecki [...] z Janem Licyniuszem [...] o przedwiecznym bóstwie Syna Bożego [...]" ;
     jesuit_calvinist:categorizedPolemicalTheme "Corruption and Manipulation of Scripture",
@@ -6638,8 +6639,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1596"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Historia confoederationis Polonicae: Ad libellum quendam Polonicum, contra confoederationem dissidentium de sententia religionis editum responsio sive de iniquitate, avaritia, crudelitate [et] idolatria barbarica papistica, [et] de iusta causa evangelicorum" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -6871,7 +6872,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1596"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Replicae processus confoederationis brevis refutatio" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -6983,7 +6984,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1596"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Defensio absurdorum synodi Toruniensis" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -7071,8 +7072,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1374> ;
     sch:datePublished "1596"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Zachariae prophetae pro Christi divinitate illustre testimonium adversus Fausti Socini anabaptistae cavillationes propugnatum" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -7136,8 +7137,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1598"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Przestroga do ewangelików, aby nowokrzczeńcom na wiarę i na zgodę namawiać się nie dali" ;
     jesuit_calvinist:categorizedPolemicalTheme "Blasphemy and Insults Against the Divine and Holy",
@@ -7238,9 +7239,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P560> ;
     sch:datePublished "1598"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Poem",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G15>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Clypeus albo tarcz duchowna z słów apostoła Pawła Świętego, 1 [ad] Corinth[ios] 8, urobiona i wzięta, za którą dzieje się obrona nauki powszechnej i starożytnej o prawdziwym a wiecznym bóstwie Pana naszego Jezusa Krystusa o jedynej jego a nierozdzielnej stności i naturze z Ojcem i z Duchem Świętym, a przeciwna nauka bórzy się i psuje [...]" ;
     jesuit_calvinist:categorizedPolemicalTheme "Apocalyptic Imagery",
@@ -7320,8 +7321,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1324> ;
     sch:datePublished "1599"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Termin na Protestacyją ministra jednego ewangelickiego abo odpowiedź na czworaką rzecz przeciwko miejscu i władzy przedniej w kościele Chrystusowym" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -7514,8 +7515,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P710> ;
     sch:datePublished "1599"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Quinti evangelii professores antiquissimi et celeberrimi Nullus et Nemo, qui in Ecclesia mathematica, fugitiva, latitante, incognita et invisibili protestantium, usq[ue] ad Lutherum, Zwinglium et Calvinum latuerunt e tenebris eruti" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -7803,9 +7804,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P136> ;
     sch:datePublished "1599"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Satirical Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Łupieże martwe skryptu Marcina Gracjana, ministra, teraz swieżo nazwanego Protestacyją, gdzie szczypie Dysputacyją [...] Marcina Śmigleckiego" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -7940,8 +7941,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL24> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1527> ;
     sch:datePublished "1599"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Respons na protestacyją od Marcina Gracjana przeciwko Dysputacyjej wileńskiej uczynioną" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -8038,8 +8039,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1324> ;
     sch:datePublished "1600"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Cenzura dysputacyjej wileńskiej podanej przez Daniela Mikołajewskiego ministra radziejewskiego abo obrona słuszna szczyrości i zupełności edycyjej katolickiej wileńskiej przez ks[iędza] Marcina Michajlowica Żagiela" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P708> ;
@@ -8186,8 +8187,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1324> ;
     sch:datePublished "1600"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Odpór przedniejszym powieściom ewanielickim o sakramencie ciała i krwie pańskiej, do wszytkich osób ewanielickich" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -8280,8 +8281,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P273> ;
     sch:datePublished "1603"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Theses" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G3>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Theses Catholicae de vocatione ministrorum Evangelicorum, ministris in M[agno] D[ucatu] Lithuaniae Calvinianis, Vilnam Ducatus eiusdem metropolim, ad 6 idus Iunii congregatis, proposit[a]e a m[agistro] Quirino Cnoglero, logices olim et eloquentiae in eorum caetu professore ordinario" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -8423,8 +8424,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P273> ;
     sch:datePublished "1603"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Praefatio in disputationem de vocatione ministrorum Evangelicorum habita in scholis" ;
     jesuit_calvinist:categorizedPolemicalTheme "Animalistic and Monstrous Imagery",
@@ -8562,9 +8563,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P711> ;
     sch:datePublished "1604"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Poem",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G15>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Iudicium Gasparis Iarnutowski, theologi Academiae Vilnensis S[ocietatis] I[esu], super Consensu de coena Domini inter catholicum Romanum et evangelicum Reformatarum (ut vocant) ecclesiarum, Vilnae in synodo Calvinistarum divulgato, mense Iulio, anno D[omi]ni, 1604" ;
     jesuit_calvinist:categorizedPolemicalTheme "Animalistic and Monstrous Imagery",
@@ -8615,10 +8616,10 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P273> ;
     sch:datePublished "1604"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Satirical Epigram",
-        "Theses",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G3>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Latin" ;
     sch:title "Symbola tria: Catholicum, Calvinianum, Lutheranum, omnia ipsis eorum auctorum verbis expressa" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -8900,9 +8901,9 @@
     fabio:hasPageCount "81pp." ;
     sch:author <https://example.org/jesuit_calvinist/Person/P841> ;
     sch:datePublished "1605"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Satirical Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Okulary wtóre na ciemne i ślepe oczy ministrów przez księdza Macieja Szałajskiego, plebana w Zadźwiniu na Podlaszu wydane; przydana jest dysputacyja, którą miał Luter z diabłem" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -9130,8 +9131,8 @@
     fabio:hasPageCount "106pp." ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1172> ;
     sch:datePublished "1606"^^xsd:gYear ;
-    sch:genre "Dialogue",
-        "Letter" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G9> ;
     sch:inLanguage "Polish" ;
     sch:title "Katolik ks[iędza] Stanisława Ranizowskiego, sługa Pana Krystusowego, przeciwko ewanielikowi ks[iędza] d. Stanisława Grodzickiego Societatis Iesu" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -9383,7 +9384,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1608"^^xsd:gYear ;
-    sch:genre "No Data" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G13> ;
     sch:inLanguage "Polish" ;
     sch:title "Święte <odszczepieństwo> ewanielików od papieskich katolików krótko opisane, przy tym Antichristomachia, z pewną próbą Pisma Ś[więtego]" ;
     jesuit_calvinist:confessionalProfile "Protestant (General)" ;
@@ -9401,8 +9402,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL863> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1608"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Caecitas et poena Ecclesiae: Libellus lectu dignissimus" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -9517,7 +9518,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1611"^^xsd:gYear ;
-    sch:genre "Description of Events" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G14> ;
     sch:inLanguage "Polish" ;
     sch:title "[Zbór wileński:] Stopnie doskonałości luterskiej: wczoraj mnich, dziś młodzieniec, jutrzejszego zasię dnia stanu małżeńskiego wziął wizerunek nasię, pojutrze go tatusiem nazywają dzieci, piątym ewangelistą nazwan jest w dzień trzeci Katrynka go na koniec zwodzicielem zowie, czart ministrem; tak w piekło idą ministrowie" ;
     jesuit_calvinist:categorizedPolemicalTheme "Animalistic and Monstrous Imagery",
@@ -9611,7 +9612,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1611"^^xsd:gYear ;
-    sch:genre "Description of Events" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G14> ;
     sch:inLanguage "Polish" ;
     sch:title "Zbór wileński ewanielicki przez rzymskie katoliki burzony, mordowany, palony w roku teraźniejszym 1611 w nocy Julii ze dnia wtórego aż nazajutrz przez godzin ośmnaście, o tym syn Kościoła katolickiego rzymskiego szkrypt w druk podał, na ten teraz krótki repons od naśladowce ewanielijej Krystusowej uczyniony" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -9732,9 +9733,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P536> ;
     sch:datePublished "1616"^^xsd:gYear ;
-    sch:genre "Disputation Account",
-        "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G12>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Relacyja prawdziwa dysputacyjej nowogrodzkiej, która się działa dn[ia] 9 stycznia r.o. 1616 i wyraźne okazanie wielkiej nieszczyrości Łukasza Wadłowskiego w opisaniu tej dysputacyjej" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P757> ;
@@ -9879,7 +9880,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P248> ;
     sch:datePublished "1620"^^xsd:gYear ;
-    sch:genre "Satirical Epigram" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Kolenda paniom saskim W.H.A. etc." ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -9919,8 +9920,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1624"^^xsd:gYear ;
-    sch:genre "Narrative Poem",
-        "Satirical Epigram" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G5>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Tajemna rada abo exorbitantiae niektóre Samuela Dambrowskiego, supersuspendenta konfuzyi szachskiej, od pewnych osób tejże sekty do pospólstwa luterskiego we zborze miane i od nichże naganione, za pozwoleniem M. Moviusa, pastucha parszywej trzody kowieńskiej i Unifersitatis Królefieckiej, a mianowicie doktor Myślenta i doktor Boehm w fielkim mieście Toruń, sumptem do druku podane paniej Wymonowej Węgielbrokowej, seniorowej zgromadzenia luterskiego, roku 1624 miesiąca maja dnia 8 [...], pisał Phil. Han, pomagał karzeł złoty, korygował murzyn młody" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -10065,8 +10066,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P248> ;
     sch:datePublished "1624"^^xsd:gYear ;
-    sch:genre "Narrative Poem",
-        "Satirical Epigram" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G5>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Relacyja a oraz suplika zboru wileńskiego saskiego do hern Martyna Lutra za predykantem Burchardym, ministrem swoim, który roku 1623 dnia 14 octobra [...], po kury łażąc, z drabiny spadł i szyję szcześliwie złamać raczył, od wiernych owieczek [...] onemu w trunnie położona w wieście [...] Wilnie" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -10208,8 +10209,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1556> ;
     sch:datePublished "1626"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Theses" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G3>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Controversia de Ecclesia, verbo Dei, conciliis, summo pontifice, certis conclusionibus comprehensa" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -10291,7 +10292,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1216> ;
     sch:datePublished "1636"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Arma catholica pro traditionibus et purgatorio contra Anti-Bellarminum Amesii protestantis Francorani" ;
     jesuit_calvinist:confessionalProfile "Roman Catholic" ;
@@ -10313,7 +10314,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P874> ;
     sch:datePublished "1637"^^xsd:gYear ;
-    sch:genre "Theses" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G3> ;
     sch:inLanguage "Latin" ;
     sch:title "Conclusiones theologicae de distributione eucharistiae sub altera tantum vel utraque specie ad disputandum propositae et [...] Nicolao Kiszka de Ciechanowiec castellano Trocensi [...] oblatae" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -10425,8 +10426,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1638"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Paradoxa spiritus privati, quem nuper magistelli Calvinistae Vilnensis, Georgius Hartlibius rector, Elias Biskupski conrector, Samuel Ceraski collega scholae, Matthias Doliwski cantor, ad rem poeticam transtulerunt, ex libello ipsorum in exeqias cuiusdam illustris viri anno 1638 14 septembris impresso collecta et illustrata" ;
     jesuit_calvinist:categorizedPolemicalTheme "Animalistic and Monstrous Imagery",
@@ -10531,8 +10532,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P920> ;
     sch:datePublished "1638"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Arma Catholica Bellarmini verbum Dei non scriptum propugnantis a Guliel[mo] Amesio, protestante, intacta atque illaesa ostenduntur, et perillustri ac magnifico domino d. Nicolao Christophoro Sapieha [...] a Francisko Miko, s[acrae] theologiae in Alma Academia Vilnensi Societatis Iesu auditore, dedicata, defendentur ab eodem publice in eadem Academia anno Domini 1638, mense Iunio die 13" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -10681,7 +10682,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1216> ;
     sch:datePublished "1639"^^xsd:gYear ;
-    sch:genre "Letter" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Ad ministros Calvinianos Vilnae sub tempus Pentecostes anno Domini 1639 congregatos" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -10803,8 +10804,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1641"^^xsd:gYear ;
-    sch:genre "Narrative Poem",
-        "Satirical Epigram" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G5>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Bitwa ministrów saskich wileńskich 16 Iunii roku 1641: list Matiasza Doliwskiego, kantora kalwińskiego, do supra pendenta słuckiego o tumulcie saskim we zborze 16 Iunii, podczas rannego niedzielnego nabożenstwa" ;
     jesuit_calvinist:categorizedPolemicalTheme "Animalistic and Monstrous Imagery",
@@ -10875,8 +10876,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1641"^^xsd:gYear ;
-    sch:genre "Narrative Poem",
-        "Satirical Epigram" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G5>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Nowiny ponowione" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -10947,8 +10948,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P61> ;
     sch:datePublished "1642"^^xsd:gYear ;
-    sch:genre "Narrative Poem",
-        "Satirical Epigram" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G5>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Witanie na pierwszy wjazd z Królewca do kadłubka saskiego wileńskiego Ixa Her N. Lutermachra" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -11006,7 +11007,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P783> ;
     sch:datePublished "1643"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Demonstratio Catholicae Ecclesiae ex certis a prima sui origine notis in S[ancta] Scriptura expressse positis collecta [...], in gratiam d[ominorum] dissidentum, qui in Thoruniensi congressu Catholicum cognomen concedi sibi importune flagitabant" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -11084,8 +11085,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P738> ;
     sch:datePublished "1644"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Didymi Hermannovillani disquisitiones ubiquisticae, sive de Christo contra ubiquistas, aliosq[ue] praedicantes a Christi Ecclesia et Christo, qua doctrinae, qua vitae studiis, longe exerrantes, cum irenica ad eosdem praedicantes paraenesi" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -11631,7 +11632,7 @@
     fabio:hasPageCount "3pp." ;
     sch:author <https://example.org/jesuit_calvinist/Person/P248> ;
     sch:datePublished "1647"^^xsd:gYear ;
-    sch:genre "Satirical Epigram" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Kolenda paniom saskim" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -11683,7 +11684,7 @@
     fabio:hasPageCount "5pp." ;
     sch:author <https://example.org/jesuit_calvinist/Person/P248> ;
     sch:datePublished "1647"^^xsd:gYear ;
-    sch:genre "Satirical Epigram" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Fragmenta P[atris] Chądzyński" ;
     jesuit_calvinist:categorizedPolemicalTheme "Apocalyptic Imagery",
@@ -11753,6 +11754,10 @@
 <https://example.org/jesuit_calvinist/Event/E7> a sch:Event .
 
 <https://example.org/jesuit_calvinist/Event/E8> a sch:Event .
+
+<https://example.org/jesuit_calvinist/Genre/G13> a bf:GenreForm .
+
+<https://example.org/jesuit_calvinist/Genre/G2> a bf:GenreForm .
 
 <https://example.org/jesuit_calvinist/Person/P100> a sch:Person .
 
@@ -13243,7 +13248,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL376> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1404> ;
     sch:datePublished "1575"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "De sanctissima eucharistia: Tractatus primus contra Volanum Polonum" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -13317,8 +13322,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1286> ;
     sch:datePublished "1576"^^xsd:gYear ;
-    sch:genre "Emblemat",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G11> ;
     sch:inLanguage "Latin" ;
     sch:title "Pro sacratissima eucharistia contra haeresim zvinglianam: Ad Andream Volanum praesentiam corporis D[omini] n[ostri] Iesu Christi ex eodem sacramento auferentem" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -13405,8 +13410,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL1120> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1582"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Paraenesis Andreae Volani ad omnes in regno Poloniae, Magnoque Ducatu Lithuaniae, Samosatenianae vel Ebioniticae doctrinae professores: Eiusdemque ad nova Ebionitarum contra Paraenesin obiecta, responsio, nunc primum in lucem edita cum indice" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -13504,7 +13509,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL1120> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1582"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Eiusdemque ad nova Ebionitarum contra Paraenesin obiecta responsio" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -13683,7 +13688,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL336> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1127> ;
     sch:datePublished "1583"^^xsd:gYear ;
-    sch:genre "Letter" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Antonii Possevini de Societate Iesu scriptum: Magno Moscoviae duci traditum, cum Anglii mercatores eidem obtulissent librum, quo haereticus quidam ostendere conabatur, pontificem maximum esse antichristum" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P444> ;
@@ -13782,7 +13787,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1583"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Idololatriae Loiolitarum Vilnensium Oppugnatio: Itemque ad nova illorum obiecta responsio, nunc primum in lucem aedita" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -13867,8 +13872,8 @@
     fabio:hasFormat "Quarto" ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1307> ;
     sch:datePublished "1583"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Latin" ;
     sch:title "Responsio fratrum, qui in Polonia et Lithuania de uno Deo Patre, unoque Dei Filio consentiunt, quos Volanus Samosatenianos vel Ebionitas apellat de I[esu] C[hristi] natura peccatorumque per ipsos expiatione" ;
     jesuit_calvinist:categorizedPolemicalTheme "Apocalyptic Imagery",
@@ -13952,8 +13957,8 @@
     fabio:hasPageCount "172pp." ;
     sch:author <https://example.org/jesuit_calvinist/Person/P560> ;
     sch:datePublished "1583"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Antidotum albo lekarstwo na odtręt od ewangelików pana Kaspra Wilkowskiego, medyka lubelskiego, po wyściu jego od sekty nowokrzczeńskiej, przy którym są roztrząsane przyczyny odtrącenia sie jego od ewanielików a utwierdzenia w Kościele rzymskim w książkach jego niedawno wydanych opisane i pokazuje się słuszne-li były, czy-li nie" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -14155,8 +14160,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1509> ;
     sch:datePublished "1583"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Przyczyny nawrócenia do wiary powszechnej od sekt nowokrzczeńców samosateńskich Kaspara Wilkowskiego, medyka lubelskiego" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -14396,7 +14401,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1446> ;
     sch:datePublished "1585"^^xsd:gYear ;
-    sch:genre "Theses" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G3> ;
     sch:inLanguage "Latin" ;
     sch:title "Assertiones theologicae de augustissimo eucharistiae sacramento, quibus refelluntur, quaecunq[ue] fere nostrae tempestatis sectarii contra veram et realem praesentiam Christi in eucharistia et transubstantiationem panis et vini, in corpus et sanguinem eiusdem, prodigiose commenti sunt" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -14549,9 +14554,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1587"^^xsd:gYear ;
-    sch:genre "Emblemat",
-        "Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G11>,
+        <https://example.org/jesuit_calvinist/Genre/G8> ;
     sch:inLanguage "Latin" ;
     sch:title "Apologia Andreae Volani ad calumnias et convitia pestiferae hominum sectae, qui se falso Iesuitas vocant" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1342>,
@@ -14690,8 +14695,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P710> ;
     sch:datePublished "1588"^^xsd:gYear ;
-    sch:genre "Satirical Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Latin" ;
     sch:title "Mendacia et convitia evangelica Andreae Volani Lwowkoviensis, secretarii, si diis placet, Magni Ducatus Lithuaniae, ex ipsius scriptis fideliter collecta et breviter refutata [...], additi sunt in fine turpissimi errores eiusdem Volani in grammatica" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1265>,
@@ -15005,10 +15010,10 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P255> ;
     sch:datePublished "1592"^^xsd:gYear ;
-    sch:genre "Poem",
-        "Prayer",
-        "Sermon",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G10>,
+        <https://example.org/jesuit_calvinist/Genre/G15>,
+        <https://example.org/jesuit_calvinist/Genre/G16> ;
     sch:inLanguage "Polish" ;
     sch:title "Psychotopia abo czyściec ks[iędza] Stanisława Grodzickiego, profesora teologijej Societatis Iesu przedniejszego, w Wilnie 20 Julii wzniecony, na pogrzebie oświeconej księżny jej m[ości] paniej Katarzyny z Tęczyna, małżonki je[go] ks[iążęcej] m[ości] pana Krysztofa Radziwiłła, ks[ięcia] na Birżach i z Dubinek, wojewody wileńskiego i hetmana nawyższego Wiel[kiego] Ks[ięstwa] Litew[skiego] etc. etc., a przez ks[iędza] Andrzeja Chrząstowskiego, kaznodzieję je[go] ks[iążęcej] m[ości] nadwornego, we zborze wileńskim słowem Bożym zagaszony 26 Julii roku 1592" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1367>,
@@ -15098,7 +15103,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P556> ;
     sch:datePublished "1592"^^xsd:gYear ;
-    sch:genre "Dialogue" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G9> ;
     sch:inLanguage "Polish" ;
     sch:title "Ewanielik" ;
     jesuit_calvinist:categorizedPolemicalTheme "Blasphemy and Insults Against the Divine and Holy",
@@ -15180,7 +15185,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P556> ;
     sch:datePublished "1592"^^xsd:gYear ;
-    sch:genre "Sermon" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G10> ;
     sch:inLanguage "Polish" ;
     sch:title "Kazanie na pogrzebie oświeconej księżny [...] Katarzyny z Tęczyna Radziwiłłowej [...] miane w kościele tumskim wileńskim dnia 20 Julii roku pańskiego 1592" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -15274,7 +15279,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1593"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Iudicium Andreae Volani de libello quodam Stanislai Rescii, qui inscribitur Ministromachia, ad d[ominum] Piasecium Societatis, ut vocant, Iesu in Collegio Vilnensi" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P718> ;
@@ -15395,8 +15400,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1593"^^xsd:gYear ;
-    sch:genre "Satirical Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Latin" ;
     sch:title "Andreae Volani ad beatissimum patrem, d[ominum] Hippolytum Aldebrandinum, cardinalem olim et summum Ecclesiae Romanae poenitentiarium, nunc autem pont[eficem] max[imum] electum, oratio" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -15490,9 +15495,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P255> ;
     sch:datePublished "1594"^^xsd:gYear ;
-    sch:genre "Emblemat",
-        "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G11>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Obrona prawdziwego szafunku wieczerzej pańskiej" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -15626,9 +15631,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P841> ;
     sch:datePublished "1594"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Satirical Epigram",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G7> ;
     sch:inLanguage "Polish" ;
     sch:title "Okulary na Zwierciadło nabożeństwa chrześcijańskiego w Polszcze, począwszy od przystania Polaków na wiarę chrześcijańską aż do teraźniejszego roku 1594" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -15886,10 +15891,10 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1417> ;
     sch:datePublished "1594"^^xsd:gYear ;
-    sch:genre "Emblemat",
-        "Letter",
-        "Poem",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G11>,
+        <https://example.org/jesuit_calvinist/Genre/G15>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Zwierciadło nabożeństwa chrześcijańskiego w Polszcze, począwszy od przystania Polaków na wiarę krześcijańską aż do teraźniejszego roku 1590" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1357>,
@@ -16111,9 +16116,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1374> ;
     sch:datePublished "1596"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Poem",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G15>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Absurda synodu toruńskiego, który mieli ewangelicy w Toruniu roku pańskiego mense Augusto i teraz do druku podali" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -16260,8 +16265,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1374> ;
     sch:datePublished "1600"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "O jednej widomej głowie Kościoła Bożego, to jest, że po Chrystusie na ziemi jest jeden najwyższy pasterz Kościoła wszytkiego, naprzeciw błędom teraźniejszym i skryptom niektórych ministrów ewangelickich pisanie [...] Marcina Śmigleckiego [...]" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -16434,9 +16439,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1417> ;
     sch:datePublished "1604"^^xsd:gYear ;
-    sch:genre "Epigram",
-        "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G8> ;
     sch:inLanguage "Polish" ;
     sch:title "Jasne oko prawdy ks[iędza] Simeona T[eofila] Turnowskiego, służebnika Pana Jezusowego i ewangelii jego w Polszcze z Obroną a odpowiedzią na Okulary ciemne a omylne przez ks[iędza] Marcina Tworzydła" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -16724,6 +16729,10 @@
 <https://example.org/jesuit_calvinist/Event/E27> a sch:Event .
 
 <https://example.org/jesuit_calvinist/Event/E3> a sch:Event .
+
+<https://example.org/jesuit_calvinist/Genre/G14> a bf:GenreForm .
+
+<https://example.org/jesuit_calvinist/Genre/G6> a bf:GenreForm .
 
 <https://example.org/jesuit_calvinist/Person/P1> a sch:Person .
 
@@ -17219,7 +17228,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL1088> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1574"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Latin" ;
     sch:title "Vera et orthodoxa veteris ecclesiae sententia de coena Domini ad Petrum Skarga" ;
     jesuit_calvinist:confessionalProfile "Reformed Evangelical" ;
@@ -17256,7 +17265,7 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1286> ;
     sch:datePublished "1582"^^xsd:gYear ;
-    sch:genre "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1> ;
     sch:inLanguage "Polish" ;
     sch:title "Siedm filarów, na których stoi katolicka nauka o przenaświętszym sakramencie ołtarza: postawione przeciw nauce zwingliańskiej, kalwińskiej Jędrzeja Wolana i przeciw pedagogijej teraz po polsku wydanej jednego ciemnego ministra z ciemnej drukarnijej, przez księdza Piotra Skargę, kapłana Societatis Jesu, który to, co po łacinie przeciw temuż Wolanowi dwakroć pisał, dla pojęcia pospolitego po polsku zebrał" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -17325,9 +17334,9 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL473> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P919> ;
     sch:datePublished "1599"^^xsd:gYear ;
-    sch:genre "Disputation Account",
-        "Letter",
-        "Narrative Poem" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G12>,
+        <https://example.org/jesuit_calvinist/Genre/G4>,
+        <https://example.org/jesuit_calvinist/Genre/G5> ;
     sch:inLanguage "Polish" ;
     sch:title "Dysputacyja wileńska, którą miał ks[iądz] Marcin Śmiglecki Soc[ietatis] Iesu z ks[iędzem] Danielem Mikołajewskim, sługą słowa Bożego, de primatu Petri a o jednej widomej głowie Kościoła Bożego dnia 2 czerwca w roku 1599, od samego autora cale i szczyrze wydana; nie zaniechały się i przysadki ks[iędza] Śmigleckiego z odpowiedzią na nie tegoż ks[iędza] Daniela Mikołajewskiego" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P61> ;
@@ -17458,8 +17467,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1527> ;
     sch:datePublished "1599"^^xsd:gYear ;
-    sch:genre "Disputation Account",
-        "Letter" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G12>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Dysputacyja wileńska, którą miał ks[iądz] Marcin Śmiglecki Societatis Iesu z ministrami ewangelickimi 2 Iunii w roku 1599 o jednej widomej głowie Kościoła Bożego, wydana przez Pawła Wołłowicza" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P1374> ;
@@ -17524,6 +17533,10 @@
     jesuit_calvinist:targetedConfession "Reformed Evangelical" .
 
 <https://example.org/jesuit_calvinist/Event/E20> a sch:Event .
+
+<https://example.org/jesuit_calvinist/Genre/G16> a bf:GenreForm .
+
+<https://example.org/jesuit_calvinist/Genre/G9> a bf:GenreForm .
 
 <https://example.org/jesuit_calvinist/Person/P1013> a sch:Person .
 
@@ -17734,8 +17747,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL1088> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P1470> ;
     sch:datePublished "1579"^^xsd:gYear ;
-    sch:genre "Emblemat",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G11> ;
     sch:inLanguage "Latin" ;
     sch:title "Defensio verae, orthodoxae, veterisque in Ecclesia sententiae, de sacramento corporis et sanguinis Domini nostri Iesu Christi, veraque eius in coena sua praesentia contra novum et commentitium transubstantionis dogma aliosque errores ex illo natos: Ad Petrum Scargam [...] vanissimi huius commenti propugnatore[m], authore Andrea Volano; Respondetur hic quoque obiter Francisco Turriano [...], qui duobus libris, altero Florentiae, altero Romae publicatis, Scargam sibi suscepit, contra Volanum, defendendum" ;
     jesuit_calvinist:additionalAuthor <https://example.org/jesuit_calvinist/Person/P718> ;
@@ -17904,8 +17917,8 @@
     fabio:hasPlaceOfPublication <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:author <https://example.org/jesuit_calvinist/Person/P535> ;
     sch:datePublished "1599"^^xsd:gYear ;
-    sch:genre "Letter",
-        "Treatise" ;
+    sch:genre <https://example.org/jesuit_calvinist/Genre/G1>,
+        <https://example.org/jesuit_calvinist/Genre/G4> ;
     sch:inLanguage "Polish" ;
     sch:title "Protestacyja przeciwko niesłusznej chlubie tych, co za przyczyną dysputacyi [...] Marcina Śmigleckiego [...] z [...] Danielem Mikołajewskim [...] o widzialnej głowie Kościoła Bożego etc. przez zwycięstwem tryumfują" ;
     jesuit_calvinist:categorizedPolemicalTheme "Abuse and Misappropriation of Tradition and Authority",
@@ -18026,6 +18039,8 @@
     jesuit_calvinist:targetedConfession "Roman Catholic" .
 
 <https://example.org/jesuit_calvinist/Event/E16> a sch:Event .
+
+<https://example.org/jesuit_calvinist/Genre/G12> a bf:GenreForm .
 
 <https://example.org/jesuit_calvinist/Person/P1001> a sch:Person .
 
@@ -18165,6 +18180,8 @@
 
 <https://example.org/jesuit_calvinist/Event/E4> a sch:Event .
 
+<https://example.org/jesuit_calvinist/Genre/G10> a bf:GenreForm .
+
 <https://example.org/jesuit_calvinist/Person/P1046> a sch:Person .
 
 <https://example.org/jesuit_calvinist/Person/P1052> a sch:Person .
@@ -18285,6 +18302,8 @@
 
 <https://example.org/jesuit_calvinist/Person/P966> a sch:Person .
 
+<https://example.org/jesuit_calvinist/Genre/G15> a bf:GenreForm .
+
 <https://example.org/jesuit_calvinist/Person/P1051> a sch:Person .
 
 <https://example.org/jesuit_calvinist/Person/P1054> a sch:Person .
@@ -18363,6 +18382,8 @@
 
 <https://example.org/jesuit_calvinist/Person/P950> a sch:Person .
 
+<https://example.org/jesuit_calvinist/Genre/G11> a bf:GenreForm .
+
 <https://example.org/jesuit_calvinist/Person/P1020> a sch:Person .
 
 <https://example.org/jesuit_calvinist/Person/P1073> a sch:Person .
@@ -18400,6 +18421,8 @@
 <https://example.org/jesuit_calvinist/Person/P873> a sch:Person .
 
 <https://example.org/jesuit_calvinist/Person/P975> a sch:Person .
+
+<https://example.org/jesuit_calvinist/Genre/G5> a bf:GenreForm .
 
 <https://example.org/jesuit_calvinist/Person/P1058> a sch:Person .
 
@@ -18467,6 +18490,8 @@
 
 <https://example.org/jesuit_calvinist/Person/P990> a sch:Person .
 
+<https://example.org/jesuit_calvinist/Genre/G8> a bf:GenreForm .
+
 <https://example.org/jesuit_calvinist/Person/P1321> a sch:Person .
 
 <https://example.org/jesuit_calvinist/Person/P1520> a sch:Person .
@@ -18494,6 +18519,8 @@
 <https://example.org/jesuit_calvinist/Person/P703> a sch:Person .
 
 <https://example.org/jesuit_calvinist/Person/P919> a sch:Person .
+
+<https://example.org/jesuit_calvinist/Genre/G3> a bf:GenreForm .
 
 <https://example.org/jesuit_calvinist/Person/P1100> a sch:Person .
 
@@ -18595,6 +18622,8 @@
 
 <https://example.org/jesuit_calvinist/Person/P77> a sch:Person .
 
+<https://example.org/jesuit_calvinist/Genre/G7> a bf:GenreForm .
+
 <https://example.org/jesuit_calvinist/Person/P1307> a sch:Person .
 
 <https://example.org/jesuit_calvinist/Person/P1354> a sch:Person .
@@ -18689,11 +18718,15 @@
 
 <https://example.org/jesuit_calvinist/Person/P134> a sch:Person .
 
+<https://example.org/jesuit_calvinist/Genre/G4> a bf:GenreForm .
+
 <https://example.org/jesuit_calvinist/Person/P665> a sch:Person .
 
 <https://example.org/jesuit_calvinist/Person/P1470> a sch:Person .
 
 <https://example.org/jesuit_calvinist/Person/P202> a sch:Person .
+
+<https://example.org/jesuit_calvinist/Genre/G1> a bf:GenreForm .
 
 <https://example.org/jesuit_calvinist/Person/P835> a sch:Person .
 

@@ -1,7 +1,10 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix jesuit_calvinist: <https://example.org/jesuit_calvinist/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sch: <http://schema.org/> .
+
+bf:GenreForm a rdfs:Class .
 
 sch:Event a rdfs:Class .
 
@@ -12,6 +15,7 @@ sch:Place a rdfs:Class .
 sch:Text a rdfs:Class ;
     fabio:hasPlaceOfPublication sch:Place ;
     sch:author sch:Person ;
+    sch:genre bf:GenreForm ;
     jesuit_calvinist:additionalAuthor sch:Person ;
     jesuit_calvinist:dedicatedTo sch:Person ;
     jesuit_calvinist:keyAuthorsCited sch:Person ;
