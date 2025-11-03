@@ -240,23 +240,27 @@ print(f"RDF triples written to {OUTPUT_TTL}")
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Skrypt RDF do filtrowania schema:Text z editionType zawierającym "Original".
+Filtr RDF: wybiera schema:Text z editionType zawierającym 'Original' (case-insensitive),
+buduje pełny podgraf (ABox) z wszystkimi atrybutami bytów użytych w tych tekstach,
+oraz graf klas (TBox-like) obserwowanych na krawędziach w podgrafie.
+
 Gotowy do uruchomienia w Spyderze – wystarczy nacisnąć F5.
 """
 
-from rdflib import Graph, Namespace, RDF, RDFS, URIRef, Literal
+from rdflib import Graph, Namespace, RDF, RDFS, URIRef, BNode, Literal
 from pathlib import Path
+from collections import deque
 
 # ------------------------------------------------------------
 # 🔧 USTAWIENIA ŚCIEŻEK – ZMODYFIKUJ WG SWOJEGO KATALOGU
 # ------------------------------------------------------------
-INPUT_PATH = Path(r"jecal.ttl")
+INPUT_PATH = Path(r"jecal.ttl")  # <- zmień ścieżkę, jeśli trzeba
 OUT_SUBGRAPH_PATH = Path(r"jecal_original_texts_subgraph.ttl")
 OUT_CLASSES_PATH = Path(r"jecal_original_texts_classes.ttl")
 INPUT_FORMAT = "turtle"  # zmień na np. "xml" jeśli plik RDF jest w RDF/XML
 
 # ------------------------------------------------------------
-# 🔧 NAZWY PRZESTRZENI
+# 🔧 NAZWY PRZESTRZENi
 # ------------------------------------------------------------
 SCHEMA = Namespace("http://schema.org/")
 JC = Namespace("https://example.org/jesuit_calvinist/")
@@ -275,6 +279,21 @@ def classes_of(g: Graph, node) -> set:
     """Zwraca zbiór klas (rdf:type) dla danego węzła."""
     return set(g.objects(node, RDF.type))
 
+def add_all_triples_of_subject(g_src: Graph, g_dst: Graph, s) -> set:
+    """
+    Dodaje do g_dst wszystkie trójki, gdzie 's' jest podmiotem, i zwraca zbiór nowych węzłów
+    (obiektów), które są IRI lub BNode – do dalszej eksploracji.
+    """
+    new_nodes = set()
+    for p, o in g_src.predicate_objects(s):
+        g_dst.add((s, p, o))
+        if isinstance(o, (URIRef, BNode)):
+            new_nodes.add(o)
+    # Zawsze dodajemy typy danego węzła
+    for c in g_src.objects(s, RDF.type):
+        g_dst.add((s, RDF.type, c))
+    return new_nodes
+
 # ------------------------------------------------------------
 # 🚀 GŁÓWNA LOGIKA
 # ------------------------------------------------------------
@@ -284,34 +303,47 @@ def main():
     g.parse(INPUT_PATH, format=INPUT_FORMAT)
     print(f"✅ Załadowano {len(g)} trójek RDF z pliku {INPUT_PATH}")
 
-    # 1️⃣ Znajdź wszystkie schema:Text, które mają editionType zawierające 'Original'
+    # 1) Znajdź wszystkie schema:Text, które mają editionType zawierające 'Original'
     texts = set(
         s for s in g.subjects(RDF.type, SCHEMA.Text)
         if any(literal_contains_original(o) for o in g.objects(s, JC.editionType))
     )
-    print(f"🔎 Znaleziono {len(texts)} obiektów schema:Text z editionType='Original'")
+    print(f"🔎 Znaleziono {len(texts)} obiektów schema:Text z editionType zawierającym 'Original'")
 
-    # 2️⃣ Zbuduj subgraf (ABox)
+    # 2) Zbuduj pełny subgraf (ABox) – domknięcie po krawędziach „do przodu”
     subg = Graph()
+    # skopiuj przestrzenie nazw
     for prefix, ns in g.namespaces():
         subg.bind(prefix, ns)
-    nodes = set()
-    for s in texts:
-        for p, o in g.predicate_objects(s):
-            subg.add((s, p, o))
-            nodes.add(s); nodes.add(o)
-    for n in list(nodes):
-        for c in g.objects(n, RDF.type):
-            subg.add((n, RDF.type, c))
-    subg.serialize(destination=OUT_SUBGRAPH_PATH, format="turtle")
-    print(f"💾 Zapisano subgraf (ABox) → {OUT_SUBGRAPH_PATH} ({len(subg)} trójek)")
 
-    # 3️⃣ Zbuduj graf klas (TBox-like)
+    visited = set()               # odwiedzone węzły (podmioty)
+    q = deque(texts)              # zaczynamy od wybranych tekstów
+
+    while q:
+        s = q.popleft()
+        if s in visited:
+            continue
+        visited.add(s)
+        # dodaj wszystkie trójki, gdzie s jest podmiotem; zbierz nowe węzły do eksploracji
+        new_nodes = add_all_triples_of_subject(g, subg, s)
+        # kontynuuj eksplorację po IRI/BNode w obiektach
+        for n in new_nodes:
+            # Jeśli node ma również własne atrybuty jako podmiot, też je dociągamy
+            q.append(n)
+
+    print(f"💾 Zbudowano subgraf (ABox) z {len(subg)} trójkami dla {len(visited)} węzłów")
+
+    subg.serialize(destination=OUT_SUBGRAPH_PATH, format="turtle")
+    print(f"💾 Zapisano subgraf → {OUT_SUBGRAPH_PATH}")
+
+    # 3) Zbuduj graf klas (TBox-like) na podstawie subgrafu
     class_graph = Graph()
     for prefix, ns in g.namespaces():
         class_graph.bind(prefix, ns)
+
     observed_edges = set()
     for s, p, o in subg:
+        # ignorujemy trójki typujące i trójki, gdzie obiekt nie jest IRI (literal/BNode nie tworzy łuku między klasami)
         if p == RDF.type or not isinstance(o, URIRef):
             continue
         s_classes = classes_of(g, s)
@@ -319,10 +351,12 @@ def main():
         for cs in s_classes:
             for co in o_classes:
                 observed_edges.add((cs, p, co))
+
     for cs, p, co in observed_edges:
         class_graph.add((cs, p, co))
         class_graph.add((cs, RDF.type, RDFS.Class))
         class_graph.add((co, RDF.type, RDFS.Class))
+
     class_graph.serialize(destination=OUT_CLASSES_PATH, format="turtle")
     print(f"💾 Zapisano graf klas (TBox-like) → {OUT_CLASSES_PATH} ({len(class_graph)} trójek)")
 

@@ -6,9 +6,12 @@
 
 bf:GenreForm a rdfs:Class .
 
-sch:Event a rdfs:Class .
+sch:Event a rdfs:Class ;
+    sch:location sch:Place .
 
-sch:Person a rdfs:Class .
+sch:Person a rdfs:Class ;
+    sch:birthPlace sch:Place ;
+    sch:deathPlace sch:Place .
 
 sch:Place a rdfs:Class .
 
