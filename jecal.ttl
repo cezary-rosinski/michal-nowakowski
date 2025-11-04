@@ -16,32 +16,12 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
-<https://example.org/jesuit_calvinist/Person/P1055> a sch:Person ;
-    sch:birthDate "720"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1026> ;
-    sch:deathDate "799"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL23> ;
-    sch:name "Paul the Deacon" ;
-    owl:sameAs wdt:Q160424 ;
-    jesuit_calvinist:productivityCentury "8" ;
-    jesuit_calvinist:productivityEpoch "Medieval" .
-
 <https://example.org/jesuit_calvinist/Person/P1089> a sch:Person ;
     sch:birthDate "1550"^^xsd:gYear ;
     sch:deathDate "1608"^^xsd:gYear ;
     sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL754> ;
     sch:name "Pietkiewicz, Melchior" ;
     owl:sameAs wdt:Q16577997 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P1090> a sch:Person ;
-    sch:birthDate "1490"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL477> ;
-    sch:deathDate "1542"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL925> ;
-    sch:name "Pighius, Albert" ;
-    owl:sameAs wdt:Q2361366 ;
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
@@ -52,13 +32,6 @@
     sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL644> ;
     sch:name "Plantin, Christophe" ;
     owl:sameAs wdt:Q380360 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P1140> a sch:Person ;
-    sch:deathDate "1598"^^xsd:gYear ;
-    sch:name "Przetocki, Wojciech" ;
-    owl:sameAs wdt:Q98203523 ;
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
@@ -91,16 +64,6 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
-<https://example.org/jesuit_calvinist/Person/P1218> a sch:Person ;
-    sch:birthDate "1508"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL809> ;
-    sch:deathDate "1560"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL410> ;
-    sch:name "Sabinus, Georg" ;
-    owl:sameAs wdt:Q69731 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
 <https://example.org/jesuit_calvinist/Person/P1250> a sch:Person ;
     sch:birthDate "255"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL580> ;
@@ -117,36 +80,6 @@
     jesuit_calvinist:productivityCentury "17" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
-<https://example.org/jesuit_calvinist/Person/P1270> a sch:Person ;
-    sch:birthDate "1566"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL358> ;
-    sch:deathDate "1632"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL1106> ;
-    sch:name "Sigismund III Vasa" ;
-    owl:sameAs wdt:Q52940 ;
-    jesuit_calvinist:productivityCentury "17" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P1273> a sch:Person ;
-    sch:birthDate "1520"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL755> ;
-    sch:deathDate "1584"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL755> ;
-    sch:name "Sigonius, Carolus" ;
-    owl:sameAs wdt:Q544176 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P1313> a sch:Person ;
-    sch:birthDate "1484"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1074> ;
-    sch:deathDate "1551"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL1129> ;
-    sch:name "Speratus, Paul" ;
-    owl:sameAs wdt:Q67531 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
 <https://example.org/jesuit_calvinist/Person/P1332> a sch:Person ;
     sch:birthDate "1574"^^xsd:gYear ;
     sch:deathDate "1638"^^xsd:gYear ;
@@ -154,16 +87,6 @@
     sch:name "Sternacki, Sebastian" ;
     owl:sameAs wdt:Q58644815 ;
     jesuit_calvinist:productivityCentury "17" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P1333> a sch:Person ;
-    sch:birthDate "1497"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL862> ;
-    sch:deathDate "1548"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL716> ;
-    sch:name "Steuco, Agostino" ;
-    owl:sameAs wdt:Q395722 ;
-    jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
 <https://example.org/jesuit_calvinist/Person/P1337> a sch:Person ;
@@ -204,36 +127,6 @@
     jesuit_calvinist:productivityCentury "14" ;
     jesuit_calvinist:productivityEpoch "Medieval" .
 
-<https://example.org/jesuit_calvinist/Person/P1400> a sch:Person ;
-    sch:birthDate "1532"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL31> ;
-    sch:deathDate "1596"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL342> ;
-    sch:name "Toledo, Francisco de" ;
-    owl:sameAs wdt:Q1379453 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P1407> a sch:Person ;
-    sch:birthDate "1400"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL371> ;
-    sch:deathDate "1455"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL903> ;
-    sch:name "Tostado, Alonso" ;
-    owl:sameAs wdt:Q604156 ;
-    jesuit_calvinist:productivityCentury "15" ;
-    jesuit_calvinist:productivityEpoch "Medieval" .
-
-<https://example.org/jesuit_calvinist/Person/P1414> a sch:Person ;
-    sch:birthDate "1462"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL642> ;
-    sch:deathDate "1516"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL707> ;
-    sch:name "Trithemius, Johannes" ;
-    owl:sameAs wdt:Q60178 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
 <https://example.org/jesuit_calvinist/Person/P1430> a sch:Person ;
     sch:birthDate "327"^^xsd:gYear ;
     sch:deathDate "390"^^xsd:gYear ;
@@ -254,15 +147,6 @@
     owl:sameAs wdt:Q3061059 ;
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P1462> a sch:Person ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1111> ;
-    sch:deathDate "445"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL679> ;
-    sch:name "Vincent of Lérins" ;
-    owl:sameAs wdt:Q644057 ;
-    jesuit_calvinist:productivityCentury "5" ;
-    jesuit_calvinist:productivityEpoch "Ancient" .
 
 <https://example.org/jesuit_calvinist/Person/P1482> a sch:Person ;
     sch:birthDate "1549"^^xsd:gYear ;
@@ -299,26 +183,6 @@
     jesuit_calvinist:productivityCentury "6" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
-<https://example.org/jesuit_calvinist/Person/P1505> a sch:Person ;
-    sch:birthDate "1523"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1036> ;
-    sch:deathDate "1587"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL39> ;
-    sch:name "Wigand, Johann" ;
-    owl:sameAs wdt:Q70322 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P1518> a sch:Person ;
-    sch:birthDate "1501"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL294> ;
-    sch:deathDate "1573"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL347> ;
-    sch:name "Witzel, Georg" ;
-    owl:sameAs wdt:Q91326 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
 <https://example.org/jesuit_calvinist/Person/P1525> a sch:Person ;
     sch:deathDate "1636"^^xsd:gYear ;
     sch:name "Wolter, Bernhard" ;
@@ -339,26 +203,6 @@
     jesuit_calvinist:productivityCentury "3" ;
     jesuit_calvinist:productivityEpoch "Ancient" .
 
-<https://example.org/jesuit_calvinist/Person/P177> a sch:Person ;
-    sch:birthDate "1600"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL193> ;
-    sch:deathDate "1674"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL259> ;
-    sch:name "Botsack, Johann" ;
-    owl:sameAs wdt:Q1692728 ;
-    jesuit_calvinist:productivityCentury "17" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P192> a sch:Person ;
-    sch:birthDate "1176"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1030> ;
-    sch:deathDate "1230"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL557> ;
-    sch:name "Burchard of Ursberg" ;
-    owl:sameAs wdt:Q1010365 ;
-    jesuit_calvinist:productivityCentury "13" ;
-    jesuit_calvinist:productivityEpoch "Medieval" .
-
 <https://example.org/jesuit_calvinist/Person/P24> a sch:Person ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL649> ;
     sch:deathDate "410"^^xsd:gYear ;
@@ -367,16 +211,6 @@
     owl:sameAs wdt:Q102371 ;
     jesuit_calvinist:productivityCentury "5" ;
     jesuit_calvinist:productivityEpoch "Ancient" .
-
-<https://example.org/jesuit_calvinist/Person/P251> a sch:Person ;
-    sch:birthDate "1155"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL622> ;
-    sch:deathDate "1217"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL46> ;
-    sch:name "Choniates, Niketas" ;
-    owl:sameAs wdt:Q297340 ;
-    jesuit_calvinist:productivityCentury "12" ;
-    jesuit_calvinist:productivityEpoch "Medieval" .
 
 <https://example.org/jesuit_calvinist/Person/P253> a sch:Person ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL698> ;
@@ -429,26 +263,6 @@
     jesuit_calvinist:productivityCentury "3" ;
     jesuit_calvinist:productivityEpoch "Ancient" .
 
-<https://example.org/jesuit_calvinist/Person/P487> a sch:Person ;
-    sch:birthDate "1499"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL788> ;
-    sch:deathDate "1571"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL788> ;
-    sch:name "Garet, Jean" ;
-    owl:sameAs wdt:Q64992107 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P495> a sch:Person ;
-    sch:birthDate "1535"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL690> ;
-    sch:deathDate "1597"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL996> ;
-    sch:name "Génébrard, Gilbert" ;
-    owl:sameAs wdt:Q3105742 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
 <https://example.org/jesuit_calvinist/Person/P500> a sch:Person ;
     sch:name "George" .
 
@@ -459,16 +273,6 @@
     sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL978> ;
     sch:name "George, Margrave of Brandenburg-Ansbach" ;
     owl:sameAs wdt:Q384941 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P54> a sch:Person ;
-    sch:birthDate "1528"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL495> ;
-    sch:deathDate "1590"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL417> ;
-    sch:name "Andreae, Jakob" ;
-    owl:sameAs wdt:Q62754 ;
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
@@ -488,9 +292,6 @@
     owl:sameAs wdt:Q19690264 ;
     jesuit_calvinist:productivityCentury "15" ;
     jesuit_calvinist:productivityEpoch "Medieval" .
-
-<https://example.org/jesuit_calvinist/Person/P613> a sch:Person ;
-    sch:name "Hippolytus" .
 
 <https://example.org/jesuit_calvinist/Person/P636> a sch:Person ;
     sch:birthDate "1581"^^xsd:gYear ;
@@ -546,35 +347,6 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
-<https://example.org/jesuit_calvinist/Person/P772> a sch:Person ;
-    sch:birthDate "240"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL378> ;
-    sch:deathDate "317"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL364> ;
-    sch:name "Lactantius" ;
-    owl:sameAs wdt:Q209102 ;
-    jesuit_calvinist:productivityCentury "3" ;
-    jesuit_calvinist:productivityEpoch "Ancient" .
-
-<https://example.org/jesuit_calvinist/Person/P797> a sch:Person ;
-    sch:birthDate "1002"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL533> ;
-    sch:deathDate "1054"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL342> ;
-    sch:name "Leo IX" ;
-    owl:sameAs wdt:Q58559 ;
-    jesuit_calvinist:productivityCentury "11" ;
-    jesuit_calvinist:productivityEpoch "Medieval" .
-
-<https://example.org/jesuit_calvinist/Person/P80> a sch:Person ;
-    sch:birthDate "255"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL618> ;
-    sch:deathDate "327"^^xsd:gYear ;
-    sch:name "Arnobius" ;
-    owl:sameAs wdt:Q342416 ;
-    jesuit_calvinist:productivityCentury "4" ;
-    jesuit_calvinist:productivityEpoch "Ancient" .
-
 <https://example.org/jesuit_calvinist/Person/P811> a sch:Person ;
     sch:birthDate "1570"^^xsd:gYear ;
     sch:deathDate "1623"^^xsd:gYear ;
@@ -623,16 +395,6 @@
 <https://example.org/jesuit_calvinist/Person/P908> a sch:Person ;
     sch:name "Mertzenich, Franz Jacob" .
 
-<https://example.org/jesuit_calvinist/Person/P916> a sch:Person ;
-    sch:birthDate "1457"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1093> ;
-    sch:deathDate "1523"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL24> ;
-    sch:name "Miechowita, Maciej" ;
-    owl:sameAs wdt:Q2452397 ;
-    jesuit_calvinist:productivityCentury "16" ;
-    jesuit_calvinist:productivityEpoch "Early Modern" .
-
 <https://example.org/jesuit_calvinist/Person/P924> a sch:Person ;
     sch:birthDate "1528"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL189> ;
@@ -662,16 +424,6 @@
     owl:sameAs wdt:Q61073 ;
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P961> a sch:Person ;
-    sch:birthDate "1363"^^xsd:gYear ;
-    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL33> ;
-    sch:deathDate "1437"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL101> ;
-    sch:name "Nicholas of Clémanges" ;
-    owl:sameAs wdt:Q744014 ;
-    jesuit_calvinist:productivityCentury "15" ;
-    jesuit_calvinist:productivityEpoch "Medieval" .
 
 <https://example.org/jesuit_calvinist/Person/P979> a sch:Person ;
     sch:name "No Data" .
@@ -741,7 +493,7 @@
         <https://example.org/jesuit_calvinist/Person/P486>,
         <https://example.org/jesuit_calvinist/Person/P547>,
         <https://example.org/jesuit_calvinist/Person/P610>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P631>,
         <https://example.org/jesuit_calvinist/Person/P641>,
         <https://example.org/jesuit_calvinist/Person/P647>,
@@ -834,7 +586,7 @@
         <https://example.org/jesuit_calvinist/Person/P486>,
         <https://example.org/jesuit_calvinist/Person/P547>,
         <https://example.org/jesuit_calvinist/Person/P610>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P631>,
         <https://example.org/jesuit_calvinist/Person/P641>,
         <https://example.org/jesuit_calvinist/Person/P647>,
@@ -910,7 +662,7 @@
         <https://example.org/jesuit_calvinist/Person/P1306>,
         <https://example.org/jesuit_calvinist/Person/P1381>,
         <https://example.org/jesuit_calvinist/Person/P1383>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P267>,
         <https://example.org/jesuit_calvinist/Person/P304>,
         <https://example.org/jesuit_calvinist/Person/P307>,
@@ -1171,13 +923,13 @@
     jesuit_calvinist:editionType "Original" ;
     jesuit_calvinist:existingPhysicalCopy "No" ;
     jesuit_calvinist:keyAuthorsCited <https://example.org/jesuit_calvinist/Person/P1020>,
-        <https://example.org/jesuit_calvinist/Person/P1056>,
-        <https://example.org/jesuit_calvinist/Person/P1091>,
+        <https://example.org/jesuit_calvinist/Person/P1055>,
+        <https://example.org/jesuit_calvinist/Person/P1090>,
         <https://example.org/jesuit_calvinist/Person/P1106>,
         <https://example.org/jesuit_calvinist/Person/P1127>,
         <https://example.org/jesuit_calvinist/Person/P1208>,
         <https://example.org/jesuit_calvinist/Person/P1217>,
-        <https://example.org/jesuit_calvinist/Person/P1219>,
+        <https://example.org/jesuit_calvinist/Person/P1218>,
         <https://example.org/jesuit_calvinist/Person/P1286>,
         <https://example.org/jesuit_calvinist/Person/P129>,
         <https://example.org/jesuit_calvinist/Person/P1295>,
@@ -1190,7 +942,7 @@
         <https://example.org/jesuit_calvinist/Person/P1450>,
         <https://example.org/jesuit_calvinist/Person/P1553>,
         <https://example.org/jesuit_calvinist/Person/P167>,
-        <https://example.org/jesuit_calvinist/Person/P193>,
+        <https://example.org/jesuit_calvinist/Person/P192>,
         <https://example.org/jesuit_calvinist/Person/P258>,
         <https://example.org/jesuit_calvinist/Person/P304>,
         <https://example.org/jesuit_calvinist/Person/P393>,
@@ -1204,7 +956,7 @@
         <https://example.org/jesuit_calvinist/Person/P675>,
         <https://example.org/jesuit_calvinist/Person/P746>,
         <https://example.org/jesuit_calvinist/Person/P77>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P853>,
         <https://example.org/jesuit_calvinist/Person/P86>,
@@ -1383,7 +1135,7 @@
     jesuit_calvinist:existingPhysicalCopy "Yes" ;
     jesuit_calvinist:keyAuthorsCited <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P538>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P86> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P1078>,
         <https://example.org/jesuit_calvinist/Person/P1358>,
@@ -1515,7 +1267,7 @@
         <https://example.org/jesuit_calvinist/Person/P187>,
         <https://example.org/jesuit_calvinist/Person/P191>,
         <https://example.org/jesuit_calvinist/Person/P202>,
-        <https://example.org/jesuit_calvinist/Person/P252>,
+        <https://example.org/jesuit_calvinist/Person/P251>,
         <https://example.org/jesuit_calvinist/Person/P267>,
         <https://example.org/jesuit_calvinist/Person/P274>,
         <https://example.org/jesuit_calvinist/Person/P275>,
@@ -1809,7 +1561,7 @@
     jesuit_calvinist:keyAuthorsCited <https://example.org/jesuit_calvinist/Person/P1002>,
         <https://example.org/jesuit_calvinist/Person/P129>,
         <https://example.org/jesuit_calvinist/Person/P1383>,
-        <https://example.org/jesuit_calvinist/Person/P193>,
+        <https://example.org/jesuit_calvinist/Person/P192>,
         <https://example.org/jesuit_calvinist/Person/P258>,
         <https://example.org/jesuit_calvinist/Person/P399>,
         <https://example.org/jesuit_calvinist/Person/P543>,
@@ -2034,7 +1786,7 @@
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P45>,
         <https://example.org/jesuit_calvinist/Person/P477>,
-        <https://example.org/jesuit_calvinist/Person/P488>,
+        <https://example.org/jesuit_calvinist/Person/P487>,
         <https://example.org/jesuit_calvinist/Person/P493>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P547>,
@@ -2273,13 +2025,13 @@
         <https://example.org/jesuit_calvinist/Person/P1249>,
         <https://example.org/jesuit_calvinist/Person/P1255>,
         <https://example.org/jesuit_calvinist/Person/P127>,
-        <https://example.org/jesuit_calvinist/Person/P1274>,
+        <https://example.org/jesuit_calvinist/Person/P1273>,
         <https://example.org/jesuit_calvinist/Person/P1286>,
         <https://example.org/jesuit_calvinist/Person/P129>,
         <https://example.org/jesuit_calvinist/Person/P1295>,
         <https://example.org/jesuit_calvinist/Person/P1315>,
         <https://example.org/jesuit_calvinist/Person/P1318>,
-        <https://example.org/jesuit_calvinist/Person/P1334>,
+        <https://example.org/jesuit_calvinist/Person/P1333>,
         <https://example.org/jesuit_calvinist/Person/P134>,
         <https://example.org/jesuit_calvinist/Person/P1346>,
         <https://example.org/jesuit_calvinist/Person/P1354>,
@@ -2351,10 +2103,10 @@
         <https://example.org/jesuit_calvinist/Person/P887>,
         <https://example.org/jesuit_calvinist/Person/P888>,
         <https://example.org/jesuit_calvinist/Person/P91>,
-        <https://example.org/jesuit_calvinist/Person/P917>,
+        <https://example.org/jesuit_calvinist/Person/P916>,
         <https://example.org/jesuit_calvinist/Person/P921>,
         <https://example.org/jesuit_calvinist/Person/P96>,
-        <https://example.org/jesuit_calvinist/Person/P963> ;
+        <https://example.org/jesuit_calvinist/Person/P961> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P10>,
         <https://example.org/jesuit_calvinist/Person/P1012>,
         <https://example.org/jesuit_calvinist/Person/P1044>,
@@ -2764,7 +2516,7 @@
         <https://example.org/jesuit_calvinist/Person/P1020>,
         <https://example.org/jesuit_calvinist/Person/P1038>,
         <https://example.org/jesuit_calvinist/Person/P105>,
-        <https://example.org/jesuit_calvinist/Person/P1056>,
+        <https://example.org/jesuit_calvinist/Person/P1055>,
         <https://example.org/jesuit_calvinist/Person/P1058>,
         <https://example.org/jesuit_calvinist/Person/P1106>,
         <https://example.org/jesuit_calvinist/Person/P1107>,
@@ -2773,7 +2525,7 @@
         <https://example.org/jesuit_calvinist/Person/P1208>,
         <https://example.org/jesuit_calvinist/Person/P1217>,
         <https://example.org/jesuit_calvinist/Person/P1266>,
-        <https://example.org/jesuit_calvinist/Person/P1274>,
+        <https://example.org/jesuit_calvinist/Person/P1273>,
         <https://example.org/jesuit_calvinist/Person/P1295>,
         <https://example.org/jesuit_calvinist/Person/P1306>,
         <https://example.org/jesuit_calvinist/Person/P1328>,
@@ -2783,12 +2535,12 @@
         <https://example.org/jesuit_calvinist/Person/P1381>,
         <https://example.org/jesuit_calvinist/Person/P1383>,
         <https://example.org/jesuit_calvinist/Person/P1386>,
-        <https://example.org/jesuit_calvinist/Person/P1408>,
+        <https://example.org/jesuit_calvinist/Person/P1407>,
         <https://example.org/jesuit_calvinist/Person/P1450>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1502>,
         <https://example.org/jesuit_calvinist/Person/P1553>,
-        <https://example.org/jesuit_calvinist/Person/P193>,
+        <https://example.org/jesuit_calvinist/Person/P192>,
         <https://example.org/jesuit_calvinist/Person/P202>,
         <https://example.org/jesuit_calvinist/Person/P280>,
         <https://example.org/jesuit_calvinist/Person/P285>,
@@ -2818,7 +2570,7 @@
         <https://example.org/jesuit_calvinist/Person/P713>,
         <https://example.org/jesuit_calvinist/Person/P727>,
         <https://example.org/jesuit_calvinist/Person/P76>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P8>,
         <https://example.org/jesuit_calvinist/Person/P828>,
         <https://example.org/jesuit_calvinist/Person/P83>,
@@ -3013,14 +2765,14 @@
         <https://example.org/jesuit_calvinist/Person/P407>,
         <https://example.org/jesuit_calvinist/Person/P414>,
         <https://example.org/jesuit_calvinist/Person/P489>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P499>,
         <https://example.org/jesuit_calvinist/Person/P510>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
         <https://example.org/jesuit_calvinist/Person/P549>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P561>,
         <https://example.org/jesuit_calvinist/Person/P584>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -3041,7 +2793,7 @@
         <https://example.org/jesuit_calvinist/Person/P75>,
         <https://example.org/jesuit_calvinist/Person/P76>,
         <https://example.org/jesuit_calvinist/Person/P77>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P781>,
         <https://example.org/jesuit_calvinist/Person/P814>,
         <https://example.org/jesuit_calvinist/Person/P816>,
@@ -3242,9 +2994,9 @@
         <https://example.org/jesuit_calvinist/Person/P1383>,
         <https://example.org/jesuit_calvinist/Person/P1389>,
         <https://example.org/jesuit_calvinist/Person/P1399>,
-        <https://example.org/jesuit_calvinist/Person/P1401>,
+        <https://example.org/jesuit_calvinist/Person/P1400>,
         <https://example.org/jesuit_calvinist/Person/P1404>,
-        <https://example.org/jesuit_calvinist/Person/P1415>,
+        <https://example.org/jesuit_calvinist/Person/P1414>,
         <https://example.org/jesuit_calvinist/Person/P1438>,
         <https://example.org/jesuit_calvinist/Person/P1450>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
@@ -3417,13 +3169,13 @@
         <https://example.org/jesuit_calvinist/Person/P45>,
         <https://example.org/jesuit_calvinist/Person/P455>,
         <https://example.org/jesuit_calvinist/Person/P477>,
-        <https://example.org/jesuit_calvinist/Person/P488>,
+        <https://example.org/jesuit_calvinist/Person/P487>,
         <https://example.org/jesuit_calvinist/Person/P49>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
         <https://example.org/jesuit_calvinist/Person/P608>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P620>,
         <https://example.org/jesuit_calvinist/Person/P641>,
         <https://example.org/jesuit_calvinist/Person/P644>,
@@ -3434,9 +3186,9 @@
         <https://example.org/jesuit_calvinist/Person/P684>,
         <https://example.org/jesuit_calvinist/Person/P705>,
         <https://example.org/jesuit_calvinist/Person/P713>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P792>,
-        <https://example.org/jesuit_calvinist/Person/P81>,
+        <https://example.org/jesuit_calvinist/Person/P80>,
         <https://example.org/jesuit_calvinist/Person/P83>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P86>,
@@ -3536,8 +3288,8 @@
         <https://example.org/jesuit_calvinist/Person/P45>,
         <https://example.org/jesuit_calvinist/Person/P47>,
         <https://example.org/jesuit_calvinist/Person/P493>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P608>,
         <https://example.org/jesuit_calvinist/Person/P633>,
         <https://example.org/jesuit_calvinist/Person/P638>,
@@ -3549,7 +3301,7 @@
         <https://example.org/jesuit_calvinist/Person/P684>,
         <https://example.org/jesuit_calvinist/Person/P713>,
         <https://example.org/jesuit_calvinist/Person/P753>,
-        <https://example.org/jesuit_calvinist/Person/P798>,
+        <https://example.org/jesuit_calvinist/Person/P797>,
         <https://example.org/jesuit_calvinist/Person/P83>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P86>,
@@ -3671,10 +3423,10 @@
         <https://example.org/jesuit_calvinist/Person/P45>,
         <https://example.org/jesuit_calvinist/Person/P47>,
         <https://example.org/jesuit_calvinist/Person/P538>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P565>,
         <https://example.org/jesuit_calvinist/Person/P598>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -3693,8 +3445,8 @@
         <https://example.org/jesuit_calvinist/Person/P721>,
         <https://example.org/jesuit_calvinist/Person/P753>,
         <https://example.org/jesuit_calvinist/Person/P792>,
-        <https://example.org/jesuit_calvinist/Person/P798>,
-        <https://example.org/jesuit_calvinist/Person/P81>,
+        <https://example.org/jesuit_calvinist/Person/P797>,
+        <https://example.org/jesuit_calvinist/Person/P80>,
         <https://example.org/jesuit_calvinist/Person/P83>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P86>,
@@ -3709,7 +3461,7 @@
         <https://example.org/jesuit_calvinist/Person/P550>,
         <https://example.org/jesuit_calvinist/Person/P57>,
         <https://example.org/jesuit_calvinist/Person/P640>,
-        <https://example.org/jesuit_calvinist/Person/P798>,
+        <https://example.org/jesuit_calvinist/Person/P797>,
         <https://example.org/jesuit_calvinist/Person/P960> ;
     jesuit_calvinist:polemicalTheme "Absurd Beliefs",
         "Audacity",
@@ -3789,7 +3541,7 @@
         <https://example.org/jesuit_calvinist/Person/P1446>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1554>,
-        <https://example.org/jesuit_calvinist/Person/P193>,
+        <https://example.org/jesuit_calvinist/Person/P192>,
         <https://example.org/jesuit_calvinist/Person/P202>,
         <https://example.org/jesuit_calvinist/Person/P255>,
         <https://example.org/jesuit_calvinist/Person/P258>,
@@ -4038,7 +3790,7 @@
         <https://example.org/jesuit_calvinist/Person/P321>,
         <https://example.org/jesuit_calvinist/Person/P399>,
         <https://example.org/jesuit_calvinist/Person/P407>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P647>,
         <https://example.org/jesuit_calvinist/Person/P665>,
         <https://example.org/jesuit_calvinist/Person/P77>,
@@ -4165,7 +3917,7 @@
         <https://example.org/jesuit_calvinist/Person/P1109>,
         <https://example.org/jesuit_calvinist/Person/P1134>,
         <https://example.org/jesuit_calvinist/Person/P1138>,
-        <https://example.org/jesuit_calvinist/Person/P1141>,
+        <https://example.org/jesuit_calvinist/Person/P1140>,
         <https://example.org/jesuit_calvinist/Person/P1153>,
         <https://example.org/jesuit_calvinist/Person/P1156>,
         <https://example.org/jesuit_calvinist/Person/P117>,
@@ -4174,7 +3926,7 @@
         <https://example.org/jesuit_calvinist/Person/P1258>,
         <https://example.org/jesuit_calvinist/Person/P1265>,
         <https://example.org/jesuit_calvinist/Person/P1269>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1286>,
         <https://example.org/jesuit_calvinist/Person/P1287>,
         <https://example.org/jesuit_calvinist/Person/P129>,
@@ -4203,7 +3955,7 @@
         <https://example.org/jesuit_calvinist/Person/P399>,
         <https://example.org/jesuit_calvinist/Person/P428>,
         <https://example.org/jesuit_calvinist/Person/P45>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P520>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P581>,
@@ -4436,7 +4188,7 @@
         <https://example.org/jesuit_calvinist/Person/P565>,
         <https://example.org/jesuit_calvinist/Person/P6>,
         <https://example.org/jesuit_calvinist/Person/P610>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P62>,
         <https://example.org/jesuit_calvinist/Person/P624>,
         <https://example.org/jesuit_calvinist/Person/P647>,
@@ -4786,9 +4538,9 @@
         <https://example.org/jesuit_calvinist/Person/P375>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P399>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P512>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P635>,
         <https://example.org/jesuit_calvinist/Person/P647>,
         <https://example.org/jesuit_calvinist/Person/P665>,
@@ -4952,7 +4704,7 @@
         <https://example.org/jesuit_calvinist/Person/P340>,
         <https://example.org/jesuit_calvinist/Person/P375>,
         <https://example.org/jesuit_calvinist/Person/P399>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P512>,
         <https://example.org/jesuit_calvinist/Person/P605>,
         <https://example.org/jesuit_calvinist/Person/P635>,
@@ -5149,8 +4901,8 @@
         <https://example.org/jesuit_calvinist/Person/P50>,
         <https://example.org/jesuit_calvinist/Person/P520>,
         <https://example.org/jesuit_calvinist/Person/P530>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P605>,
         <https://example.org/jesuit_calvinist/Person/P610>,
         <https://example.org/jesuit_calvinist/Person/P626>,
@@ -5774,7 +5526,7 @@
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P610>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P62>,
         <https://example.org/jesuit_calvinist/Person/P638>,
         <https://example.org/jesuit_calvinist/Person/P647>,
@@ -5965,7 +5717,7 @@
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P1155>,
         <https://example.org/jesuit_calvinist/Person/P1157>,
         <https://example.org/jesuit_calvinist/Person/P1165>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P129>,
         <https://example.org/jesuit_calvinist/Person/P1320>,
         <https://example.org/jesuit_calvinist/Person/P1461>,
@@ -6222,7 +5974,7 @@
         "Sectarian Discord and Doctrinal Instability" ;
     jesuit_calvinist:confessionalProfile "Roman Catholic" ;
     jesuit_calvinist:dateAdditionalInfo "Presumed" ;
-    jesuit_calvinist:dedicatedTo <https://example.org/jesuit_calvinist/Person/P1141> ;
+    jesuit_calvinist:dedicatedTo <https://example.org/jesuit_calvinist/Person/P1140> ;
     jesuit_calvinist:digitizedCopy "Yes" ;
     jesuit_calvinist:discussedIssue "Infant Baptism",
         "Predestination",
@@ -6247,7 +5999,7 @@
         <https://example.org/jesuit_calvinist/Person/P316>,
         <https://example.org/jesuit_calvinist/Person/P379>,
         <https://example.org/jesuit_calvinist/Person/P387>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P721>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P86> ;
@@ -6530,7 +6282,7 @@
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P547>,
         <https://example.org/jesuit_calvinist/Person/P556>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P62>,
         <https://example.org/jesuit_calvinist/Person/P641>,
         <https://example.org/jesuit_calvinist/Person/P647>,
@@ -6542,7 +6294,7 @@
         <https://example.org/jesuit_calvinist/Person/P709>,
         <https://example.org/jesuit_calvinist/Person/P710>,
         <https://example.org/jesuit_calvinist/Person/P72>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P788>,
         <https://example.org/jesuit_calvinist/Person/P801>,
         <https://example.org/jesuit_calvinist/Person/P83>,
@@ -6710,7 +6462,7 @@
         <https://example.org/jesuit_calvinist/Person/P198>,
         <https://example.org/jesuit_calvinist/Person/P202>,
         <https://example.org/jesuit_calvinist/Person/P249>,
-        <https://example.org/jesuit_calvinist/Person/P252>,
+        <https://example.org/jesuit_calvinist/Person/P251>,
         <https://example.org/jesuit_calvinist/Person/P256>,
         <https://example.org/jesuit_calvinist/Person/P258>,
         <https://example.org/jesuit_calvinist/Person/P267>,
@@ -6736,7 +6488,7 @@
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P647>,
         <https://example.org/jesuit_calvinist/Person/P665>,
         <https://example.org/jesuit_calvinist/Person/P67>,
@@ -6747,9 +6499,9 @@
         <https://example.org/jesuit_calvinist/Person/P72>,
         <https://example.org/jesuit_calvinist/Person/P75>,
         <https://example.org/jesuit_calvinist/Person/P76>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P792>,
-        <https://example.org/jesuit_calvinist/Person/P81>,
+        <https://example.org/jesuit_calvinist/Person/P80>,
         <https://example.org/jesuit_calvinist/Person/P83>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P848>,
@@ -6953,7 +6705,7 @@
         <https://example.org/jesuit_calvinist/Person/P713>,
         <https://example.org/jesuit_calvinist/Person/P72>,
         <https://example.org/jesuit_calvinist/Person/P77>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P83>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P839>,
@@ -7098,7 +6850,7 @@
         <https://example.org/jesuit_calvinist/Person/P150>,
         <https://example.org/jesuit_calvinist/Person/P1501>,
         <https://example.org/jesuit_calvinist/Person/P1502>,
-        <https://example.org/jesuit_calvinist/Person/P1506>,
+        <https://example.org/jesuit_calvinist/Person/P1505>,
         <https://example.org/jesuit_calvinist/Person/P1531>,
         <https://example.org/jesuit_calvinist/Person/P1540>,
         <https://example.org/jesuit_calvinist/Person/P1554>,
@@ -7128,14 +6880,14 @@
         <https://example.org/jesuit_calvinist/Person/P479>,
         <https://example.org/jesuit_calvinist/Person/P485>,
         <https://example.org/jesuit_calvinist/Person/P486>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P499>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P512>,
         <https://example.org/jesuit_calvinist/Person/P517>,
         <https://example.org/jesuit_calvinist/Person/P530>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P584>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -7553,7 +7305,7 @@
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1488>,
         <https://example.org/jesuit_calvinist/Person/P1501>,
-        <https://example.org/jesuit_calvinist/Person/P1506>,
+        <https://example.org/jesuit_calvinist/Person/P1505>,
         <https://example.org/jesuit_calvinist/Person/P1530>,
         <https://example.org/jesuit_calvinist/Person/P1554>,
         <https://example.org/jesuit_calvinist/Person/P189>,
@@ -7589,7 +7341,7 @@
         <https://example.org/jesuit_calvinist/Person/P1138>,
         <https://example.org/jesuit_calvinist/Person/P1153>,
         <https://example.org/jesuit_calvinist/Person/P1269>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1345>,
         <https://example.org/jesuit_calvinist/Person/P1472>,
         <https://example.org/jesuit_calvinist/Person/P1494>,
@@ -8036,7 +7788,7 @@
         <https://example.org/jesuit_calvinist/Person/P150>,
         <https://example.org/jesuit_calvinist/Person/P1501>,
         <https://example.org/jesuit_calvinist/Person/P1502>,
-        <https://example.org/jesuit_calvinist/Person/P1506>,
+        <https://example.org/jesuit_calvinist/Person/P1505>,
         <https://example.org/jesuit_calvinist/Person/P1531>,
         <https://example.org/jesuit_calvinist/Person/P1540>,
         <https://example.org/jesuit_calvinist/Person/P1554>,
@@ -8066,14 +7818,14 @@
         <https://example.org/jesuit_calvinist/Person/P479>,
         <https://example.org/jesuit_calvinist/Person/P485>,
         <https://example.org/jesuit_calvinist/Person/P486>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P499>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P512>,
         <https://example.org/jesuit_calvinist/Person/P517>,
         <https://example.org/jesuit_calvinist/Person/P530>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P584>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -8239,7 +7991,7 @@
         <https://example.org/jesuit_calvinist/Person/P129>,
         <https://example.org/jesuit_calvinist/Person/P1307>,
         <https://example.org/jesuit_calvinist/Person/P1323>,
-        <https://example.org/jesuit_calvinist/Person/P1334>,
+        <https://example.org/jesuit_calvinist/Person/P1333>,
         <https://example.org/jesuit_calvinist/Person/P134>,
         <https://example.org/jesuit_calvinist/Person/P1362>,
         <https://example.org/jesuit_calvinist/Person/P1381>,
@@ -8274,7 +8026,7 @@
         <https://example.org/jesuit_calvinist/Person/P713>,
         <https://example.org/jesuit_calvinist/Person/P76>,
         <https://example.org/jesuit_calvinist/Person/P77>,
-        <https://example.org/jesuit_calvinist/Person/P81>,
+        <https://example.org/jesuit_calvinist/Person/P80>,
         <https://example.org/jesuit_calvinist/Person/P83>,
         <https://example.org/jesuit_calvinist/Person/P844>,
         <https://example.org/jesuit_calvinist/Person/P852>,
@@ -8474,7 +8226,7 @@
         <https://example.org/jesuit_calvinist/Person/P1285>,
         <https://example.org/jesuit_calvinist/Person/P1307>,
         <https://example.org/jesuit_calvinist/Person/P1312>,
-        <https://example.org/jesuit_calvinist/Person/P1314>,
+        <https://example.org/jesuit_calvinist/Person/P1313>,
         <https://example.org/jesuit_calvinist/Person/P1321>,
         <https://example.org/jesuit_calvinist/Person/P1374>,
         <https://example.org/jesuit_calvinist/Person/P1381>,
@@ -8497,7 +8249,7 @@
         <https://example.org/jesuit_calvinist/Person/P109>,
         <https://example.org/jesuit_calvinist/Person/P1268>,
         <https://example.org/jesuit_calvinist/Person/P1269>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1272>,
         <https://example.org/jesuit_calvinist/Person/P1284>,
         <https://example.org/jesuit_calvinist/Person/P1520>,
@@ -8969,7 +8721,7 @@
         <https://example.org/jesuit_calvinist/Person/P114>,
         <https://example.org/jesuit_calvinist/Person/P1258>,
         <https://example.org/jesuit_calvinist/Person/P127>,
-        <https://example.org/jesuit_calvinist/Person/P1274>,
+        <https://example.org/jesuit_calvinist/Person/P1273>,
         <https://example.org/jesuit_calvinist/Person/P1306>,
         <https://example.org/jesuit_calvinist/Person/P1307>,
         <https://example.org/jesuit_calvinist/Person/P1319>,
@@ -9003,7 +8755,7 @@
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P86>,
         <https://example.org/jesuit_calvinist/Person/P897>,
-        <https://example.org/jesuit_calvinist/Person/P917>,
+        <https://example.org/jesuit_calvinist/Person/P916>,
         <https://example.org/jesuit_calvinist/Person/P950>,
         <https://example.org/jesuit_calvinist/Person/P971>,
         <https://example.org/jesuit_calvinist/Person/P990>,
@@ -9042,7 +8794,7 @@
         <https://example.org/jesuit_calvinist/Person/P723>,
         <https://example.org/jesuit_calvinist/Person/P725>,
         <https://example.org/jesuit_calvinist/Person/P726>,
-        <https://example.org/jesuit_calvinist/Person/P798>,
+        <https://example.org/jesuit_calvinist/Person/P797>,
         <https://example.org/jesuit_calvinist/Person/P897>,
         <https://example.org/jesuit_calvinist/Person/P910>,
         <https://example.org/jesuit_calvinist/Person/P912>,
@@ -9213,7 +8965,7 @@
         <https://example.org/jesuit_calvinist/Person/P202>,
         <https://example.org/jesuit_calvinist/Person/P232>,
         <https://example.org/jesuit_calvinist/Person/P255>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P77>,
         <https://example.org/jesuit_calvinist/Person/P809>,
         <https://example.org/jesuit_calvinist/Person/P835> ;
@@ -9656,7 +9408,7 @@
         <https://example.org/jesuit_calvinist/Person/P1449>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1457>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1465>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1483>,
@@ -9705,20 +9457,20 @@
         <https://example.org/jesuit_calvinist/Person/P390>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P400>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P425>,
         <https://example.org/jesuit_calvinist/Person/P43>,
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P510>,
         <https://example.org/jesuit_calvinist/Person/P512>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -10184,7 +9936,7 @@
         <https://example.org/jesuit_calvinist/Person/P117>,
         <https://example.org/jesuit_calvinist/Person/P1175>,
         <https://example.org/jesuit_calvinist/Person/P1217>,
-        <https://example.org/jesuit_calvinist/Person/P1274>,
+        <https://example.org/jesuit_calvinist/Person/P1273>,
         <https://example.org/jesuit_calvinist/Person/P1283>,
         <https://example.org/jesuit_calvinist/Person/P1287>,
         <https://example.org/jesuit_calvinist/Person/P134>,
@@ -10192,7 +9944,7 @@
         <https://example.org/jesuit_calvinist/Person/P1354>,
         <https://example.org/jesuit_calvinist/Person/P136>,
         <https://example.org/jesuit_calvinist/Person/P1374>,
-        <https://example.org/jesuit_calvinist/Person/P1415>,
+        <https://example.org/jesuit_calvinist/Person/P1414>,
         <https://example.org/jesuit_calvinist/Person/P142>,
         <https://example.org/jesuit_calvinist/Person/P1450>,
         <https://example.org/jesuit_calvinist/Person/P1461>,
@@ -10218,7 +9970,7 @@
         <https://example.org/jesuit_calvinist/Person/P708>,
         <https://example.org/jesuit_calvinist/Person/P733>,
         <https://example.org/jesuit_calvinist/Person/P759>,
-        <https://example.org/jesuit_calvinist/Person/P798>,
+        <https://example.org/jesuit_calvinist/Person/P797>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P848>,
         <https://example.org/jesuit_calvinist/Person/P91>,
@@ -10330,7 +10082,7 @@
         <https://example.org/jesuit_calvinist/Person/P202>,
         <https://example.org/jesuit_calvinist/Person/P647>,
         <https://example.org/jesuit_calvinist/Person/P713>,
-        <https://example.org/jesuit_calvinist/Person/P81>,
+        <https://example.org/jesuit_calvinist/Person/P80>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P84>,
         <https://example.org/jesuit_calvinist/Person/P86>,
@@ -10497,7 +10249,7 @@
         <https://example.org/jesuit_calvinist/Person/P1449>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1457>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1465>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1483>,
@@ -10546,20 +10298,20 @@
         <https://example.org/jesuit_calvinist/Person/P390>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P400>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P425>,
         <https://example.org/jesuit_calvinist/Person/P43>,
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P510>,
         <https://example.org/jesuit_calvinist/Person/P512>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -10783,7 +10535,7 @@
         <https://example.org/jesuit_calvinist/Person/P1449>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1457>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1465>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1483>,
@@ -10832,20 +10584,20 @@
         <https://example.org/jesuit_calvinist/Person/P390>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P400>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P425>,
         <https://example.org/jesuit_calvinist/Person/P43>,
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P510>,
         <https://example.org/jesuit_calvinist/Person/P512>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -11075,7 +10827,7 @@
         <https://example.org/jesuit_calvinist/Person/P1449>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1457>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1465>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1483>,
@@ -11124,20 +10876,20 @@
         <https://example.org/jesuit_calvinist/Person/P390>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P400>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P425>,
         <https://example.org/jesuit_calvinist/Person/P43>,
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P510>,
         <https://example.org/jesuit_calvinist/Person/P512>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -11365,7 +11117,7 @@
         <https://example.org/jesuit_calvinist/Person/P1449>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1457>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1465>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1483>,
@@ -11414,20 +11166,20 @@
         <https://example.org/jesuit_calvinist/Person/P390>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P400>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P425>,
         <https://example.org/jesuit_calvinist/Person/P43>,
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P510>,
         <https://example.org/jesuit_calvinist/Person/P512>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -12034,7 +11786,7 @@
         <https://example.org/jesuit_calvinist/Person/P76>,
         <https://example.org/jesuit_calvinist/Person/P807>,
         <https://example.org/jesuit_calvinist/Person/P835>,
-        <https://example.org/jesuit_calvinist/Person/P917>,
+        <https://example.org/jesuit_calvinist/Person/P916>,
         <https://example.org/jesuit_calvinist/Person/P97> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P1013>,
         <https://example.org/jesuit_calvinist/Person/P1014>,
@@ -12048,7 +11800,7 @@
         <https://example.org/jesuit_calvinist/Person/P1212>,
         <https://example.org/jesuit_calvinist/Person/P1215>,
         <https://example.org/jesuit_calvinist/Person/P125>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1272>,
         <https://example.org/jesuit_calvinist/Person/P1282>,
         <https://example.org/jesuit_calvinist/Person/P1320>,
@@ -12393,7 +12145,7 @@
         <https://example.org/jesuit_calvinist/Person/P395>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P4>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P407>,
         <https://example.org/jesuit_calvinist/Person/P408>,
         <https://example.org/jesuit_calvinist/Person/P413>,
@@ -12408,9 +12160,9 @@
         <https://example.org/jesuit_calvinist/Person/P499>,
         <https://example.org/jesuit_calvinist/Person/P505>,
         <https://example.org/jesuit_calvinist/Person/P508>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P562>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P573>,
@@ -12448,7 +12200,7 @@
         <https://example.org/jesuit_calvinist/Person/P893>,
         <https://example.org/jesuit_calvinist/Person/P897>,
         <https://example.org/jesuit_calvinist/Person/P914>,
-        <https://example.org/jesuit_calvinist/Person/P917>,
+        <https://example.org/jesuit_calvinist/Person/P916>,
         <https://example.org/jesuit_calvinist/Person/P937>,
         <https://example.org/jesuit_calvinist/Person/P938>,
         <https://example.org/jesuit_calvinist/Person/P94>,
@@ -12599,7 +12351,7 @@
         <https://example.org/jesuit_calvinist/Person/P129>,
         <https://example.org/jesuit_calvinist/Person/P1357>,
         <https://example.org/jesuit_calvinist/Person/P1403>,
-        <https://example.org/jesuit_calvinist/Person/P1415>,
+        <https://example.org/jesuit_calvinist/Person/P1414>,
         <https://example.org/jesuit_calvinist/Person/P142>,
         <https://example.org/jesuit_calvinist/Person/P149>,
         <https://example.org/jesuit_calvinist/Person/P1554>,
@@ -12623,10 +12375,10 @@
         <https://example.org/jesuit_calvinist/Person/P841>,
         <https://example.org/jesuit_calvinist/Person/P853>,
         <https://example.org/jesuit_calvinist/Person/P878>,
-        <https://example.org/jesuit_calvinist/Person/P917>,
+        <https://example.org/jesuit_calvinist/Person/P916>,
         <https://example.org/jesuit_calvinist/Person/P95>,
         <https://example.org/jesuit_calvinist/Person/P950>,
-        <https://example.org/jesuit_calvinist/Person/P963>,
+        <https://example.org/jesuit_calvinist/Person/P961>,
         <https://example.org/jesuit_calvinist/Person/P97>,
         <https://example.org/jesuit_calvinist/Person/P992> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P1013>,
@@ -12642,7 +12394,7 @@
         <https://example.org/jesuit_calvinist/Person/P1192>,
         <https://example.org/jesuit_calvinist/Person/P1215>,
         <https://example.org/jesuit_calvinist/Person/P125>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1272>,
         <https://example.org/jesuit_calvinist/Person/P1301>,
         <https://example.org/jesuit_calvinist/Person/P1320>,
@@ -12846,8 +12598,8 @@
         <https://example.org/jesuit_calvinist/Person/P1357>,
         <https://example.org/jesuit_calvinist/Person/P1381>,
         <https://example.org/jesuit_calvinist/Person/P1390>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
-        <https://example.org/jesuit_calvinist/Person/P1519>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
+        <https://example.org/jesuit_calvinist/Person/P1518>,
         <https://example.org/jesuit_calvinist/Person/P166>,
         <https://example.org/jesuit_calvinist/Person/P187>,
         <https://example.org/jesuit_calvinist/Person/P202>,
@@ -12874,7 +12626,7 @@
         <https://example.org/jesuit_calvinist/Person/P708>,
         <https://example.org/jesuit_calvinist/Person/P72>,
         <https://example.org/jesuit_calvinist/Person/P758>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P79>,
         <https://example.org/jesuit_calvinist/Person/P792>,
         <https://example.org/jesuit_calvinist/Person/P835>,
@@ -13111,7 +12863,7 @@
         <https://example.org/jesuit_calvinist/Person/P1417>,
         <https://example.org/jesuit_calvinist/Person/P142>,
         <https://example.org/jesuit_calvinist/Person/P1424>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1554>,
         <https://example.org/jesuit_calvinist/Person/P187>,
         <https://example.org/jesuit_calvinist/Person/P202>,
@@ -13398,7 +13150,7 @@
         <https://example.org/jesuit_calvinist/Person/P1449>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1457>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1465>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1483>,
@@ -13447,20 +13199,20 @@
         <https://example.org/jesuit_calvinist/Person/P390>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P400>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P425>,
         <https://example.org/jesuit_calvinist/Person/P43>,
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P510>,
         <https://example.org/jesuit_calvinist/Person/P512>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -13726,7 +13478,7 @@
         <https://example.org/jesuit_calvinist/Person/P395>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P4>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P407>,
         <https://example.org/jesuit_calvinist/Person/P408>,
         <https://example.org/jesuit_calvinist/Person/P413>,
@@ -13741,9 +13493,9 @@
         <https://example.org/jesuit_calvinist/Person/P499>,
         <https://example.org/jesuit_calvinist/Person/P505>,
         <https://example.org/jesuit_calvinist/Person/P508>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P562>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P573>,
@@ -13781,7 +13533,7 @@
         <https://example.org/jesuit_calvinist/Person/P893>,
         <https://example.org/jesuit_calvinist/Person/P897>,
         <https://example.org/jesuit_calvinist/Person/P914>,
-        <https://example.org/jesuit_calvinist/Person/P917>,
+        <https://example.org/jesuit_calvinist/Person/P916>,
         <https://example.org/jesuit_calvinist/Person/P937>,
         <https://example.org/jesuit_calvinist/Person/P938>,
         <https://example.org/jesuit_calvinist/Person/P94>,
@@ -13930,7 +13682,7 @@
         <https://example.org/jesuit_calvinist/Person/P1035>,
         <https://example.org/jesuit_calvinist/Person/P105>,
         <https://example.org/jesuit_calvinist/Person/P1073>,
-        <https://example.org/jesuit_calvinist/Person/P1091>,
+        <https://example.org/jesuit_calvinist/Person/P1090>,
         <https://example.org/jesuit_calvinist/Person/P1106>,
         <https://example.org/jesuit_calvinist/Person/P117>,
         <https://example.org/jesuit_calvinist/Person/P1217>,
@@ -13945,7 +13697,7 @@
         <https://example.org/jesuit_calvinist/Person/P1390>,
         <https://example.org/jesuit_calvinist/Person/P140>,
         <https://example.org/jesuit_calvinist/Person/P1438>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1530>,
         <https://example.org/jesuit_calvinist/Person/P1554>,
         <https://example.org/jesuit_calvinist/Person/P198>,
@@ -13971,7 +13723,7 @@
         <https://example.org/jesuit_calvinist/Person/P687>,
         <https://example.org/jesuit_calvinist/Person/P72>,
         <https://example.org/jesuit_calvinist/Person/P77>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P820>,
         <https://example.org/jesuit_calvinist/Person/P83>,
         <https://example.org/jesuit_calvinist/Person/P835>,
@@ -13983,7 +13735,7 @@
         <https://example.org/jesuit_calvinist/Person/P932>,
         <https://example.org/jesuit_calvinist/Person/P950>,
         <https://example.org/jesuit_calvinist/Person/P954>,
-        <https://example.org/jesuit_calvinist/Person/P963>,
+        <https://example.org/jesuit_calvinist/Person/P961>,
         <https://example.org/jesuit_calvinist/Person/P966>,
         <https://example.org/jesuit_calvinist/Person/P993> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P1081>,
@@ -14266,7 +14018,7 @@
         <https://example.org/jesuit_calvinist/Person/P395>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P4>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P407>,
         <https://example.org/jesuit_calvinist/Person/P408>,
         <https://example.org/jesuit_calvinist/Person/P413>,
@@ -14281,9 +14033,9 @@
         <https://example.org/jesuit_calvinist/Person/P499>,
         <https://example.org/jesuit_calvinist/Person/P505>,
         <https://example.org/jesuit_calvinist/Person/P508>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P562>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P573>,
@@ -14321,7 +14073,7 @@
         <https://example.org/jesuit_calvinist/Person/P893>,
         <https://example.org/jesuit_calvinist/Person/P897>,
         <https://example.org/jesuit_calvinist/Person/P914>,
-        <https://example.org/jesuit_calvinist/Person/P917>,
+        <https://example.org/jesuit_calvinist/Person/P916>,
         <https://example.org/jesuit_calvinist/Person/P937>,
         <https://example.org/jesuit_calvinist/Person/P938>,
         <https://example.org/jesuit_calvinist/Person/P94>,
@@ -14533,7 +14285,7 @@
         <https://example.org/jesuit_calvinist/Person/P1449>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1457>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1465>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1483>,
@@ -14583,21 +14335,21 @@
         <https://example.org/jesuit_calvinist/Person/P390>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P400>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P425>,
         <https://example.org/jesuit_calvinist/Person/P43>,
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P510>,
         <https://example.org/jesuit_calvinist/Person/P512>,
         <https://example.org/jesuit_calvinist/Person/P529>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -14950,7 +14702,7 @@
         <https://example.org/jesuit_calvinist/Person/P1449>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1457>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1465>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1483>,
@@ -15000,21 +14752,21 @@
         <https://example.org/jesuit_calvinist/Person/P390>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P400>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P425>,
         <https://example.org/jesuit_calvinist/Person/P43>,
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P510>,
         <https://example.org/jesuit_calvinist/Person/P512>,
         <https://example.org/jesuit_calvinist/Person/P529>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -15205,7 +14957,7 @@
         <https://example.org/jesuit_calvinist/Person/P565>,
         <https://example.org/jesuit_calvinist/Person/P6>,
         <https://example.org/jesuit_calvinist/Person/P610>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P62>,
         <https://example.org/jesuit_calvinist/Person/P624>,
         <https://example.org/jesuit_calvinist/Person/P647>,
@@ -15421,15 +15173,15 @@
         <https://example.org/jesuit_calvinist/Person/P1295>,
         <https://example.org/jesuit_calvinist/Person/P1306>,
         <https://example.org/jesuit_calvinist/Person/P1381>,
-        <https://example.org/jesuit_calvinist/Person/P1519>,
+        <https://example.org/jesuit_calvinist/Person/P1518>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P560>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P86>,
         <https://example.org/jesuit_calvinist/Person/P879> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P109>,
         <https://example.org/jesuit_calvinist/Person/P1269>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1352>,
         <https://example.org/jesuit_calvinist/Person/P1429>,
         <https://example.org/jesuit_calvinist/Person/P1504>,
@@ -15710,7 +15462,7 @@
         <https://example.org/jesuit_calvinist/Person/P1449>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1457>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1465>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1483>,
@@ -15759,20 +15511,20 @@
         <https://example.org/jesuit_calvinist/Person/P390>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P400>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P425>,
         <https://example.org/jesuit_calvinist/Person/P43>,
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P510>,
         <https://example.org/jesuit_calvinist/Person/P512>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -16005,7 +15757,7 @@
         <https://example.org/jesuit_calvinist/Person/P1449>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1457>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1465>,
         <https://example.org/jesuit_calvinist/Person/P1470>,
         <https://example.org/jesuit_calvinist/Person/P1483>,
@@ -16054,20 +15806,20 @@
         <https://example.org/jesuit_calvinist/Person/P390>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P400>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P413>,
         <https://example.org/jesuit_calvinist/Person/P425>,
         <https://example.org/jesuit_calvinist/Person/P43>,
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P508>,
         <https://example.org/jesuit_calvinist/Person/P510>,
         <https://example.org/jesuit_calvinist/Person/P512>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P560>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -16521,7 +16273,7 @@
         <https://example.org/jesuit_calvinist/Person/P395>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P4>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P407>,
         <https://example.org/jesuit_calvinist/Person/P408>,
         <https://example.org/jesuit_calvinist/Person/P413>,
@@ -16536,9 +16288,9 @@
         <https://example.org/jesuit_calvinist/Person/P499>,
         <https://example.org/jesuit_calvinist/Person/P505>,
         <https://example.org/jesuit_calvinist/Person/P508>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P562>,
         <https://example.org/jesuit_calvinist/Person/P567>,
         <https://example.org/jesuit_calvinist/Person/P573>,
@@ -16576,7 +16328,7 @@
         <https://example.org/jesuit_calvinist/Person/P893>,
         <https://example.org/jesuit_calvinist/Person/P897>,
         <https://example.org/jesuit_calvinist/Person/P914>,
-        <https://example.org/jesuit_calvinist/Person/P917>,
+        <https://example.org/jesuit_calvinist/Person/P916>,
         <https://example.org/jesuit_calvinist/Person/P937>,
         <https://example.org/jesuit_calvinist/Person/P938>,
         <https://example.org/jesuit_calvinist/Person/P94>,
@@ -16715,7 +16467,7 @@
         <https://example.org/jesuit_calvinist/Person/P931>,
         <https://example.org/jesuit_calvinist/Person/P940> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P1211>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1479>,
         <https://example.org/jesuit_calvinist/Person/P1526> ;
     jesuit_calvinist:notes "Scholarly edition in: Zbigniew Nowak, Kontrreformacyjna satyra obyczajowa w Polsce XVII wieku. Gdańsk: Gdańskie Towarzystwo Naukowe, 1968, pp. 269–288." ;
@@ -17376,7 +17128,7 @@
         <https://example.org/jesuit_calvinist/Person/P321>,
         <https://example.org/jesuit_calvinist/Person/P399>,
         <https://example.org/jesuit_calvinist/Person/P407>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P647>,
         <https://example.org/jesuit_calvinist/Person/P665>,
         <https://example.org/jesuit_calvinist/Person/P77>,
@@ -17603,7 +17355,7 @@
         <https://example.org/jesuit_calvinist/Person/P407>,
         <https://example.org/jesuit_calvinist/Person/P414>,
         <https://example.org/jesuit_calvinist/Person/P47>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P572>,
         <https://example.org/jesuit_calvinist/Person/P587>,
         <https://example.org/jesuit_calvinist/Person/P608>,
@@ -17969,7 +17721,7 @@
         <https://example.org/jesuit_calvinist/Person/P1498>,
         <https://example.org/jesuit_calvinist/Person/P189>,
         <https://example.org/jesuit_calvinist/Person/P202>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P555>,
         <https://example.org/jesuit_calvinist/Person/P708>,
         <https://example.org/jesuit_calvinist/Person/P710>,
@@ -18418,7 +18170,7 @@
         <https://example.org/jesuit_calvinist/Person/P1185>,
         <https://example.org/jesuit_calvinist/Person/P1186>,
         <https://example.org/jesuit_calvinist/Person/P1193>,
-        <https://example.org/jesuit_calvinist/Person/P1219>,
+        <https://example.org/jesuit_calvinist/Person/P1218>,
         <https://example.org/jesuit_calvinist/Person/P1221>,
         <https://example.org/jesuit_calvinist/Person/P1237>,
         <https://example.org/jesuit_calvinist/Person/P1239>,
@@ -18438,7 +18190,7 @@
         <https://example.org/jesuit_calvinist/Person/P1295>,
         <https://example.org/jesuit_calvinist/Person/P1300>,
         <https://example.org/jesuit_calvinist/Person/P1310>,
-        <https://example.org/jesuit_calvinist/Person/P1314>,
+        <https://example.org/jesuit_calvinist/Person/P1313>,
         <https://example.org/jesuit_calvinist/Person/P1319>,
         <https://example.org/jesuit_calvinist/Person/P1321>,
         <https://example.org/jesuit_calvinist/Person/P1325>,
@@ -18461,7 +18213,7 @@
         <https://example.org/jesuit_calvinist/Person/P1392>,
         <https://example.org/jesuit_calvinist/Person/P1396>,
         <https://example.org/jesuit_calvinist/Person/P1404>,
-        <https://example.org/jesuit_calvinist/Person/P1408>,
+        <https://example.org/jesuit_calvinist/Person/P1407>,
         <https://example.org/jesuit_calvinist/Person/P1409>,
         <https://example.org/jesuit_calvinist/Person/P1412>,
         <https://example.org/jesuit_calvinist/Person/P142>,
@@ -18475,7 +18227,7 @@
         <https://example.org/jesuit_calvinist/Person/P1450>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
         <https://example.org/jesuit_calvinist/Person/P1458>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
         <https://example.org/jesuit_calvinist/Person/P1468>,
         <https://example.org/jesuit_calvinist/Person/P1469>,
         <https://example.org/jesuit_calvinist/Person/P1474>,
@@ -18485,14 +18237,14 @@
         <https://example.org/jesuit_calvinist/Person/P1486>,
         <https://example.org/jesuit_calvinist/Person/P1487>,
         <https://example.org/jesuit_calvinist/Person/P1501>,
-        <https://example.org/jesuit_calvinist/Person/P1506>,
-        <https://example.org/jesuit_calvinist/Person/P1519>,
+        <https://example.org/jesuit_calvinist/Person/P1505>,
+        <https://example.org/jesuit_calvinist/Person/P1518>,
         <https://example.org/jesuit_calvinist/Person/P1534>,
         <https://example.org/jesuit_calvinist/Person/P1549>,
         <https://example.org/jesuit_calvinist/Person/P1553>,
         <https://example.org/jesuit_calvinist/Person/P1554>,
         <https://example.org/jesuit_calvinist/Person/P166>,
-        <https://example.org/jesuit_calvinist/Person/P178>,
+        <https://example.org/jesuit_calvinist/Person/P177>,
         <https://example.org/jesuit_calvinist/Person/P179>,
         <https://example.org/jesuit_calvinist/Person/P18>,
         <https://example.org/jesuit_calvinist/Person/P181>,
@@ -18563,9 +18315,9 @@
         <https://example.org/jesuit_calvinist/Person/P499>,
         <https://example.org/jesuit_calvinist/Person/P503>,
         <https://example.org/jesuit_calvinist/Person/P508>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P553>,
         <https://example.org/jesuit_calvinist/Person/P555>,
         <https://example.org/jesuit_calvinist/Person/P558>,
@@ -18577,7 +18329,7 @@
         <https://example.org/jesuit_calvinist/Person/P605>,
         <https://example.org/jesuit_calvinist/Person/P610>,
         <https://example.org/jesuit_calvinist/Person/P612>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P62>,
         <https://example.org/jesuit_calvinist/Person/P621>,
         <https://example.org/jesuit_calvinist/Person/P624>,
@@ -18601,7 +18353,7 @@
         <https://example.org/jesuit_calvinist/Person/P72>,
         <https://example.org/jesuit_calvinist/Person/P735>,
         <https://example.org/jesuit_calvinist/Person/P76>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P774>,
         <https://example.org/jesuit_calvinist/Person/P792>,
         <https://example.org/jesuit_calvinist/Person/P800>,
@@ -18641,7 +18393,7 @@
         <https://example.org/jesuit_calvinist/Person/P115>,
         <https://example.org/jesuit_calvinist/Person/P1268>,
         <https://example.org/jesuit_calvinist/Person/P1269>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1290>,
         <https://example.org/jesuit_calvinist/Person/P1352>,
         <https://example.org/jesuit_calvinist/Person/P1356>,
@@ -21743,6 +21495,16 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
+<https://example.org/jesuit_calvinist/Person/P177> a sch:Person ;
+    sch:birthDate "1600"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL193> ;
+    sch:deathDate "1674"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL259> ;
+    sch:name "Botsack, Johann" ;
+    owl:sameAs wdt:Q1692728 ;
+    jesuit_calvinist:productivityCentury "17" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
 <https://example.org/jesuit_calvinist/Person/P182> a sch:Person ;
     sch:birthDate "1490"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL65> ;
@@ -22580,15 +22342,6 @@
     owl:sameAs wdt:Q113767123 ;
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
-
-<https://example.org/jesuit_calvinist/Person/P404> a sch:Person ;
-    sch:birthDate "450"^^xsd:gYear ;
-    sch:deathDate "505"^^xsd:gYear ;
-    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL277> ;
-    sch:name "Eugenius of Carthage" ;
-    owl:sameAs wdt:Q1270991 ;
-    jesuit_calvinist:productivityCentury "5" ;
-    jesuit_calvinist:productivityEpoch "Ancient" .
 
 <https://example.org/jesuit_calvinist/Person/P41> a sch:Person ;
     sch:birthDate "1055"^^xsd:gYear ;
@@ -30514,7 +30267,7 @@
         <https://example.org/jesuit_calvinist/Person/P721>,
         <https://example.org/jesuit_calvinist/Person/P743>,
         <https://example.org/jesuit_calvinist/Person/P76>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P83>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P86>,
@@ -30730,10 +30483,10 @@
         <https://example.org/jesuit_calvinist/Person/P45>,
         <https://example.org/jesuit_calvinist/Person/P47>,
         <https://example.org/jesuit_calvinist/Person/P538>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
         <https://example.org/jesuit_calvinist/Person/P546>,
         <https://example.org/jesuit_calvinist/Person/P547>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P565>,
         <https://example.org/jesuit_calvinist/Person/P598>,
         <https://example.org/jesuit_calvinist/Person/P605>,
@@ -30752,8 +30505,8 @@
         <https://example.org/jesuit_calvinist/Person/P721>,
         <https://example.org/jesuit_calvinist/Person/P753>,
         <https://example.org/jesuit_calvinist/Person/P792>,
-        <https://example.org/jesuit_calvinist/Person/P798>,
-        <https://example.org/jesuit_calvinist/Person/P81>,
+        <https://example.org/jesuit_calvinist/Person/P797>,
+        <https://example.org/jesuit_calvinist/Person/P80>,
         <https://example.org/jesuit_calvinist/Person/P83>,
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P86>,
@@ -30768,7 +30521,7 @@
         <https://example.org/jesuit_calvinist/Person/P550>,
         <https://example.org/jesuit_calvinist/Person/P57>,
         <https://example.org/jesuit_calvinist/Person/P640>,
-        <https://example.org/jesuit_calvinist/Person/P798>,
+        <https://example.org/jesuit_calvinist/Person/P797>,
         <https://example.org/jesuit_calvinist/Person/P960> ;
     jesuit_calvinist:placeAdditionalInfo "Presumed" ;
     jesuit_calvinist:polemicalTheme "Absurd Beliefs",
@@ -31041,7 +30794,7 @@
         <https://example.org/jesuit_calvinist/Person/P1471>,
         <https://example.org/jesuit_calvinist/Person/P1501>,
         <https://example.org/jesuit_calvinist/Person/P1502>,
-        <https://example.org/jesuit_calvinist/Person/P1506>,
+        <https://example.org/jesuit_calvinist/Person/P1505>,
         <https://example.org/jesuit_calvinist/Person/P1523>,
         <https://example.org/jesuit_calvinist/Person/P1540>,
         <https://example.org/jesuit_calvinist/Person/P1554>,
@@ -31076,7 +30829,7 @@
         <https://example.org/jesuit_calvinist/Person/P387>,
         <https://example.org/jesuit_calvinist/Person/P397>,
         <https://example.org/jesuit_calvinist/Person/P399>,
-        <https://example.org/jesuit_calvinist/Person/P406>,
+        <https://example.org/jesuit_calvinist/Person/P404>,
         <https://example.org/jesuit_calvinist/Person/P408>,
         <https://example.org/jesuit_calvinist/Person/P422>,
         <https://example.org/jesuit_calvinist/Person/P428>,
@@ -31085,19 +30838,19 @@
         <https://example.org/jesuit_calvinist/Person/P475>,
         <https://example.org/jesuit_calvinist/Person/P479>,
         <https://example.org/jesuit_calvinist/Person/P493>,
-        <https://example.org/jesuit_calvinist/Person/P497>,
+        <https://example.org/jesuit_calvinist/Person/P495>,
         <https://example.org/jesuit_calvinist/Person/P50>,
         <https://example.org/jesuit_calvinist/Person/P512>,
         <https://example.org/jesuit_calvinist/Person/P515>,
         <https://example.org/jesuit_calvinist/Person/P517>,
         <https://example.org/jesuit_calvinist/Person/P531>,
         <https://example.org/jesuit_calvinist/Person/P538>,
+        <https://example.org/jesuit_calvinist/Person/P54>,
         <https://example.org/jesuit_calvinist/Person/P541>,
-        <https://example.org/jesuit_calvinist/Person/P55>,
         <https://example.org/jesuit_calvinist/Person/P564>,
         <https://example.org/jesuit_calvinist/Person/P605>,
         <https://example.org/jesuit_calvinist/Person/P610>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P62>,
         <https://example.org/jesuit_calvinist/Person/P643>,
         <https://example.org/jesuit_calvinist/Person/P644>,
@@ -31135,7 +30888,7 @@
         <https://example.org/jesuit_calvinist/Person/P1156>,
         <https://example.org/jesuit_calvinist/Person/P1163>,
         <https://example.org/jesuit_calvinist/Person/P1269>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1284>,
         <https://example.org/jesuit_calvinist/Person/P1348>,
         <https://example.org/jesuit_calvinist/Person/P1512>,
@@ -31568,7 +31321,7 @@
         <https://example.org/jesuit_calvinist/Person/P1296>,
         <https://example.org/jesuit_calvinist/Person/P1307>,
         <https://example.org/jesuit_calvinist/Person/P134>,
-        <https://example.org/jesuit_calvinist/Person/P1401>,
+        <https://example.org/jesuit_calvinist/Person/P1400>,
         <https://example.org/jesuit_calvinist/Person/P1406>,
         <https://example.org/jesuit_calvinist/Person/P1412>,
         <https://example.org/jesuit_calvinist/Person/P1433>,
@@ -31608,7 +31361,7 @@
         <https://example.org/jesuit_calvinist/Person/P873>,
         <https://example.org/jesuit_calvinist/Person/P938> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P1085>,
-        <https://example.org/jesuit_calvinist/Person/P1141>,
+        <https://example.org/jesuit_calvinist/Person/P1140>,
         <https://example.org/jesuit_calvinist/Person/P800> ;
     jesuit_calvinist:placeAdditionalInfo "Presumed" ;
     jesuit_calvinist:polemicalTheme "Abuses Within Church",
@@ -31693,7 +31446,7 @@
         <https://example.org/jesuit_calvinist/Person/P86> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P1100>,
         <https://example.org/jesuit_calvinist/Person/P1205>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1360>,
         <https://example.org/jesuit_calvinist/Person/P1561>,
         <https://example.org/jesuit_calvinist/Person/P174>,
@@ -31940,7 +31693,7 @@
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P86> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P1201>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1386>,
         <https://example.org/jesuit_calvinist/Person/P1520> ;
     jesuit_calvinist:polemicalTheme "Absurd Beliefs",
@@ -32122,7 +31875,7 @@
         <https://example.org/jesuit_calvinist/Person/P919>,
         <https://example.org/jesuit_calvinist/Person/P959> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P109>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1298>,
         <https://example.org/jesuit_calvinist/Person/P271>,
         <https://example.org/jesuit_calvinist/Person/P391>,
@@ -32268,8 +32021,8 @@
         <https://example.org/jesuit_calvinist/Person/P1357>,
         <https://example.org/jesuit_calvinist/Person/P1381>,
         <https://example.org/jesuit_calvinist/Person/P1390>,
-        <https://example.org/jesuit_calvinist/Person/P1463>,
-        <https://example.org/jesuit_calvinist/Person/P1519>,
+        <https://example.org/jesuit_calvinist/Person/P1462>,
+        <https://example.org/jesuit_calvinist/Person/P1518>,
         <https://example.org/jesuit_calvinist/Person/P166>,
         <https://example.org/jesuit_calvinist/Person/P187>,
         <https://example.org/jesuit_calvinist/Person/P202>,
@@ -32296,7 +32049,7 @@
         <https://example.org/jesuit_calvinist/Person/P708>,
         <https://example.org/jesuit_calvinist/Person/P72>,
         <https://example.org/jesuit_calvinist/Person/P758>,
-        <https://example.org/jesuit_calvinist/Person/P773>,
+        <https://example.org/jesuit_calvinist/Person/P772>,
         <https://example.org/jesuit_calvinist/Person/P79>,
         <https://example.org/jesuit_calvinist/Person/P792>,
         <https://example.org/jesuit_calvinist/Person/P835>,
@@ -32600,6 +32353,16 @@
     jesuit_calvinist:productivityCentury "15" ;
     jesuit_calvinist:productivityEpoch "Medieval" .
 
+<https://example.org/jesuit_calvinist/Person/P1055> a sch:Person ;
+    sch:birthDate "720"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1026> ;
+    sch:deathDate "799"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL23> ;
+    sch:name "Paul the Deacon" ;
+    owl:sameAs wdt:Q160424 ;
+    jesuit_calvinist:productivityCentury "8" ;
+    jesuit_calvinist:productivityEpoch "Medieval" .
+
 <https://example.org/jesuit_calvinist/Person/P1064> a sch:Person ;
     sch:birthDate "34"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL42> ;
@@ -32651,6 +32414,16 @@
 
 <https://example.org/jesuit_calvinist/Person/P1085> a sch:Person ;
     sch:name "Piasecki, Sebastian?" .
+
+<https://example.org/jesuit_calvinist/Person/P1090> a sch:Person ;
+    sch:birthDate "1490"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL477> ;
+    sch:deathDate "1542"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL925> ;
+    sch:name "Pighius, Albert" ;
+    owl:sameAs wdt:Q2361366 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
 
 <https://example.org/jesuit_calvinist/Person/P1094> a sch:Person ;
     sch:birthDate "1542"^^xsd:gYear ;
@@ -32814,6 +32587,16 @@
     jesuit_calvinist:productivityCentury "17" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
+<https://example.org/jesuit_calvinist/Person/P1218> a sch:Person ;
+    sch:birthDate "1508"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL809> ;
+    sch:deathDate "1560"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL410> ;
+    sch:name "Sabinus, Georg" ;
+    owl:sameAs wdt:Q69731 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
 <https://example.org/jesuit_calvinist/Person/P1225> a sch:Person ;
     sch:name "Samborzecka, Dorota" .
 
@@ -32929,6 +32712,16 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
+<https://example.org/jesuit_calvinist/Person/P1313> a sch:Person ;
+    sch:birthDate "1484"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1074> ;
+    sch:deathDate "1551"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL1129> ;
+    sch:name "Speratus, Paul" ;
+    owl:sameAs wdt:Q67531 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
 <https://example.org/jesuit_calvinist/Person/P1329> a sch:Person ;
     sch:birthDate "969"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL123> ;
@@ -32938,6 +32731,16 @@
     owl:sameAs wdt:Q177903 ;
     jesuit_calvinist:productivityCentury "11" ;
     jesuit_calvinist:productivityEpoch "Medieval" .
+
+<https://example.org/jesuit_calvinist/Person/P1333> a sch:Person ;
+    sch:birthDate "1497"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL862> ;
+    sch:deathDate "1548"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL716> ;
+    sch:name "Steuco, Agostino" ;
+    owl:sameAs wdt:Q395722 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
 
 <https://example.org/jesuit_calvinist/Person/P1344> a sch:Person ;
     sch:birthDate "1398"^^xsd:gYear ;
@@ -33024,6 +32827,16 @@
     owl:sameAs wdt:Q1407 ;
     jesuit_calvinist:productivityCentury "1" ;
     jesuit_calvinist:productivityEpoch "Ancient" .
+
+<https://example.org/jesuit_calvinist/Person/P1407> a sch:Person ;
+    sch:birthDate "1400"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL371> ;
+    sch:deathDate "1455"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL903> ;
+    sch:name "Tostado, Alonso" ;
+    owl:sameAs wdt:Q604156 ;
+    jesuit_calvinist:productivityCentury "15" ;
+    jesuit_calvinist:productivityEpoch "Medieval" .
 
 <https://example.org/jesuit_calvinist/Person/P141> a sch:Person ;
     sch:name "Bieliński, Daniel" ;
@@ -33297,6 +33110,16 @@
     jesuit_calvinist:productivityCentury "8" ;
     jesuit_calvinist:productivityEpoch "Medieval" .
 
+<https://example.org/jesuit_calvinist/Person/P251> a sch:Person ;
+    sch:birthDate "1155"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL622> ;
+    sch:deathDate "1217"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL46> ;
+    sch:name "Choniates, Niketas" ;
+    owl:sameAs wdt:Q297340 ;
+    jesuit_calvinist:productivityCentury "12" ;
+    jesuit_calvinist:productivityEpoch "Medieval" .
+
 <https://example.org/jesuit_calvinist/Person/P254> a sch:Person ;
     sch:birthDate "335"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL147> ;
@@ -33521,6 +33344,16 @@
     sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL220> ;
     sch:name "Gallus, Nicolaus" ;
     owl:sameAs wdt:Q101169 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
+<https://example.org/jesuit_calvinist/Person/P487> a sch:Person ;
+    sch:birthDate "1499"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL788> ;
+    sch:deathDate "1571"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL788> ;
+    sch:name "Garet, Jean" ;
+    owl:sameAs wdt:Q64992107 ;
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
@@ -35211,7 +35044,7 @@
         <https://example.org/jesuit_calvinist/Person/P486>,
         <https://example.org/jesuit_calvinist/Person/P547>,
         <https://example.org/jesuit_calvinist/Person/P610>,
-        <https://example.org/jesuit_calvinist/Person/P614>,
+        <https://example.org/jesuit_calvinist/Person/P613>,
         <https://example.org/jesuit_calvinist/Person/P641>,
         <https://example.org/jesuit_calvinist/Person/P665>,
         <https://example.org/jesuit_calvinist/Person/P675>,
@@ -35644,7 +35477,7 @@
         <https://example.org/jesuit_calvinist/Person/P114>,
         <https://example.org/jesuit_calvinist/Person/P1258>,
         <https://example.org/jesuit_calvinist/Person/P127>,
-        <https://example.org/jesuit_calvinist/Person/P1274>,
+        <https://example.org/jesuit_calvinist/Person/P1273>,
         <https://example.org/jesuit_calvinist/Person/P1306>,
         <https://example.org/jesuit_calvinist/Person/P1307>,
         <https://example.org/jesuit_calvinist/Person/P1319>,
@@ -35678,7 +35511,7 @@
         <https://example.org/jesuit_calvinist/Person/P835>,
         <https://example.org/jesuit_calvinist/Person/P86>,
         <https://example.org/jesuit_calvinist/Person/P897>,
-        <https://example.org/jesuit_calvinist/Person/P917>,
+        <https://example.org/jesuit_calvinist/Person/P916>,
         <https://example.org/jesuit_calvinist/Person/P950>,
         <https://example.org/jesuit_calvinist/Person/P971>,
         <https://example.org/jesuit_calvinist/Person/P990>,
@@ -35717,7 +35550,7 @@
         <https://example.org/jesuit_calvinist/Person/P723>,
         <https://example.org/jesuit_calvinist/Person/P725>,
         <https://example.org/jesuit_calvinist/Person/P726>,
-        <https://example.org/jesuit_calvinist/Person/P798>,
+        <https://example.org/jesuit_calvinist/Person/P797>,
         <https://example.org/jesuit_calvinist/Person/P897>,
         <https://example.org/jesuit_calvinist/Person/P910>,
         <https://example.org/jesuit_calvinist/Person/P912>,
@@ -35911,7 +35744,7 @@
         <https://example.org/jesuit_calvinist/Person/P76>,
         <https://example.org/jesuit_calvinist/Person/P807>,
         <https://example.org/jesuit_calvinist/Person/P835>,
-        <https://example.org/jesuit_calvinist/Person/P917>,
+        <https://example.org/jesuit_calvinist/Person/P916>,
         <https://example.org/jesuit_calvinist/Person/P97> ;
     jesuit_calvinist:keyHistoricalFiguresMentioned <https://example.org/jesuit_calvinist/Person/P1013>,
         <https://example.org/jesuit_calvinist/Person/P1014>,
@@ -35925,7 +35758,7 @@
         <https://example.org/jesuit_calvinist/Person/P1212>,
         <https://example.org/jesuit_calvinist/Person/P1215>,
         <https://example.org/jesuit_calvinist/Person/P125>,
-        <https://example.org/jesuit_calvinist/Person/P1271>,
+        <https://example.org/jesuit_calvinist/Person/P1270>,
         <https://example.org/jesuit_calvinist/Person/P1272>,
         <https://example.org/jesuit_calvinist/Person/P1282>,
         <https://example.org/jesuit_calvinist/Person/P1320>,
@@ -36372,6 +36205,13 @@
     jesuit_calvinist:productivityCentury "5" ;
     jesuit_calvinist:productivityEpoch "Ancient" .
 
+<https://example.org/jesuit_calvinist/Person/P1140> a sch:Person ;
+    sch:deathDate "1598"^^xsd:gYear ;
+    sch:name "Przetocki, Wojciech" ;
+    owl:sameAs wdt:Q98203523 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
 <https://example.org/jesuit_calvinist/Person/P1162> a sch:Person ;
     sch:birthDate "1579"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL754> ;
@@ -36556,6 +36396,16 @@
     owl:sameAs wdt:Q2039 ;
     jesuit_calvinist:productivityCentury "-1" ;
     jesuit_calvinist:productivityEpoch "Ancient" .
+
+<https://example.org/jesuit_calvinist/Person/P1400> a sch:Person ;
+    sch:birthDate "1532"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL31> ;
+    sch:deathDate "1596"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL342> ;
+    sch:name "Toledo, Francisco de" ;
+    owl:sameAs wdt:Q1379453 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
 
 <https://example.org/jesuit_calvinist/Person/P1402> a sch:Person ;
     sch:birthDate "1272"^^xsd:gYear ;
@@ -37244,6 +37094,16 @@
 <https://example.org/jesuit_calvinist/Person/P95> a sch:Person ;
     sch:name "Bacontorpius, Joannes" .
 
+<https://example.org/jesuit_calvinist/Person/P961> a sch:Person ;
+    sch:birthDate "1363"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL33> ;
+    sch:deathDate "1437"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL101> ;
+    sch:name "Nicholas of Clémanges" ;
+    owl:sameAs wdt:Q744014 ;
+    jesuit_calvinist:productivityCentury "15" ;
+    jesuit_calvinist:productivityEpoch "Medieval" .
+
 <https://example.org/jesuit_calvinist/Person/P974> a sch:Person ;
     sch:birthDate "758"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL248> ;
@@ -37579,9 +37439,9 @@
         <https://example.org/jesuit_calvinist/Person/P1383>,
         <https://example.org/jesuit_calvinist/Person/P1389>,
         <https://example.org/jesuit_calvinist/Person/P1399>,
-        <https://example.org/jesuit_calvinist/Person/P1401>,
+        <https://example.org/jesuit_calvinist/Person/P1400>,
         <https://example.org/jesuit_calvinist/Person/P1404>,
-        <https://example.org/jesuit_calvinist/Person/P1415>,
+        <https://example.org/jesuit_calvinist/Person/P1414>,
         <https://example.org/jesuit_calvinist/Person/P1438>,
         <https://example.org/jesuit_calvinist/Person/P1450>,
         <https://example.org/jesuit_calvinist/Person/P1451>,
@@ -38095,6 +37955,16 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
+<https://example.org/jesuit_calvinist/Person/P1414> a sch:Person ;
+    sch:birthDate "1462"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL642> ;
+    sch:deathDate "1516"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL707> ;
+    sch:name "Trithemius, Johannes" ;
+    owl:sameAs wdt:Q60178 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
 <https://example.org/jesuit_calvinist/Person/P1420> a sch:Person ;
     sch:birthDate "1494"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1078> ;
@@ -38154,6 +38024,16 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
+<https://example.org/jesuit_calvinist/Person/P1518> a sch:Person ;
+    sch:birthDate "1501"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL294> ;
+    sch:deathDate "1573"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL347> ;
+    sch:name "Witzel, Georg" ;
+    owl:sameAs wdt:Q91326 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
 <https://example.org/jesuit_calvinist/Person/P1523> a sch:Person ;
     sch:name "Wolan, Jakub" ;
     jesuit_calvinist:productivityCentury "16" ;
@@ -38205,6 +38085,16 @@
     owl:sameAs wdt:Q80979 ;
     jesuit_calvinist:productivityCentury "5" ;
     jesuit_calvinist:productivityEpoch "Ancient" .
+
+<https://example.org/jesuit_calvinist/Person/P192> a sch:Person ;
+    sch:birthDate "1176"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1030> ;
+    sch:deathDate "1230"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL557> ;
+    sch:name "Burchard of Ursberg" ;
+    owl:sameAs wdt:Q1010365 ;
+    jesuit_calvinist:productivityCentury "13" ;
+    jesuit_calvinist:productivityEpoch "Medieval" .
 
 <https://example.org/jesuit_calvinist/Person/P195> a sch:Person ;
     sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL754> ;
@@ -38964,6 +38854,16 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
+<https://example.org/jesuit_calvinist/Person/P1273> a sch:Person ;
+    sch:birthDate "1520"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL755> ;
+    sch:deathDate "1584"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL755> ;
+    sch:name "Sigonius, Carolus" ;
+    owl:sameAs wdt:Q544176 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
 <https://example.org/jesuit_calvinist/Person/P1283> a sch:Person ;
     sch:birthDate "1520"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL212> ;
@@ -39034,6 +38934,16 @@
     owl:sameAs wdt:Q58563 ;
     jesuit_calvinist:productivityCentury "11" ;
     jesuit_calvinist:productivityEpoch "Medieval" .
+
+<https://example.org/jesuit_calvinist/Person/P1505> a sch:Person ;
+    sch:birthDate "1523"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1036> ;
+    sch:deathDate "1587"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL39> ;
+    sch:name "Wigand, Johann" ;
+    owl:sameAs wdt:Q70322 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
 
 <https://example.org/jesuit_calvinist/Person/P161> a sch:Person ;
     sch:birthDate "1507"^^xsd:gYear ;
@@ -39825,6 +39735,15 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
+<https://example.org/jesuit_calvinist/Person/P80> a sch:Person ;
+    sch:birthDate "255"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL618> ;
+    sch:deathDate "327"^^xsd:gYear ;
+    sch:name "Arnobius" ;
+    owl:sameAs wdt:Q342416 ;
+    jesuit_calvinist:productivityCentury "4" ;
+    jesuit_calvinist:productivityEpoch "Ancient" .
+
 <https://example.org/jesuit_calvinist/Person/P853> a sch:Person ;
     sch:birthDate "1447"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL974> ;
@@ -40427,6 +40346,16 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
+<https://example.org/jesuit_calvinist/Person/P797> a sch:Person ;
+    sch:birthDate "1002"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL533> ;
+    sch:deathDate "1054"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL342> ;
+    sch:name "Leo IX" ;
+    owl:sameAs wdt:Q58559 ;
+    jesuit_calvinist:productivityCentury "11" ;
+    jesuit_calvinist:productivityEpoch "Medieval" .
+
 <https://example.org/jesuit_calvinist/Person/P805> a sch:Person ;
     sch:birthDate "1559"^^xsd:gYear ;
     sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL389> ;
@@ -40922,6 +40851,16 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
+<https://example.org/jesuit_calvinist/Person/P916> a sch:Person ;
+    sch:birthDate "1457"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1093> ;
+    sch:deathDate "1523"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL24> ;
+    sch:name "Miechowita, Maciej" ;
+    owl:sameAs wdt:Q2452397 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
 <https://example.org/jesuit_calvinist/Person/P971> a sch:Person ;
     sch:birthDate "1526"^^xsd:gYear ;
     sch:deathDate "1598"^^xsd:gYear ;
@@ -41068,6 +41007,9 @@
     owl:sameAs wdt:Q243427 ;
     jesuit_calvinist:productivityCentury "10" ;
     jesuit_calvinist:productivityEpoch "Medieval" .
+
+<https://example.org/jesuit_calvinist/Person/P613> a sch:Person ;
+    sch:name "Hippolytus" .
 
 <https://example.org/jesuit_calvinist/Person/P623> a sch:Person ;
     sch:birthDate "1148"^^xsd:gYear ;
@@ -41515,6 +41457,16 @@
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
+<https://example.org/jesuit_calvinist/Person/P1270> a sch:Person ;
+    sch:birthDate "1566"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL358> ;
+    sch:deathDate "1632"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL1106> ;
+    sch:name "Sigismund III Vasa" ;
+    owl:sameAs wdt:Q52940 ;
+    jesuit_calvinist:productivityCentury "17" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
 <https://example.org/jesuit_calvinist/Person/P1417> a sch:Person ;
     sch:birthDate "1544"^^xsd:gYear ;
     sch:deathDate "1608"^^xsd:gYear ;
@@ -41602,6 +41554,16 @@
     owl:sameAs wdt:Q43939 ;
     jesuit_calvinist:productivityCentury "11" ;
     jesuit_calvinist:productivityEpoch "Medieval" .
+
+<https://example.org/jesuit_calvinist/Person/P772> a sch:Person ;
+    sch:birthDate "240"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL378> ;
+    sch:deathDate "317"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL364> ;
+    sch:name "Lactantius" ;
+    owl:sameAs wdt:Q209102 ;
+    jesuit_calvinist:productivityCentury "3" ;
+    jesuit_calvinist:productivityEpoch "Ancient" .
 
 <https://example.org/jesuit_calvinist/Person/P990> a sch:Person ;
     sch:birthDate "1487"^^xsd:gYear ;
@@ -41726,6 +41688,15 @@
     owl:sameAs wdt:Q1696061 ;
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
+
+<https://example.org/jesuit_calvinist/Person/P1462> a sch:Person ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL1111> ;
+    sch:deathDate "445"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL679> ;
+    sch:name "Vincent of Lérins" ;
+    owl:sameAs wdt:Q644057 ;
+    jesuit_calvinist:productivityCentury "5" ;
+    jesuit_calvinist:productivityEpoch "Ancient" .
 
 <https://example.org/jesuit_calvinist/Person/P206> a sch:Person ;
     sch:birthDate "1521"^^xsd:gYear ;
@@ -41904,6 +41875,15 @@
     owl:sameAs wdt:Q190089 ;
     jesuit_calvinist:productivityCentury "13" ;
     jesuit_calvinist:productivityEpoch "Medieval" .
+
+<https://example.org/jesuit_calvinist/Person/P404> a sch:Person ;
+    sch:birthDate "450"^^xsd:gYear ;
+    sch:deathDate "505"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL277> ;
+    sch:name "Eugenius of Carthage" ;
+    owl:sameAs wdt:Q1270991 ;
+    jesuit_calvinist:productivityCentury "5" ;
+    jesuit_calvinist:productivityEpoch "Ancient" .
 
 <https://example.org/jesuit_calvinist/Person/P425> a sch:Person ;
     sch:birthDate "1489"^^xsd:gYear ;
@@ -42164,6 +42144,16 @@
     sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL823> ;
     sch:name "de Sainctes, Claude" ;
     owl:sameAs wdt:Q2978359 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
+
+<https://example.org/jesuit_calvinist/Person/P495> a sch:Person ;
+    sch:birthDate "1535"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL690> ;
+    sch:deathDate "1597"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL996> ;
+    sch:name "Génébrard, Gilbert" ;
+    owl:sameAs wdt:Q3105742 ;
     jesuit_calvinist:productivityCentury "16" ;
     jesuit_calvinist:productivityEpoch "Early Modern" .
 
@@ -42534,6 +42524,16 @@
     owl:sameAs wdt:Q8413 ;
     jesuit_calvinist:productivityCentury "4" ;
     jesuit_calvinist:productivityEpoch "Ancient" .
+
+<https://example.org/jesuit_calvinist/Person/P54> a sch:Person ;
+    sch:birthDate "1528"^^xsd:gYear ;
+    sch:birthPlace <https://example.org/jesuit_calvinist/Place/PL495> ;
+    sch:deathDate "1590"^^xsd:gYear ;
+    sch:deathPlace <https://example.org/jesuit_calvinist/Place/PL417> ;
+    sch:name "Andreae, Jakob" ;
+    owl:sameAs wdt:Q62754 ;
+    jesuit_calvinist:productivityCentury "16" ;
+    jesuit_calvinist:productivityEpoch "Early Modern" .
 
 <https://example.org/jesuit_calvinist/Person/P645> a sch:Person ;
     sch:birthDate "1160"^^xsd:gYear ;
