@@ -261,7 +261,14 @@ df = df.loc[~df['person'].isin(['Anonymous', 'Various']) &
 
 co_occurrence = df.groupby(['person', 'response_person']).size().reset_index(name='weight')
 co_occurrence.to_excel('data/article_lpg_1.xlsx', index=False)
+co_occurrence = co_occurrence.rename(columns={'person': 'Source', 'response_person': 'Target', 'weight': 'Weight'})
 
+nodes_list = pd.DataFrame(list(zip(range(1,38), set(co_occurrence['Source'].to_list() + co_occurrence['Target'].to_list()))), columns=['Id', 'Label'])
+nodes_list.to_csv('data/nodes.csv', index=False, encoding='utf-8')
+nodes_dict = dict(zip(nodes_list['Label'].to_list(), nodes_list['Id'].to_list()))
+co_occurrence['Source'] = co_occurrence['Source'].apply(lambda x: nodes_dict.get(x))
+co_occurrence['Target'] = co_occurrence['Target'].apply(lambda x: nodes_dict.get(x))
+co_occurrence.to_csv('data/edges.csv', index=False, encoding='utf-8')
 # Tworzymy graf
 G = nx.Graph()
 
